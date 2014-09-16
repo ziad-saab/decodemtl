@@ -3,14 +3,26 @@
 @import "settings";
 @import "normalize";
 @import "foundation/components/grid";
+@import "vendor/hw-parallax";
 
 $decode-red: #ef4136;
+$sans-serif: 'Droid Sans', helvetica, arial, sans-serif;
 
-#page {
-  padding-top: 50px;
+@font-face {
+  font-family: 'decodemtl';
+  src: url('../font/decodemtl.eot?7563585');
+  src: url('../font/decodemtl.eot?7563585#iefix') format('embedded-opentype'),
+  url('../font/decodemtl.woff?7563585') format('woff'),
+  url('../font/decodemtl.ttf?7563585') format('truetype'),
+  url('../font/decodemtl.svg?7563585#decodemtl') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
 .section-content {
   @include grid-row();
+  padding: 0 10px;
 }
 
 @import "main-header";
+@import "intro-section";
