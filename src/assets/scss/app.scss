@@ -2,3 +2,15 @@
 
 @import "settings";
 @import "normalize";
+@import "foundation/components/grid";
+
+$decode-red: #ef4136;
+
+#page {
+  padding-top: 50px;
+}
+.section-content {
+  @include grid-row();
+}
+
+@import "main-header";

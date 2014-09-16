@@ -1,0 +1,89 @@
+.main-header {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0,0,0, 0.75);
+  
+  &__logo {
+    float: left;
+  }
+  &__logo-image {
+    width: 250px;
+  }
+  
+  &__nav-burger-icon {
+    display: block;
+    float: right;
+    border-top: 15px double #fff;
+    border-bottom: 5px solid #fff;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 30px;
+    cursor: pointer;
+  }
+  &__nav-checkbox {
+    display: none;
+  }
+  &__nav {
+    clear: both;
+  }
+  &__nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    overflow: hidden;
+  }
+  &__nav-checkbox:checked + &__nav-list {
+    display: block;
+  }
+  &__nav-item {
+    text-align: center;
+    margin: 10px 0;
+  }
+  &__nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .main-header {
+    $height: 55px;
+    
+    height: $height;
+    
+    &__logo-image {
+      width: auto;
+      height: $height;
+    }
+    &__nav-burger-icon {
+      display: none;
+    }
+    &__nav {
+      float: right;
+      clear: none;
+      height: $height;
+    }
+    &__nav-list {
+      display: block;
+      height: 100%;
+    }
+    &__nav-item {
+      float: left;
+      margin: 0;
+      height: 100%;
+      line-height: $height;
+      padding: 0 10px;
+    }
+    &__nav-item--apply {
+      background-color: $decode-red;
+    }
+  }
+}
