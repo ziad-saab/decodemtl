@@ -1,0 +1,7 @@
+.grunt
+node_modules
+bower_components
+/dist
+/www
+/src/assets/css
+/src/assets/js/*app-bundle*
