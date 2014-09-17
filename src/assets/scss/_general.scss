@@ -1,5 +1,6 @@
 $decode-red: #ef4136;
 $sans-serif: 'Droid Sans', helvetica, arial, sans-serif;
+$section-content-padding: 10px;
 
 @font-face {
   font-family: 'decodemtl';
@@ -14,7 +15,7 @@ $sans-serif: 'Droid Sans', helvetica, arial, sans-serif;
 
 .section-content {
   @include grid-row();
-  padding: 0 10px;
+  padding: 0 $section-content-padding;
 }
 .section-heading {
   font-family: $sans-serif;
