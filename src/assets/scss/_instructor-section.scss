@@ -1,0 +1,93 @@
+.instructor {
+  padding-bottom: 50px;
+  
+  &__heading {
+    height: 220px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.8) inset;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  &__heading:before, &__heading:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    border-bottom: 20px solid #fff;
+  }
+  &__heading:before {
+    left: 0;
+    border-bottom: 20px solid #fff;
+    border-right: 20px solid transparent;
+  }
+  &__heading:after {
+    right: 0;
+    border-left: 20px solid transparent;
+  }
+  
+  .touch &__heading {
+    background-image: url(../images/web-developer.jpg);
+    background-size: cover;
+    background-position: 50%;
+  }
+  
+  &__avatar-wrapper {
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  &__avatar-wrapper:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px rgba(0,0,0, 0.75) inset;
+  }
+  &__avatar {
+    width: 100%;
+  }
+  
+  &__content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  &__data {
+    margin: 0;
+  }
+  
+  &__name {
+    line-height: 1;
+    margin: 0 0 15px;
+    font-size: 32px;
+  }
+  &__title {
+    line-height: 1;
+    margin: 0 0 30px;
+    font-weight: normal;
+    font-size: 24px;
+  }
+  &__bio {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media #{$medium-up} {
+  .instructor {
+    
+    &__avatar-wrapper {
+      float: left;
+      margin: 0;
+      margin-right: 50px;
+    }
+    
+    &__data {
+      overflow: hidden;
+    }
+  }
+}

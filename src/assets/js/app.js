@@ -10,4 +10,7 @@ if (!Modernizr.touch) {
   $('.intro-section').parallax({
     scroll_factor: 0.5
   });
+  $('.instructor__heading').parallax({
+    scroll_factor: 0.2
+  });
 }
