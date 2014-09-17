@@ -1,0 +1,63 @@
+.curriculum {
+  background-color: #e6e7e9;
+}
+
+.course-curriculum {
+  
+  max-width: 850px;
+  margin: 0 (-$section-content-padding) 50px;
+  
+  &__checkbox {
+    display: none;
+  }
+  
+  &__unit {
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    @include transition(background-color 250ms ease-in-out);
+  }
+  
+  &__header {
+    display: block;
+    padding: 20px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  
+  &__unit-number {
+    display: inline-block;
+    line-height: 1;
+    padding: 5px;
+    padding-right: 10px;
+    margin-right: 20px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  &__content {
+    display: none;
+    padding: 0 10px;
+  }
+  
+  &__checkbox:checked + &__unit {
+    background-color: #fff;
+  }
+  &__checkbox:checked + &__unit > &__content {
+    display: block;
+  }
+}
+
+@media #{$medium-up} {
+  .course-curriculum {
+    margin: 0 auto 50px;
+    
+    &__header {
+      font-size: 22px;
+    }
+    
+    &__content {
+      padding: 0 10px 0 110px;
+    }
+  }
+}

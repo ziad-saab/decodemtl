@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+@import "bourbon/bourbon";
 @import "settings";
 @import "normalize";
 @import "foundation/components/grid";
@@ -9,3 +10,4 @@
 @import "main-header";
 @import "intro-section";
 @import "about-section";
+@import "curriculum-section";
