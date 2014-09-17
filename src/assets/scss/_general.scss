@@ -13,6 +13,11 @@ $section-content-padding: 10px;
   font-style: normal;
 }
 
+@mixin no-tap-highlight() {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
 .section-content {
   @include grid-row();
   padding: 0 $section-content-padding;

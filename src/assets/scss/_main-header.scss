@@ -25,6 +25,7 @@
     margin-right: 10px;
     width: 30px;
     cursor: pointer;
+    @include no-tap-highlight;
   }
   &__nav-checkbox {
     display: none;
