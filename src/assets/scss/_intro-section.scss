@@ -12,11 +12,12 @@
     color: #fff;
     font-weight: bold;
     font-family: $sans-serif;
-    text-shadow: 2px 2px 0 #000;
+    text-shadow: 0 3px 0 #000;
     max-width: 800px;
     margin: 0 auto 50px;
     text-align: center;
     font-size: 30px;
+    line-height: 1.1;
     text-transform: uppercase;
   }
   
@@ -68,8 +69,14 @@
     line-height: 1;
   }
 }
-
-@media only screen and (min-width: 1140px) {
+@media #{$medium-up} {
+  .intro-section {
+    &__heading-group {
+      font-size: 50px;
+    }
+  }
+}
+@media #{$large-up} {
   .intro-section {
     position: relative;
     padding-top: 220px;
@@ -78,6 +85,10 @@
     &__heading-group {
       font-size: 80px;
       line-height: 1.1;
+    }
+    
+    &__apply-link {
+      font-size: 30px;
     }
     
     &__course-location {
