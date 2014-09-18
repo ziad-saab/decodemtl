@@ -7,7 +7,7 @@ FastClick.attach(document.body);
 $(document).foundation();
 
 if (!Modernizr.touch) {
-  $('.intro-section').parallax({
+  $('.intro-section,.schedule').parallax({
     scroll_factor: 0.5
   });
   $('.instructor__heading').parallax({

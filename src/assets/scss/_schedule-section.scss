@@ -1,0 +1,71 @@
+.section-heading--schedule {
+  color: #fff;
+  margin: 0.8em auto;
+}
+.schedule {
+  padding-bottom: 100px;
+  
+  .touch & {
+    background-image: url(../images/montreal.jpg);
+    background-size: cover;
+    background-position: 50% 100%;
+  }
+  
+  &__content {
+    background-color: #fff;
+    display: table;
+    margin: 0 auto;
+    padding: 1em 1.5em;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  &__dates {
+    padding-bottom: 0.7em;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 0.7em;
+  }
+  &__date {
+    font-weight: bold;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding: 0 0.8em;
+  }
+  
+  &__times {
+    padding-bottom: 0.7em;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 0.7em;
+  }
+  
+  &__days {
+    font-size: 1.4em;
+    text-transform: uppercase;
+  }
+  &__hour {
+    font-size: 1.4em;
+  }
+  
+  &__tuition {
+    display: table;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    font-size: 16px;
+    padding: 0.5em 1.5em;
+  }
+}
+
+@media #{$medium-up} {
+  .schedule {
+    &__content {
+      font-size: 24px;
+    }
+    
+    &__tuition {
+      font-size: 28px;
+    }
+  }
+}
