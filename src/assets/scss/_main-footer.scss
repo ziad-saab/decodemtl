@@ -1,0 +1,45 @@
+.section-content--footer {
+  overflow: hidden;
+}
+
+.main-footer {
+  padding: 20px 0;
+  background-color: #000;
+  color: #fff;
+  
+  &__logo {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  &__logo-image {
+    display: block;
+  }
+  
+  &__info {
+    margin: 0;
+    font-size: 14px;
+    float: left;
+    width: 50%;
+  }
+  &__info-key {
+    text-transform: uppercase;
+    color: #ccc;
+  }
+  &__info-value {
+    margin: 0;
+  }
+}
+
+@media #{$medium-up} {
+  .main-footer {
+    &__logo {
+      float: left;
+      width: 60%;
+      padding-right: 20px;
+    }
+    
+    &__info {
+      width: 20%;
+    }
+  }
+}
