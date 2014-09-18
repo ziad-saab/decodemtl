@@ -24,8 +24,9 @@
     "grunt-gh-pages": "~0.9.1"
   },
   "dependencies": {
-    "jquery": "~1.11.1",
     "fastclick": "~1.0.3",
-    "lodash": "~2.4.1"
+    "jquery": "~1.11.1",
+    "lodash": "~2.4.1",
+    "parse": "^1.2.19"
   }
 }
