@@ -1,6 +1,7 @@
 var $ = require('jquery');
 var FastClick = require('fastclick');
 require('foundation/foundation');
+require('foundation/foundation.reveal');
 require('hw-parallax/src/hw-parallax');
 
 FastClick.attach(document.body);
@@ -29,4 +30,44 @@ $(document.body).on('click', 'a[href^=#]', function() {
   var targetScrollTop = $target.offset().top - navbarHeight;
   var mills = Math.abs((targetScrollTop - currentScrollTop) / scrollSpeed);
   $htmlBody.animate({scrollTop: targetScrollTop}, mills);
+});
+
+// Application form
+require('script-loader!parse');
+var applicationFormValidator = require('parse-common/app-form-validator');
+Parse.initialize('fyWcoNIpRkC4Tc18XJqHUKNFXoDkhTZqF1ceJeFS', 'IYowp9G78uLzKdnviez6NMtIJ4tx28ocqFcYJ0nW');
+
+$('.application-form__send-button').on('click', function() {
+  // Gather all keys/values from the form
+  var values = $('.application-form__form')
+    .serializeArray()
+    .reduce(
+      function(carry, current) {
+        carry[current.name] = current.value;
+        return carry;
+      }, {}
+    );
+  // Validate
+  var errors = applicationFormValidator(values);
+  var errorKeys = Object.keys(errors);
+  if (errorKeys.length) {
+    // Has errors, alert about them
+    var errorValues = errorKeys.map(function(key) {return errors[key]});
+    alert(errorValues.join("\r\n"));
+  }
+  else {
+    // No errors, submit!
+    $('#application-form').addClass('application-form--submitting');
+    Parse.Cloud.run('sendApplication', {values: values}).then(
+      function() {
+        alert('Your application was submitted successfully!');
+        $('#application-form').removeClass('application-form--submitting').foundation('reveal', 'close');
+      },
+      function(error) {
+        var errorMessage = error && error.error || 'Unknown error';
+        alert("An error occurred while submitting your application:\r\n\r\n" + errorMessage);
+        $('#application-form').removeClass('application-form--submitting');
+      }
+    )
+  }
 });

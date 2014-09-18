@@ -6,3 +6,4 @@ bower_components
 /src/assets/css
 /src/assets/js/*app-bundle*
 /parse/config
+/parse/cloud/config.js

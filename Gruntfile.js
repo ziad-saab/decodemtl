@@ -22,7 +22,13 @@ module.exports = function(grunt) {
         },
         resolve: {
           extensions: ['', '.js', '.jsx'],
-          modulesDirectories: ['web_modules','node_modules','bower_components', __dirname + '/src/assets/js'],
+          modulesDirectories: [
+            'web_modules',
+            'node_modules',
+            'bower_components',
+            __dirname + '/src/assets/js',
+            __dirname + '/parse/cloud'
+          ],
           alias: {
             foundation: 'foundation/js/foundation'
           }
@@ -51,7 +57,13 @@ module.exports = function(grunt) {
         },
         resolve: {
           extensions: ['', '.js', '.jsx'],
-          modulesDirectories: ['web_modules','node_modules','bower_components', __dirname + '/src/assets/js'],
+          modulesDirectories: [
+            'web_modules',
+            'node_modules',
+            'bower_components',
+            __dirname + '/src/assets/js',
+            __dirname + '/parse/cloud'
+          ],
           alias: {
             foundation: 'foundation/js/foundation'
           }
