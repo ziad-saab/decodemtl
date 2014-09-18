@@ -7,6 +7,10 @@
   background-color: #000;
   color: #fff;
   
+  &__above {
+    overflow: hidden;
+  }
+  
   &__logo {
     max-width: 500px;
     margin: 0 auto;
@@ -27,6 +31,17 @@
   }
   &__info-value {
     margin: 0;
+    font-family: $sans-serif;
+  }
+  
+  &__copyright {
+    clear: both;
+    margin-top: 15px;
+    border-top: 1px solid #999;
+    padding-top: 15px;
+    color: #999;
+    text-align: center;
+    font-family: $sans-serif;
   }
 }
 

@@ -22,7 +22,7 @@ var $htmlBody = $('html,body');
 var navbarHeight = $('.main-header').outerHeight();
 $(document.body).on('click', 'a[href^=#]', function() {
   var $target = $(this.hash);
-  if (!$target) {
+  if (!$target.length) {
     return;
   }
   var currentScrollTop = $htmlBody.scrollTop();
