@@ -1,18 +1,18 @@
-## Development
-```
-git clone
-npm install # does bower install after
-ln -s src www # if testing from a web server
-grunt dev
-```
+# [DecodeMTL](http://www.decodemtl.com)
+## Learn Front-End Web Development in 8 weeks
+This training is proudly offered in Montreal, Canada.
 
-## Build
-```
-grunt build
-ln -s dist www
-```
+The code for the landing page is open thru this repository, and the page is hosted on [Github Pages](https://pages.github.com/).
 
-## Deploy to github pages
-```
-grunt gh-pages
-```
+Technologies used:
+* html5
+* css3 inspired from [BEM](https://bem.info/)
+* javascript/jquery
+* [sass](http://sass-lang.com/)
+* [bourbon](http://bourbon.io/)
+* [zurb foundation](http://foundation.zurb.com/)
+* [webpack](http://webpack.github.io/)
+* [grunt](http://gruntjs.com/)
+
+
+Built using the awesome [WebStorm IDE](http://www.jetbrains.com/webstorm/)
