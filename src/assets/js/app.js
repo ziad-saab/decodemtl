@@ -31,10 +31,25 @@ $body.on('click', 'a[href^=#]', function() {
   var targetScrollTop = $target.offset().top - navbarHeight;
   var mills = Math.abs((targetScrollTop - currentScrollTop) / scrollSpeed);
   $htmlBody.animate({scrollTop: targetScrollTop}, mills);
+  
+  // Send fake pageview to GA when clicking on anchor
+  window.ga && ga('send', 'pageview', '/' + this.hash.substr(1));
 });
 
 $body.on('click', '.course-curriculum__header', function() {
+  // re-draw parallax because page height has changed
   setTimeout(function() {$(window).trigger('hwparallax.reconfigure');}, 500);
+  
+  // since the accordion is "css-only", this enables clearing the radio button if current box is open
+  var $for = $('#' + $(this).attr('for'));
+  if ($for.length && $for.prop('checked')) {
+    setTimeout(function() {$for.prop('checked', false);}, 0);
+  }
+  else {
+    // the accordion is being expanded, send a GA event
+    var unitName = $(this).find('.course-curriculum__unit-name').text();
+    window.ga && ga('send', 'event', 'curriculum', 'expand unit', unitName);
+  }
 });
 
 // Application form
@@ -76,3 +91,8 @@ $('.application-form__send-button').on('click', function() {
     )
   }
 });
+
+// Send an event after 30 seconds to prevent inaccurate bounce rate
+setTimeout(function() {
+  window.ga && ga('send', 'event', 'activity', 'user spent 30 seconds on page');
+}, 30 * 1000);
