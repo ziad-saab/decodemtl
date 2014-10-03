@@ -1,25 +1,43 @@
-.curriculum {
-  background-color: #e6e7e9;
+.faq {
+  padding-bottom: 50px;
+  
+  
+  &__apply-link {
+    display: block;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: $decode-red;
+    color: #fff;
+    line-height: 1;
+    padding: 0.5em 0;
+    border-bottom: 3px solid #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    
+    @media #{$medium-up} {
+      font-size: 32px;
+    }
+  }
 }
 
-.course-curriculum {
-  
+.faq-list {
+
   max-width: 850px;
   margin: 0 (-$section-content-padding) 50px;
-  
+
   &__checkbox {
     display: none;
   }
-  
-  &__unit {
+
+  &__question {
     position: relative;
     border-bottom: 1px solid #fff;
-    background-color: transparent;
     overflow: hidden;
-    @include transition(background-color 250ms ease-in-out);
   }
-  
-  &__unit:before {
+
+  &__question:before {
     content: "\203a";
     font-size: 40px;
     line-height: 1;
@@ -29,54 +47,33 @@
     pointer-events: none;
     @include transform(rotateZ(90deg));
     @include transition(transform 250ms ease-in-out);
-    
-    @media #{$medium-up} {
-      right: 30px;
-    }
   }
-  
+
   &__header {
     display: block;
-    padding: 20px 0;
+    padding: 20px 30px 20px 0;
     cursor: pointer;
-    text-transform: uppercase;
     font-size: 18px;
     @include no-tap-highlight;
-    
+
     @media #{$medium-up} {
       font-size: 22px;
     }
   }
-  
-  &__unit-number {
-    display: inline-block;
-    line-height: 1;
-    padding: 5px;
-    padding-right: 10px;
-    margin-right: 20px;
-    background-color: #000;
-    color: #fff;
-  }
-  
+
   &__content {
     display: none;
-    padding: 0 10px;
-    
-    @media #{$medium-up} {
-      padding: 0 10px 0 110px;
-    }
+    padding: 0 10px 10px;
+    border-bottom: 1px solid #eee;
   }
-  
-  &__checkbox:checked + &__unit {
-    background-color: #fff;
-  }
-  &__checkbox:checked + &__unit:before {
+
+  &__checkbox:checked + &__question:before {
     @include transform(rotateZ(270deg));
   }
-  &__checkbox:checked + &__unit > &__content {
+  &__checkbox:checked + &__question > &__content {
     display: block;
   }
-  
+
   @media #{$medium-up} {
     margin: 0 auto 50px;
   }

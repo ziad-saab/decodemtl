@@ -34,8 +34,11 @@
               <li class="main-header__nav-item">
                 <a class="main-header__nav-link" href="mailto:hello@decodemtl.com">Contact</a>
               </li>
+              <li class="main-header__nav-item">
+                <a class="main-header__nav-link" href="#faq">FAQ</a>
+              </li>
               <li class="main-header__nav-item main-header__nav-item--apply">
-                <a class="main-header__nav-link" href="#apply">Apply</a>
+                <a onclick="window.ga && ga('send', 'event', 'application form', 'open', 'nav menu')" class="main-header__nav-link" href="#" data-reveal-id="application-form">Apply</a>
               </li>
             </ul>
           </nav>
@@ -47,7 +50,7 @@
             <h1 class="intro-section__headline">Learn front-end web development</h1>
             <h2 class="intro-section__tagline">in 8 weeks</h2>
           </hgroup>
-          <a class="intro-section__apply-link" href="#apply">Apply now</a>
+          <a onclick="window.ga && ga('send', 'event', 'application form', 'open', 'inside hero')" class="intro-section__apply-link" href="#" data-reveal-id="application-form">Apply now</a>
           <div class="intro-section__course-location">
             Proudly offered in Montreal, Quebec
           </div>
@@ -269,26 +272,93 @@
           </div>
         </div>
       </section>
-      <section id="apply" class="apply">
+      <section id="faq" class="faq">
         <div class="section-content">
-          <h2 class="section-heading section-heading--beta">Apply Now</h2>
-          <ul class="apply__info-list">
-            <li class="apply__info-list-item">
-              <strong>This course will be limited to a maximum of 10 students</strong>, so be sure to apply as soon
-              as possible as it will fill up fast. Everyone is welcome to apply, however only those candidates which
-              we feel will benefit the most from this course will be accepted.
-            </li>
-            <li class="apply__info-list-item">
-              <strong>This course is for beginners or complete newbies</strong>, who have a strong desire to learn,
-              and are willing to put in the extra time and effort out of class to make the most of their learning
-              experience.
-            </li>
-            <li class="apply__info-list-item">
-              <strong>If you are unsure</strong> whether you are a good candidate or not,
-              <strong>apply anyways</strong> and we will contact you to find out.
-            </li>
-          </ul>
-          <a onclick="window.ga && ga('send', 'event', 'application form', 'open')" class="apply__link" href="#" data-reveal-id="application-form">Click here to apply</a>
+          <h2 class="section-heading section-heading--beta">FAQ</h2>
+          <div class="faq-list">
+            
+            <input id="faq-list__checkbox--q1" class="faq-list__checkbox" type="radio" name="faq-list__checkbox"/>
+            <div class="faq-list__question">
+              <label class="faq-list__header" for="faq-list__checkbox--q1">
+                Do I need any prior knowledge to attend this course?
+              </label>
+              <div class="faq-list__content">
+                No, this course welcomes beginners who have never written a line of code before, or those who have tinkered with a minimal amount of code.
+              </div>
+            </div>
+
+            <input id="faq-list__checkbox--q2" class="faq-list__checkbox" type="radio" name="faq-list__checkbox"/>
+            <div class="faq-list__question">
+              <label class="faq-list__header" for="faq-list__checkbox--q2">
+                What are the requirements to take part in this course?
+              </label>
+              <div class="faq-list__content">
+                You will need to be ambitious, focused, willing to work on your own time, and be receptive to learning new things. You will also need to bring a laptop. (Mac Preferred but not necessary)
+              </div>
+            </div>
+
+            <input id="faq-list__checkbox--q3" class="faq-list__checkbox" type="radio" name="faq-list__checkbox"/>
+            <div class="faq-list__question">
+              <label class="faq-list__header" for="faq-list__checkbox--q3">
+                Does everyone get accepted for the course?
+              </label>
+              <div class="faq-list__content">
+                Only those candidates which we feel will benefit the most from this course will be accepted.
+              </div>
+            </div>
+
+            <input id="faq-list__checkbox--q4" class="faq-list__checkbox" type="radio" name="faq-list__checkbox"/>
+            <div class="faq-list__question">
+              <label class="faq-list__header" for="faq-list__checkbox--q4">
+                How many students are in the classroom?
+              </label>
+              <div class="faq-list__content">
+                The course is limited to a maximum of 10 students. Seats tend to fill up quickly so make sure to apply as soon as possible.
+              </div>
+            </div>
+
+            <input id="faq-list__checkbox--q5" class="faq-list__checkbox" type="radio" name="faq-list__checkbox"/>
+            <div class="faq-list__question">
+              <label class="faq-list__header" for="faq-list__checkbox--q5">
+                If I have questions after class time, is someone able to help me?
+              </label>
+              <div class="faq-list__content">
+                Yes, our instructors have office hours where they will happily assist you with any question or technical problem you may have encountered.
+              </div>
+            </div>
+
+            <input id="faq-list__checkbox--q6" class="faq-list__checkbox" type="radio" name="faq-list__checkbox"/>
+            <div class="faq-list__question">
+              <label class="faq-list__header" for="faq-list__checkbox--q6">
+                Is 8 part-time weeks really enough to learn how to code?
+              </label>
+              <div class="faq-list__content">
+                Yes and no. It’s an excellent start and you can become a junior front-end web developer. However, you will need to continue learning and practicing to refine and grow your skill set.
+              </div>
+            </div>
+
+            <input id="faq-list__checkbox--q7" class="faq-list__checkbox" type="radio" name="faq-list__checkbox"/>
+            <div class="faq-list__question">
+              <label class="faq-list__header" for="faq-list__checkbox--q7">
+                How much does the course cost?
+              </label>
+              <div class="faq-list__content">
+                Tuition for the course is $2,500 and is payable in two equal payments. We accept all major forms of payment.
+              </div>
+            </div>
+
+            <input id="faq-list__checkbox--q8" class="faq-list__checkbox" type="radio" name="faq-list__checkbox"/>
+            <div class="faq-list__question">
+              <label class="faq-list__header" for="faq-list__checkbox--q8">
+                What are the payment deadlines?
+              </label>
+              <div class="faq-list__content">
+                Once you are accepted into the course, you will be required to pay a $250 deposit to secure your seat. The remaining balance is split into two equal payments. The first due on the starting day of the course, and the second due midway through the course.
+              </div>
+            </div>
+            
+          </div>
+          <a onclick="window.ga && ga('send', 'event', 'application form', 'open', 'after faq')" class="faq__apply-link" href="#" data-reveal-id="application-form">Click here to apply</a>
         </div>
       </section>
       <footer class="main-footer">

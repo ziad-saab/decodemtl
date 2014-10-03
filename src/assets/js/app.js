@@ -52,6 +52,22 @@ $body.on('click', '.course-curriculum__header', function() {
   }
 });
 
+$body.on('click', '.faq-list__header', function() {
+  // re-draw parallax because page height has changed
+  setTimeout(function() {$(window).trigger('hwparallax.reconfigure');}, 500);
+
+  // since the accordion is "css-only", this enables clearing the radio button if current box is open
+  var $for = $('#' + $(this).attr('for'));
+  if ($for.length && $for.prop('checked')) {
+    setTimeout(function() {$for.prop('checked', false);}, 0);
+  }
+  else {
+    // the accordion is being expanded, send a GA event
+    var questionText = $(this).find('.faq-list__header').text();
+    window.ga && ga('send', 'event', 'faq', 'expand question', questionText);
+  }
+});
+
 // Application form
 require('script-loader!parse');
 var applicationFormValidator = require('parse-common/app-form-validator');
