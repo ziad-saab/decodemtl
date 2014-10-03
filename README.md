@@ -13,6 +13,7 @@ Technologies used:
 * [zurb foundation](http://foundation.zurb.com/)
 * [webpack](http://webpack.github.io/)
 * [grunt](http://gruntjs.com/)
+* [jekyll](http://jekyllrb.com/)
 
 
 Built using the awesome [WebStorm IDE](http://www.jetbrains.com/webstorm/)
