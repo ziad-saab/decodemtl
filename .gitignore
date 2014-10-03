@@ -7,3 +7,5 @@ bower_components
 /src/assets/js/*app-bundle*
 /parse/config
 /parse/cloud/config.js
+/_site
+/dist-jekyll

@@ -7,7 +7,21 @@ module.exports = function(grunt) {
         options: {
           logConcurrentOutput: true
         },
-        tasks: ['watch:sass', 'webpack:dev']
+        tasks: ['watch:sass', 'webpack:dev', 'jekyll:dev']
+      }
+    },
+    jekyll: {
+      dev: {
+        options: {
+          src: 'src',
+          serve: true
+        }
+      },
+      dist: {
+        options: {
+          src: 'dist',
+          dest: 'dist-jekyll'
+        }
       }
     },
     webpack: {
@@ -155,7 +169,7 @@ module.exports = function(grunt) {
     },
     'gh-pages': {
       options: {
-        base: 'dist'
+        base: 'dist-jekyll'
       },
       src: ['**']
     },
@@ -173,8 +187,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-webpack');
   grunt.loadNpmTasks('grunt-modernizr');
   grunt.loadNpmTasks('grunt-gh-pages');
+  grunt.loadNpmTasks('grunt-jekyll');
 
   grunt.registerTask('dev', ['concurrent:dev']);
-  grunt.registerTask('build', ['clean:dist', 'copy:dist', 'webpack:dist', 'uglify:app', 'modernizr:dist', 'sass:dist']);
+  grunt.registerTask('build', ['clean:dist', 'copy:dist', 'webpack:dist', 'uglify:app', 'modernizr:dist', 'sass:dist', 'jekyll:dist']);
   grunt.registerTask('deploy', ['build', 'gh-pages']);
 };
