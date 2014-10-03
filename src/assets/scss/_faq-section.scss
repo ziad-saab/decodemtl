@@ -33,7 +33,7 @@
 
   &__question {
     position: relative;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #eee;
     overflow: hidden;
   }
 
@@ -63,8 +63,7 @@
 
   &__content {
     display: none;
-    padding: 0 10px 10px;
-    border-bottom: 1px solid #eee;
+    padding: 0 10px;
   }
 
   &__checkbox:checked + &__question:before {
