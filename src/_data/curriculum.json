@@ -62,6 +62,19 @@
       ]
     },
     {
+      "name": "Responsive Framework: Foundation",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "High-level discussion about responsiveness",
+            "Using our newly-acquired understanding of front-end technologies, explore Foundation’s offerings",
+            "Demo: creating a small landing page using Foundation’s responsive components"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Project",
       "content": [
         {

@@ -36,7 +36,8 @@
   }
   
   &__header {
-    display: block;
+    @include display(flex);
+    @include align-items(center);
     padding: 20px 0;
     cursor: pointer;
     text-transform: uppercase;
@@ -49,7 +50,7 @@
   }
   
   &__unit-number {
-    display: inline-block;
+    @include flex-shrink(0);
     line-height: 1;
     padding: 5px;
     padding-right: 10px;
