@@ -1,0 +1,87 @@
+{
+  "units": [
+    {
+      "name": "Introduction",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Aperçu de l'horaire",
+            "Mise en place de l'environnement",
+            "Aperçu des rôles du HTML et CSS",
+            "Aperçu de Git et GitHub",
+            "Bref survol des technologies web"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HTML",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Bref historique du langage HTML",
+            "Introduction au rôle du HTML, structure vs. présentation",
+            "Discussion à propos de HTML5",
+            "Utiliser les balises HTML sémantiques afin de créer du contenu annoté",
+            "Discussion sur les différents formats d'images"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CSS",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Introduction au rôle du CSS, structure vs. présentation",
+            "Expérimentation avec les propriétés de base du CSS",
+            "Compréhension de la cascade et spécificité du CSS",
+            "Compréhension du Box Model (modèle de boîtes) du CSS",
+            "Utiliser l'inspecteur du navigateur",
+            "Utiliser les Media Queries (requêtes média) pour des sites réactifs"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Javascript",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Expliquer l'utilisation du Javascript dans le développement front-end",
+            "Discussion sur la programmation déclarative vs. impérative",
+            "Le langage Javascript: variables, données, contrôle, fonctions",
+            "Introduction au DOM (Modèle Objet du Document) et à sa manipulation",
+            "Utiliser jQuery pour faciliter la manipulation du DOM"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Librairie réactive: Foundation",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Discussion sur le web réactif",
+            "Exploration de Foundation basée sur les connaissances acquises à présent",
+            "Démo: créer une petite page d'accueil avec les composantes Foundation"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Projet",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "En utilisant toutes les connaissances acquises durant la formation, les participants créeront un projet de leur choix. Ce projet peut être exécuté seul ou en groupe. Votre instructeur contrôlera l'étendue du projet et vous guidera durant toute la semaine."
+        }
+      ]
+    }
+  ]
+}

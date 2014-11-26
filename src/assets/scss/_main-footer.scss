@@ -33,6 +33,10 @@
     margin: 0;
     font-family: $sans-serif;
   }
+
+  &__link {
+    color: $decode-red;
+  }
   
   &__copyright {
     clear: both;

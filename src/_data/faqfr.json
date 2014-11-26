@@ -1,0 +1,36 @@
+{
+  "list": [
+    {
+      "question": "Ai-je besoin de connaissances avant d'assister à la formation?",
+      "answer": "Vous êtes les bienvenus, que vous n'ayez jamais écrit de code, ou simplement bricolé un peu."
+    },
+    {
+      "question": "Quels sont les requis pour assister à la formation?",
+      "answer": "Vous devez être ambitieux, concentré, et prêt à travailler par vous même. Vous devez être réceptifs à apprendre de nouvelles choses. Un ordinateur portable est également requis."
+    },
+    {
+      "question": "Est-ce que tout le monde est accepté pour la formation?",
+      "answer": "Seuls les candidats chez lesquels nous voyons un grand potentiel de bénéficier de la formation seront choisis. "
+    },
+    {
+      "question": "Combien de participants à la formation?",
+      "answer": "La formation est limitée à un maximum de 10 participants. Les places partent rapidement, postulez dès que vous pouvez."
+    },
+    {
+      "question": "Si j'ai des questions après les sessions, quelqu'un peut-il m'aider?",
+      "answer": "Oui, votre instructeur a des heures de bureau pour répondre à vos questions ou problèmes techniques."
+    },
+    {
+      "question": "Est-ce que 8 semaines à temps partiel suffisent pour apprendre à coder?",
+      "answer": "Oui et non. C'est un excellent début pour devenir un développeur front-end junior. Par contre, vous devrez continuellement apprendre et pratiquer afin d'être à votre meilleur."
+    },
+    {
+      "question": "Combien coûte la formation?",
+      "answer": "Les frais sont de 2500$ payables en 2-4 versements égaux. Nous acceptons toutes les principales formes de paiement."
+    },
+    {
+      "question": "Quels sont les échéanciers de paiement?",
+      "answer": "Une fois accepté pour la formation, on vous demandera un dépôt de 250$. La balance est partagée en paiements égaux."
+    }
+  ]
+}
