@@ -66,3 +66,7 @@ $section-content-padding: 10px;
   }
 }
 
+// Fix disappearing fixed elements on parallax
+.main-header, #habla_window_div {
+  @include transform(translateZ(0));
+}
