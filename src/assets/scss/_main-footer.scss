@@ -1,64 +1,40 @@
-.section-content--footer {
-  overflow: hidden;
-}
-
 .main-footer {
-  padding: 20px 0;
   background-color: #000;
   color: #fff;
-  
-  &__above {
-    overflow: hidden;
-  }
-  
-  &__logo {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  &__logo-image {
-    display: block;
-  }
-  
-  &__info {
-    margin: 0;
-    font-size: 14px;
-    float: left;
-    width: 50%;
-  }
-  &__info-key {
-    text-transform: uppercase;
-    color: #ccc;
-  }
-  &__info-value {
-    margin: 0;
-    font-family: $sans-serif;
+  padding: 80px 20px;
+  text-align: center;
+
+  &__subscribe-heading {
+    font-weight: 100;
+    font-size: 1.5em;
+    margin: 0 0 1.2em;
   }
 
-  &__link {
-    color: $decode-red;
+  &__subscribe-form {
+    margin: 2em 0;
   }
-  
+
+  &__subscribe-input {
+    line-height: 1;
+    padding: 0.5em 1em;
+    margin: 0 0.25em;
+    vertical-align: middle;
+  }
+
+  &__subscribe-button {
+    line-height: 1;
+    font-size: 100%;
+    padding: 0.65em 1em;
+    margin: 0 0.25em;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #333;
+    vertical-align: middle;
+  }
+
+
   &__copyright {
-    clear: both;
-    margin-top: 15px;
-    border-top: 1px solid #999;
-    padding-top: 15px;
-    color: #999;
-    text-align: center;
-    font-family: $sans-serif;
-  }
-}
-
-@media #{$medium-up} {
-  .main-footer {
-    &__logo {
-      float: left;
-      width: 60%;
-      padding-right: 20px;
-    }
-    
-    &__info {
-      width: 20%;
-    }
+    margin: 0;
+    font-size: 0.75em;
   }
 }

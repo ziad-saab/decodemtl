@@ -28,7 +28,6 @@
     width: 100%;
     padding: 0.5em;
     border: 1px solid #000;
-    font-family: $sans-serif;
   }
   &__input:focus {
     outline: none;
@@ -61,7 +60,38 @@
     font-size: 1.2em;
     padding: 0.5em 1em;
   }
-  
+
+  @media #{$medium-up} {
+    &__content {
+      font-size: 18px;
+    }
+
+    &__input-line {
+      @include display(flex);
+      @include align-items(stretch);
+    }
+    &__label {
+      width: 10em;
+      @include flex-shrink(0);
+    }
+    &__input {
+      border: none;
+      border-bottom: 1px solid #000;
+      width: auto;
+      @include flex-grow(1);
+    }
+
+    &__radio-label {
+      display: inline-block;
+      white-space: nowrap;
+    }
+  }
+
+  @media #{$large-up} {
+    &__content {
+      font-size: 22px;
+    }
+  }
 }
 @include keyframes(moving-background) {
   0% {
@@ -86,40 +116,4 @@
   @include animation-iteration-count(infinite);
   @include animation-timing-function(linear);
   
-}
-
-@media #{$medium-up} {
-  .application-form {
-    &__content {
-      font-size: 18px;
-    }
-    
-    &__input-line {
-      @include display(flex);
-      @include align-items(stretch);
-    }
-    &__label {
-      width: 10em;
-      @include flex-shrink(0);
-    }
-    &__input {
-      border: none;
-      border-bottom: 1px solid #000;
-      width: auto;
-      @include flex-grow(1);
-    }
-    
-    &__radio-label {
-      display: inline-block;
-      white-space: nowrap;
-    }
-  }
-}
-
-@media #{$large-up} {
-  .application-form {
-    &__content {
-      font-size: 22px;
-    }
-  }
 }

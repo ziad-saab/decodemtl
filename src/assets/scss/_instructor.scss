@@ -1,0 +1,43 @@
+.instructor {
+  &__heading {
+    @include section-heading;
+    text-align: center;
+  }
+}
+
+.instructor-bio {
+  text-align: center;
+
+  @media #{$medium-up} {
+    text-align: left;
+  }
+
+  &__pic {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+
+    @media #{$medium-up} {
+      float: left;
+      margin-right: 30px;
+    }
+  }
+  &__text {
+    @media #{$medium-up} {
+      overflow: hidden;
+    }
+  }
+
+  &__name {
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  &__title {
+    font-size: 20px;
+  }
+}

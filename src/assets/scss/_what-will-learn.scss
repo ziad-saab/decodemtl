@@ -1,0 +1,38 @@
+.what-will-learn {
+  text-align: center;
+
+  &__heading {
+    @include section-heading;
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+
+  &__list {
+    list-style: none;
+    max-width: 300px;
+    margin: 0 auto;
+
+    @media #{$medium-up} {
+      max-width: none;
+
+      @include block-grid(3, 20px);
+    }
+  }
+
+  &__list-icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    object-fit: scale-down;
+    object-position: center;
+    opacity: 0.66;
+
+    @media #{$medium-up} {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}

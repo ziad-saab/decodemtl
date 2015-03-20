@@ -1,0 +1,64 @@
+{
+  "list": [
+    {
+      "icon": "/assets/images/full-time/html5.png",
+      "title": "HTML5",
+      "description": "The HTML training makes you proficient at creating semantic markup."
+    },
+    {
+      "icon": "/assets/images/full-time/css3.png",
+      "title": "CSS3 and SASS",
+      "description": "Get a solid foundation in CSS and knowledge of CSS3's possibilities."
+    },
+    {
+      "icon": "/assets/images/full-time/javascript.png",
+      "title": "JavaScript",
+      "description": "The de-facto language to add interactivity to your web pages."
+    },
+    {
+      "icon": "/assets/images/full-time/mysql.png",
+      "title": "SQL",
+      "description": "Learn to model, store and query your website's data"
+    },
+    {
+      "icon": "/assets/images/full-time/rest-api.png",
+      "title": "APIs",
+      "description": "Learn about 3rd-party APIs to add features to your site."
+    },
+    {
+      "icon": "/assets/images/full-time/nodejs.png",
+      "title": "NodeJS",
+      "description": "Learn a popular back-end language to create data-driven websites."
+    },
+    {
+      "icon": "/assets/images/full-time/zurb-foundation.png",
+      "title": "Foundation",
+      "description": "Learn Foundation, a responsive rapid-prototyping web framework."
+    },
+    {
+      "icon": "/assets/images/full-time/jquery.png",
+      "title": "jQuery",
+      "description": "Learn how to create dynamic features for your websites."
+    },
+    {
+      "icon": "/assets/images/full-time/react.png",
+      "title": "React",
+      "description": "Learn a popular UI framework to create single-page applications."
+    },
+    {
+      "icon": "/assets/images/full-time/git.png",
+      "title": "Git and GitHub",
+      "description": "Learn how to manage file versions, and code collaboratively with your team."
+    },
+    {
+      "icon": "/assets/images/full-time/terminal.png",
+      "title": "Terminal",
+      "description": "Learn how to do daily tasks using your computer's command line."
+    },
+    {
+      "icon": "/assets/images/full-time/grunt.png",
+      "title": "Grunt",
+      "description": "Learn how to create automated workflows and speed up your web development."
+    }
+  ]
+}

@@ -1,21 +1,37 @@
+$height: 50px;
+
 .main-header {
-  background-color: #000;
   color: #fff;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
+  line-height: 1;
+  position: absolute;
   width: 100%;
-  box-shadow: 0 5px 10px rgba(0,0,0, 0.75);
-  
+  z-index: 9999;
+  @include clearfix;
+  @include transition(background-color 250ms ease-in);
+
   &__logo {
     float: left;
   }
   &__logo-image {
     width: 250px;
   }
-  
-  &__nav-burger-icon {
+
+  @media #{$medium-up} {
+    height: $height;
+    top: 10px;
+
+    &__logo-image {
+      width: auto;
+      height: $height;
+    }
+  }
+}
+
+.main-nav {
+  clear: both;
+  margin-left: 30px;
+
+  &__burger-icon {
     display: block;
     float: right;
     border-top: 15px double #fff;
@@ -27,103 +43,127 @@
     cursor: pointer;
     @include no-tap-highlight;
   }
-  &__nav-checkbox {
+  &__checkbox {
     display: none;
   }
   &__nav {
     clear: both;
   }
-  &__nav-list {
+  &__list {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: none;
-    overflow: hidden;
+    @include transform(scale3d(1, 0, 1));
+    @include transform-origin(0 0);
+    @include transition(transform 100ms ease-in);
   }
-  &__nav-checkbox:checked + &__nav-list {
-    display: block;
-  }
-  &__nav-item {
-    text-align: center;
-    margin: 10px 0;
-  }
-  &__nav-link {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 18px;
-  }
-}
+  &__checkbox:checked + .main-header {
+    background-color: #000;
 
-.language-switcher-wrapper {
-  position: relative;
-}
-.language-switcher {
-  position: absolute;
-  left: 0;
-  top: 0;
-  list-style: none;
-  margin: 0;
-  padding: 8px;
-  background-color: #000;
-  line-height: 1;
-
+    .main-nav__list {
+      @include transform(scale3d(1,1,1));
+    }
+  }
   &__item {
-    float: left;
-    padding: 0 10px;
-    border-right: 1px solid #fff;
-
-    &:first-child {
-      padding-left: 0;
-    }
-    &:last-child {
-      padding-right: 0;
-      border-right: none;
-    }
+    margin: 10px 0;
+    position: relative;
   }
-
   &__link {
     color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
   }
-}
 
-@media #{$large-up} {
-  .main-header {
-    $height: 55px;
-    
-    height: $height;
-    
-    &__logo-image {
-      width: auto;
-      height: $height;
+  &__sub-nav {
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  &__sub-nav-link {
+    color: #ccc;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:before {
+      content: "- ";
     }
-    &__nav-burger-icon {
+  }
+
+  @media #{$medium-up} {
+    float: right;
+    clear: none;
+    margin-right: 20px;
+    margin-left: 0;
+    height: $height;
+
+    &__burger-icon {
       display: none;
     }
-    &__nav {
-      float: right;
+    &__list {
+      @include clearfix;
+      @include transform(none);
       clear: none;
-      height: $height;
-    }
-    &__nav-list {
-      display: block;
+      display: table;
       height: 100%;
     }
-    &__nav-item {
-      float: left;
+    &__item {
+      display: table-cell;
       margin: 0;
       height: 100%;
-      line-height: $height;
+      text-align: center;
+      vertical-align: middle;
     }
-    &__nav-link {
-      display: block;
-      padding: 0 10px;
+    &__link {
+      display: inline;
+      margin: 0 10px;
       height: 100%;
     }
-    &__nav-item--apply &__nav-link {
-      background-color: $decode-red;
+
+    &__link--contact {
+      padding: 12px;
+      border: 2px solid #fff;
+      @include transition(background-color 250ms ease-in, color 250ms ease-in);
+    }
+    &__link--contact:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    &__sub-nav {
+      position: absolute;
+      left: 0;
+      @include transform(scale3d(1, 0, 1));
+      @include transform-origin(0 0);
+      @include transition(transform 100ms ease-in, background-color 300ms ease-in);
+    }
+
+    &__item:hover &__sub-nav, &__link:active + &__sub-nav {
+      @include transform(scale3d(1,1,1));
+      background-color: #000;
+    }
+
+    &__sub-nav--right {
+      left: auto;
+      right: 0;
+    }
+
+    &__sub-nav-item {
+      margin: 10px;
+    }
+
+    &__sub-nav-link {
+      white-space: nowrap;
+
+      &:before {
+        content: "";
+      }
     }
   }
 }

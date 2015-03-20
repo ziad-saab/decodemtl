@@ -18,19 +18,19 @@
     },
     {
       "question": "If I have questions after class time, is someone able to help me?",
-      "answer": "Yes, our instructors have office hours where they will happily assist you with any question or technical problem you may have encountered. "
+      "answer": "Yes, our instructors have office hours where they will happily assist you with any question or technical problem you may have encountered."
     },
     {
-      "question": "Is 8 part-time weeks enough to learn how to code?",
+      "question": "Is 6 part-time weeks enough to learn how to code?",
       "answer": "Yes and no. It’s an excellent start and you can become a junior front-end web developer. However, you will need to continue learning and practicing to refine and grow your skill set."
     },
     {
-      "question": "How much does the course cost?",
-      "answer": "Tuition for the course is $2,500 and is payable in two equal payments. We accept all major forms of payment."
+      "question": "How much does the training cost?",
+      "answer": "Tuition for the training is $1,495 and is payable before the start of the training."
     },
     {
       "question": "What are the payment deadlines?",
-      "answer": "Once you are accepted into the course, you will be required to pay a $250 deposit to secure your seat. The remaining balance is split into two equal payments. The first due on the starting day of the course, and the second due midway through the course."
+      "answer": "Once you are accepted into the course, you will be required to pay a $250 deposit to secure your seat. The remaining balance is due before the first session."
     }
   ]
 }

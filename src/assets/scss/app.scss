@@ -3,6 +3,7 @@
 @import "bourbon/bourbon";
 @import "settings";
 @import "normalize";
+@import "foundation/components/block-grid";
 @import "foundation/components/grid";
 @import "foundation/components/reveal";
 @import "vendor/hw-parallax";
@@ -10,10 +11,13 @@
 @import "general";
 @import "main-header";
 @import "intro-section";
-@import "about-section";
-@import "curriculum-section";
-@import "instructor-section";
-@import "schedule-section";
+@import "courses-section";
+@import "course-about";
 @import "faq-section";
-@import "main-footer";
 @import "application-form";
+@import "main-footer";
+@import "who-should-apply";
+@import "what-will-learn";
+@import "upcoming-courses";
+@import "instructor";
+@import "about-page";

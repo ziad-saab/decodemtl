@@ -1,0 +1,48 @@
+{
+  "list": [
+    {
+      "question": "Do I need any prior knowledge to attend this course?",
+      "answer": "No, this course welcomes beginners who have never written a line of code before, or those who have tinkered with a minimal amount of code."
+    },
+    {
+      "question": "What are the requirements to take part in this course?",
+      "answer": "You will need to be ambitious, focused, willing to work on your own time, and be receptive to learning new things. You will also need to bring your own (MacBook highly recommended) laptop. Moreover, you will need to complete a prep course before the first session."
+    },
+    {
+      "question": "Does everyone get accepted for the course?",
+      "answer": "Only those candidates which we feel will benefit the most from this course will be accepted. "
+    },
+    {
+      "question": "How many students are in the classroom?",
+      "answer": "The course is limited to a maximum of 10 students. Seats tend to fill up quickly so make sure to apply as soon as possible."
+    },
+    {
+      "question": "If I have questions after class time, is someone able to help me?",
+      "answer": "Yes, our instructors have office hours where they will happily assist you with any question or technical problem you may have encountered."
+    },
+    {
+      "question": "What kind of job can I expect?",
+      "answer": "You can expect to get an entry level job as a developer in companies ranging from startups to large corporations. There are a lot of developer jobs available, and the demand is growing. You will continue to learn on the job, and become a senior developer within a few years if you stay focused and work towards it."
+    },
+    {
+      "question": "What kind of skills can I expect to have upon completion?",
+      "answer": "Upon successfully completing this bootcamp, you will have the skills necessary to model and build data-driven websites and web applications."
+    },
+    {
+      "question": "How much does the training cost?",
+      "answer": "Tuition for the training is $5,995 and is payable before the start of the training."
+    },
+    {
+      "question": "Is there a refund policy?",
+      "answer": "We try to be fair and flexible with refunds. If for any reason you need to leave the course, we will refund your fee on a pro-rated basis. For example, if you leave midway through the course, we will refund half of your payment."
+    },
+    {
+      "question": "What are the payment deadlines?",
+      "answer": "Once you are accepted into the course, you will be required to pay a $500 deposit to secure your seat. The remaining balance is due before the first session."
+    },
+    {
+      "question": "Do I get a certiicate upon completion?",
+      "answer": "No, we do not give certificates, grades, or report cards. We give you the tools and the skills required to get a job as a developer."
+    }
+  ]
+}

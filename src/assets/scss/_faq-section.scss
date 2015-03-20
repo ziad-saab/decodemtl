@@ -1,29 +1,15 @@
-.faq {
-  padding-bottom: 50px;
-  
-  
-  &__apply-link {
-    display: block;
-    max-width: 450px;
-    margin: 0 auto;
+.course-faq {
+  &__heading {
+    @include section-heading;
     text-align: center;
-    background-color: $decode-red;
-    color: #fff;
-    line-height: 1;
-    padding: 0.5em 0;
-    border-bottom: 3px solid #000;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 24px;
-    
-    @media #{$medium-up} {
-      font-size: 32px;
-    }
+  }
+
+  &__still-questions {
+    font-size: 20px;
+    text-align: center;
   }
 }
-
 .faq-list {
-
   max-width: 850px;
   margin: 0 (-$section-content-padding) 50px;
 

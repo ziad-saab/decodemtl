@@ -3,16 +3,69 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="{% if page.description %}{{ page.description | strip_newlines }}{% else %}{{ site.description | strip_newlines }}{% endif %}">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_newlines | xml_escape }}{% else %}{{ site.description | strip_newlines | xml_escape}}{% endif %}">
+    <title>{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title | xml_escape }}{% endif %} | DecodeMTL</title>
     <link rel="icon" type="image/png" href="/assets/images/decodemtl-favicon-64.png">
     <meta property="og:image" content="http://www.decodemtl.com/assets/images/decodemtl-favicon-large.png">
     <link rel="stylesheet" href="/assets/css/app.css">
-    <link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
     <script src="/assets/js/modernizr.js"></script>
 </head>
 <body>
+<input clas class="main-nav__checkbox" type="checkbox" id="main-nav__checkbox">
+<header class="main-header">
+  <div class="main-header__logo">
+    <img class="main-header__logo-image" src="/assets/images/decodemtl-logo-white.png">
+  </div>
+  <label class="main-nav__burger-icon" for="main-nav__checkbox"></label>
+  <nav class="main-header__nav main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="/">Home</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="javascript:void(0)" class="main-nav__link">Courses</a>
+        <ul class="main-nav__sub-nav main-nav__sub-nav--right">
+          <li class="main-nav__sub-nav-item">
+            <a class="main-nav__sub-nav-link" href="/web-development-full-time">Web Development Full-Time</a>
+          </li>
+          <li class="main-nav__sub-nav-item">
+            <a class="main-nav__sub-nav-link" href="/web-development-part-time">Web Development Part-Time</a>
+          </li>
+        </ul>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="/about">About</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link main-nav__link--contact" href="mailto:hello@decodemtl.com">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
 {{ content }}
+
+<footer class="main-footer">
+  <h1 class="main-footer__subscribe-heading">Subscribe</h1>
+  <p class="main-footer__subscribe-instructions">
+    Sign up with your email address to receive news and updates.
+  </p>
+  <!-- Begin MailChimp Signup Form -->
+  <div id="mc_embed_signup">
+    <form class="main-footer__subscribe-form" action="//decodemtl.us9.list-manage.com/subscribe/post?u=26336ef421ad48ecc3fba5376&amp;id=47aff20fae" method="post" target="_blank">
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_26336ef421ad48ecc3fba5376_47aff20fae" tabindex="-1" value=""></div>
+      <input class="main-footer__subscribe-input" placeholder="First Name" type="text" name="FNAME">
+      <input class="main-footer__subscribe-input" placeholder="Last Name" type="text" name="LNAME">
+      <input class="main-footer__subscribe-input" placeholder="Email Address" type="email" name="EMAIL" required>
+      <button class="main-footer__subscribe-button" type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <!--End mc_embed_signup-->
+  <div class="main-footer__copyright">&copy; 2015 DecodeMTL</div>
+</footer>
+<script src="/assets/js/app-bundle.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

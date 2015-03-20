@@ -1,0 +1,42 @@
+.course-about {
+  text-align: center;
+
+  &__heading {
+    @include section-heading;
+  }
+  &__subheading{
+    text-transform: uppercase;
+  }
+  &__price {
+    font-weight: bold;
+  }
+
+  &__points {
+    list-style: none;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin: 3em 0;
+
+    @media #{$large-up} {
+      font-size: 20px;
+    }
+  }
+
+  &__point {
+    vertical-align: top;
+    max-width: 400px;
+    margin: 0 auto 1em;
+
+    @media #{$medium-up} {
+      display: inline-block;
+      padding: 0 10px;
+      margin-bottom: 0;
+      max-width: none;
+      width: 33.333%;
+    }
+    @media #{$large-up} {
+      padding: 0 25px;
+    }
+  }
+}

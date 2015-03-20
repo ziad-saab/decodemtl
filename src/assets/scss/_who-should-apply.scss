@@ -1,0 +1,47 @@
+.who-should-apply {
+  text-align: center;
+
+  &__heading {
+    @include section-heading;
+  }
+
+  &__intro {
+    font-size: 20px;
+  }
+
+  &__faces {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  &__face {
+    padding: 0 15px;
+  }
+
+  &__great-for-heading {
+    font-weight: 300;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__great-for-list {
+    list-style: none;
+    margin: 2em 0;
+
+    @media #{$medium-up} {
+      font-size: 20px;
+    }
+  }
+  &__great-for-item {
+    margin-bottom: 0.8em;
+  }
+  &__great-for-profile {
+    font-weight: 400;
+
+  }
+
+  &__not-sure {
+    font-size: 20px;
+  }
+}
