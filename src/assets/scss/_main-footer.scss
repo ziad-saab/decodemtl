@@ -17,8 +17,15 @@
   &__subscribe-input {
     line-height: 1;
     padding: 0.5em 1em;
-    margin: 0 0.25em;
+    margin: 0 auto 0.5em;
+    max-width: 250px;
+    display: block;
     vertical-align: middle;
+
+    @media #{$medium-up} {
+      display: inline-block;
+      margin: 0 0.25em;
+    }
   }
 
   &__subscribe-button {

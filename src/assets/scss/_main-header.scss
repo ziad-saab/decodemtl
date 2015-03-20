@@ -139,6 +139,7 @@ $height: 50px;
     &__sub-nav {
       position: absolute;
       left: 0;
+      text-align: left;
       @include transform(scale3d(1, 0, 1));
       @include transform-origin(0 0);
       @include transition(transform 100ms ease-in, background-color 300ms ease-in);
@@ -152,6 +153,7 @@ $height: 50px;
     &__sub-nav--right {
       left: auto;
       right: 0;
+      text-align: right;
     }
 
     &__sub-nav-item {

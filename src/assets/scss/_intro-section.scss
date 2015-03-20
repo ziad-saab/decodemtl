@@ -15,12 +15,7 @@
     }
 
     & .intro-section__headline {
-      margin-bottom: 0.5em;
       line-height: 1.4;
-
-      @media #{$medium-up} {
-        font-size: 80px;
-      }
     }
   }
   
@@ -88,7 +83,7 @@
     padding-bottom: 200px;
 
     &__headline {
-      font-size: 60px;
+      font-size: 90px;
     }
 
     &__tagline {
