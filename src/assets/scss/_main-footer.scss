@@ -39,9 +39,12 @@
     vertical-align: middle;
   }
 
+  &__facebook, &__twitter {
+    display: inline;
+  }
 
   &__copyright {
-    margin: 0;
+    margin: 1.5em 0 0 0;
     font-size: 0.75em;
   }
 }
