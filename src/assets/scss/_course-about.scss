@@ -3,12 +3,20 @@
 
   &__heading {
     @include section-heading;
+    margin: 0;
+    font-weight: 400;
   }
+
   &__subheading{
     text-transform: uppercase;
+    margin: 0;
+    font-size: 1.5em;
   }
+  
   &__price {
     font-weight: bold;
+    margin: 0;
+    font-size: 1.5em;
   }
 
   &__points {
