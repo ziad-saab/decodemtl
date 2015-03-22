@@ -131,12 +131,17 @@ description: Learn the fundamentals of HTML & CSS in Montreal. 8 part-time weeks
         <input class="application-form__input" type="text" name="phoneNumber">
       </div>
       <div class="application-form__input-line">
-        <label class="application-form__label">Current City</label>
-        <input class="application-form__input" type="text" name="currentCity">
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">Twitter ID</label>
-        <input class="application-form__input" type="text" name="twitterId">
+        <label class="application-form__label">What course are you applying to?</label>
+        <div class="application-form__input">
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="Part-Time (May 2015)">
+            <span class="application-form__radio-text">Part-Time (May 2015)</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="Full-Time (September 2015)">
+            <span class="application-form__radio-text">Full-Time (September 2015)</span>
+          </label>
+        </div>
       </div>
       <div class="application-form__input-line">
         <label class="application-form__label">How did you hear about us?</label>
