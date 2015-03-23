@@ -14,15 +14,11 @@
     },
     {
       "question": "How many students are in the classroom?",
-      "answer": "The course is limited to a maximum of 10 students. Seats tend to fill up quickly so make sure to apply as soon as possible."
+      "answer": "The course is limited to a maximum of 20 students. Seats tend to fill up quickly so make sure to apply as soon as possible."
     },
     {
       "question": "If I have questions after class time, is someone able to help me?",
       "answer": "Yes, our instructors have office hours where they will happily assist you with any question or technical problem you may have encountered."
-    },
-    {
-      "question": "Is 6 part-time weeks enough to learn how to code?",
-      "answer": "Yes and no. It’s an excellent start and you can become a junior front-end web developer. However, you will need to continue learning and practicing to refine and grow your skill set."
     },
     {
       "question": "How much does the training cost?",
@@ -31,6 +27,10 @@
     {
       "question": "What are the payment deadlines?",
       "answer": "Once you are accepted into the course, you will be required to pay a $250 deposit to secure your seat. The remaining balance is due before the first session."
+    },
+    {
+      "question": "Do I receive a rebate on the full-time course if I take this course prior?",
+      "answer": "Yes, you will receive an $800 discount on the full-time course if you take this course."
     }
   ]
 }

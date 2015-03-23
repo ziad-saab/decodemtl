@@ -7,18 +7,9 @@
 
   &__list {
     margin: 0 0 40px;
-    @include block-grid(1);
-
-    @media #{$medium-up} {
-      @include block-grid(2);
-    }
+    list-style-type: none;
   }
 
-  &__start-date {
-    font-size: 3em;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
   &__info {
     font-size: 16px;
 
