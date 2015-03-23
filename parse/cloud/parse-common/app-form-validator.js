@@ -9,7 +9,7 @@ module.exports = function(values) {
     lastName: 'Last name',
     emailAddress: 'Email address',
     phoneNumber: 'Phone number',
-    currentCity: 'Current city',
+    applyingTo: 'Applying to',
     leadSource: 'How you heard about us',
     whyApplying: 'Why are you applying',
     education: 'Education background',
