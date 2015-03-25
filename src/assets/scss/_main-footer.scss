@@ -39,12 +39,17 @@
     vertical-align: middle;
   }
 
-  &__facebook, &__twitter {
+  &__facebook, &__twitter, &__email {
     display: inline;
+    padding-right: 10px;
+  }
+
+  &__contact {
+    margin-top: 1.5em;
   }
 
   &__copyright {
-    margin: 1.5em 0 0 0;
+    margin: 0;
     font-size: 0.75em;
   }
 }
