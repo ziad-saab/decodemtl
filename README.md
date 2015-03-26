@@ -1,8 +1,7 @@
 # [DecodeMTL](http://www.decodemtl.com)
-## Learn Front-End Web Development in 8 weeks
-This training is proudly offered in Montreal, Canada.
+## Montreal's Leading Coding Bootcamp
 
-The code for the landing page is open thru this repository, and the page is hosted on [Github Pages](https://pages.github.com/).
+The code for the landing page is open through this repository, and the page is hosted on [Github Pages](https://pages.github.com/).
 
 Technologies used:
 * html5
