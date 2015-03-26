@@ -41,8 +41,12 @@
       "answer": "Once you are accepted into the course, you will be required to pay a $500 deposit to secure your seat. The remaining balance is due before the first session."
     },
     {
-      "question": "Do I get a certiicate upon completion?",
+      "question": "Do I get a certificate upon completion?",
       "answer": "No, we do not give certificates, grades, or report cards. We give you the tools and the skills required to get a job as a developer."
+    },
+    {
+      "question": "Where is the course taught?",
+      "answer": "Currently, we work out of the Notman House in downtown Montreal. However, our full-time course will be held in a new location which is yet to be determined. Rest assured, it will be an awesome space with proximity to public transit."
     }
   ]
 }
