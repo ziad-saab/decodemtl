@@ -27,6 +27,12 @@ a {
   text-decoration: none;
 }
 
+.full-link {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+}
+
 .section-content {
   @include grid-row();
   padding: 40px $section-content-padding;
