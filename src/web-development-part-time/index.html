@@ -92,6 +92,37 @@ description: Learn the fundamentals of HTML & CSS in Montreal. 8 part-time weeks
   </div>
 </section>
 
+<section class="curriculum">
+  <div class="section-content">
+    <h1 class="curriculum__heading">Curriculum</h1>
+    <div class="course-curriculum">
+      {% for unit in site.data.curriculum.units %}
+      <input id="course-curriculum__checkbox--unit{{forloop.index}}" class="course-curriculum__checkbox" type="radio" name="course-curriculum__checkbox">
+      <div class="course-curriculum__unit">
+        <label class="course-curriculum__header" for="course-curriculum__checkbox--unit{{forloop.index}}">
+          <span class="course-curriculum__unit-number">Unit {{forloop.index}}</span>
+          <span class="course-curriculum__unit-name">{{unit.name}}</span>
+        </label>
+        <div class="course-curriculum__content">
+          {% for contentItem in unit.content %}
+          {% case contentItem.type %}
+          {% when 'list' %}
+          <ul>
+            {% for listItem in contentItem.items %}
+            <li>{{listItem}}</li>
+            {% endfor %}
+          </ul>
+          {% when 'paragraph' %}
+          <p>{{contentItem.text}}</p>
+          {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="upcoming-courses">
   <div class="section-content">
     <div class="upcoming-courses__heading">Next Course Starts May 2015</div>

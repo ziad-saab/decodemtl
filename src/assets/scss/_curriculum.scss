@@ -1,0 +1,88 @@
+.curriculum {
+  &__heading {
+    @include section-heading;
+    text-align: center;
+  }
+}
+
+.course-curriculum {
+
+  max-width: 850px;
+  margin: 0 (-$section-content-padding) 50px;
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__unit {
+    position: relative;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    @include transition(background-color 250ms ease-in-out);
+  }
+
+  &__unit:before {
+    content: "\203a";
+    font-size: 40px;
+    line-height: 1;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    pointer-events: none;
+    @include transform(rotateZ(90deg));
+    @include transition(transform 250ms ease-in-out);
+
+    @media #{$medium-up} {
+      right: 30px;
+    }
+  }
+
+  &__header {
+    @include display(flex);
+    @include align-items(center);
+    padding: 20px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 18px;
+    @include no-tap-highlight;
+
+    @media #{$medium-up} {
+      font-size: 22px;
+    }
+  }
+
+  &__unit-number {
+    @include flex-shrink(0);
+    line-height: 1;
+    padding: 5px;
+    padding-right: 10px;
+    margin-right: 20px;
+    background-color: #000;
+    color: #fff;
+  }
+
+  &__content {
+    display: none;
+    padding: 0 10px;
+
+    @media #{$medium-up} {
+      padding: 0 10px 0 110px;
+    }
+  }
+
+  &__checkbox:checked + &__unit {
+    background-color: #fff;
+  }
+  &__checkbox:checked + &__unit:before {
+    @include transform(rotateZ(270deg));
+  }
+  &__checkbox:checked + &__unit > &__content {
+    display: block;
+  }
+
+  @media #{$medium-up} {
+    margin: 0 auto 50px;
+  }
+}
