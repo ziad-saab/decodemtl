@@ -38,7 +38,7 @@
     },
     {
       "question": "What are the payment deadlines?",
-      "answer": "Once you are accepted into the course, you will be required to pay a $500 deposit to secure your seat. The remaining balance is due before the first session."
+      "answer": "Once you are accepted into the course, you will be required to pay a deposit equal to 10% of the balance to secure your seat. The remaining balance is due before the first session."
     },
     {
       "question": "Do I get a certificate upon completion?",
@@ -46,7 +46,7 @@
     },
     {
       "question": "Where is the course taught?",
-      "answer": "Currently, we work out of the Notman House in downtown Montreal. However, our full-time course will be held in a new location which is yet to be determined. Rest assured, it will be an awesome space with proximity to public transit."
+      "answer": "These courses are currently taught at the GriffinCamp (1384 Rue Notre-Dame West, Montréal, QC H3C 1K8) in the heart of Montreal's innovation district."
     }
   ]
 }
