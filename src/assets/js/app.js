@@ -15,6 +15,10 @@ if (!Modernizr.touch) {
   $('.instructor__heading').parallax({
     scroll_factor: 0.2
   });
+
+  $('.od-parallax').parallax({
+    scroll_factor: 0.3
+  });
 }
 
 var $body = $(document.body);
