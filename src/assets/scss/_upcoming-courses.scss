@@ -1,5 +1,10 @@
 .upcoming-courses {
   text-align: center;
+  @include grid-row();
+
+  &__upcoming {
+    @include grid-column(6);
+  }
 
   &__heading {
     @include section-heading;
