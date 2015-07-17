@@ -1,4 +1,5 @@
 var $ = require('jquery');
+window.$ = window.jQuery = $;
 var FastClick = require('fastclick');
 require('foundation/foundation');
 require('foundation/foundation.reveal');
