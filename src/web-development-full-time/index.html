@@ -67,6 +67,37 @@ description: Intensive, full-time web development course in Montreal. Go from be
   </div>
 </section>
 
+<section id="curriculum" class="curriculum">
+  <div class="section-content">
+    <h1 class="curriculum__heading">Curriculum</h1>
+    <div class="course-curriculum">
+      {% for unit in site.data.fulltime_curriculum.units %}
+      <input id="course-curriculum__checkbox--unit{{forloop.index}}" class="course-curriculum__checkbox" type="radio" name="course-curriculum__checkbox">
+      <div class="course-curriculum__unit">
+        <label class="course-curriculum__header" for="course-curriculum__checkbox--unit{{forloop.index}}">
+          <span class="course-curriculum__unit-number">Unit {{forloop.index}}</span>
+          <span class="course-curriculum__unit-name">{{unit.name}}</span>
+        </label>
+        <div class="course-curriculum__content">
+          {% for contentItem in unit.content %}
+          {% case contentItem.type %}
+          {% when 'list' %}
+          <ul>
+            {% for listItem in contentItem.items %}
+            <li>{{listItem}}</li>
+            {% endfor %}
+          </ul>
+          {% when 'paragraph' %}
+          <p>{{contentItem.text}}</p>
+          {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="instructor">
   <div class="section-content">
     <h1 class="instructor__heading">Meet your instructor</h1>
