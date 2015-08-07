@@ -42,6 +42,9 @@
   &__facebook, &__twitter, &__email {
     display: inline;
     padding-right: 10px;
+    a {
+      color: white;
+    }
   }
 
   &__contact {
@@ -50,5 +53,11 @@
 
   &__legal {
     font-size: .75rem;
+  }
+
+  &__policy-terms {
+    a:first-of-type {
+      padding-right: 10px;
+    }
   }
 }
