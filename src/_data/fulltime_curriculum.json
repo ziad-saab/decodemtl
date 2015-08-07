@@ -1,0 +1,95 @@
+{
+  "units": [
+    {
+      "name": "Programming",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In this section, we will learn the fundamentals of programming by building various terminal applications. Among other things, you will have the chance to build a command-line weather app, an address book as well as a few games of luck."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Setting up our IDE and environment",
+            "Learning command line basics",
+            "Using Git and GitHub",
+            "JavaScript and JSON Review",
+            "Introduction to NodeJS and npm",
+            "Features of ECMAScript 6",
+            "Object-Oriented Programming"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Databases and Back-End Development",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In this section, we will concentrate on data modeling and persistence with MySQL. We will also practice exposing data by creating an API. Projects include upgrading of our address book and games to use a database."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Overview of data persistence options",
+            "Discussion about SQL vs NoSQL",
+            "Using MySQL for data modeling and persistence",
+            "Using an ORM for MySQL with NodeJS",
+            "Exposing data and functions with a REST API",
+            "Deploying an API server on the Heroku platform"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Front-End Development",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "After having learned how to create an API to expose our data and functions, this section will make us practice our design chops as we get in the world of front-end development. By working to bring our previous projects to the front-end world, we will practice various frameworks and tools such as jQuery and ReactJS."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Review of CSS and semantic HTML",
+            "Overview of CSS3 and HTML5 offerings",
+            "Introduction to SASS",
+            "Using Grunt to automate development tasks",
+            "Using jQuery, AJAX and 3rd-party APIs",
+            "Creating a single-page application with ReactJS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Advanced Subjects and Final Project",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In this section, you and your instructor will work together to determine some advanced subjects you would like to explore. You can decide to go more in-depth on things we have already seen, or discover a new framework, language or methodology. The goal is to scope out and create a final project with what you have learned during the bootcamp."
+        },
+        {
+          "type": "paragraph",
+          "text": "Some of the topics that can be worked on include but are not limited to:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Introduction to WordPress development",
+            "Contributing to an open-source project",
+            "Using a different front-end framework like Backbone or AngularJS",
+            "Exploring a different database system like MongoDB or Cassandra",
+            "Deploying an application on Amazon Web Services",
+            "Trying mobile development using JavaScript with React Native",
+            "Using advanced CSS3 to create a new CSS Zen Garden (csszengarden.com)",
+            "... or anything else that piques your curiosity and gets you motivated :)"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "On the last day of the bootcamp, you will present your project to your classmates, friends and family."
+        }
+      ]
+    }
+  ]
+}
