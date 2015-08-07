@@ -1,0 +1,56 @@
+.intro-section {
+
+  &--team {
+    padding-top:220px;
+    padding-bottom:220px;
+    height: 100vh;
+    background-size: cover;
+  }
+
+}
+
+.team-page {
+  text-align: center;
+
+  &__heading {
+    @include section-heading;
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+
+}
+
+.meet-the-team {
+  text-align: center;
+
+  &__heading {
+    @include section-heading;
+  }
+
+  &__members {
+    max-width: 300px;
+    margin: 0 auto;
+
+    @media #{$medium-up} {
+      max-width: none;
+      @include block-grid(2, 20px);
+    }
+  }
+
+  &__member-pic {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+  }
+  &__member-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  &__member-hello {
+    font-size: 20px;
+  }
+}
