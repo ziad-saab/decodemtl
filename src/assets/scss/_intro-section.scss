@@ -11,7 +11,7 @@
     padding-bottom: 150px;
 
     .touch & {
-      background-image: url("http://www.aspaces.ca/wp-content/uploads/2014/12/20141218_135413-600x300.jpg");
+      background-image: url("/assets/images/lacommune.jpg");
     }
 
     & .intro-section__headline {
@@ -20,7 +20,7 @@
   }
   
   .touch & {
-    background-image: url("http://www.aspaces.ca/wp-content/uploads/2014/12/20141218_135413-600x300.jpg");
+    background-image: url("/assets/images/lacommune.jpg");
     background-size: cover;
     background-position: 50%;
   }
