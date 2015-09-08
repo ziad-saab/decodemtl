@@ -11,7 +11,7 @@
     padding-bottom: 150px;
 
     .touch & {
-      background-image: url(../images/classroom.jpg);
+      background-image: url("../images/lacommune.jpg");
     }
 
     & .intro-section__headline {
@@ -20,7 +20,7 @@
   }
   
   .touch & {
-    background-image: url(../images/classroom-door.jpg);
+    background-image: url("../images/lacommune.jpg");
     background-size: cover;
     background-position: 50%;
   }
