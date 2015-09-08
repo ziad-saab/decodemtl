@@ -87,7 +87,8 @@ $height: 50px;
   }
 
   &__sub-nav-link {
-    color: #ccc;
+    color: #000;
+    background-color: #fff;
     font-size: 13px;
     font-weight: 300;
     text-decoration: none;
@@ -95,6 +96,11 @@ $height: 50px;
 
     &:before {
       content: "- ";
+    }
+    
+    &:hover {
+      color: #ccc;
+      background-color: #000;
     }
   }
 
