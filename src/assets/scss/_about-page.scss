@@ -11,7 +11,7 @@
 }
 
 .meet-the-team {
-  text-align: center;
+  text-align: left;
 
   &__heading {
     @include section-heading;
@@ -29,16 +29,16 @@
 
   &__member-pic {
     display: block;
-    max-width: 200px;
+    max-width: 180px;
     margin: 0 auto 10px;
-    border-radius: 50%;
+    border-radius: 20%;
   }
   &__member-name {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
     margin-bottom: 0;
   }
   &__member-hello {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
