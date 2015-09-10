@@ -1,0 +1,3 @@
+./src/assets/images/decodemtl-logo-white.png
+./src/assets/images/decodemtl-logo-black.png
+./files-with-logo.txt
