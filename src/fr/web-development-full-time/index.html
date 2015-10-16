@@ -1,0 +1,350 @@
+---
+layout: default
+title: Learn Web Development
+description: Intensive, full-time web development course in Montreal. Go from beginner to developer in 8 weeks. Learn more here.
+---
+<section class="intro-section intro-section--course" data-image="/assets/images/classroom.jpg" data-width="1500"
+         data-height="994">
+  <div class="section-content">
+    <h1 class="intro-section__headline">Web Development<br>Full-Time</h1>
+
+    <p class="intro-section__links">
+      <a class="intro-section__link" href="#" data-reveal-id="application-form">Apply Now</a>
+    </p>
+  </div>
+</section>
+
+<section class="course-about">
+  <div class="section-content">
+    <h1 class="course-about__heading">Full-Time
+      <nobr>Web Development</nobr>
+      Bootcamp
+    </h1>
+    <p class="course-about__subheading">8-12 hours / day for 8 weeks</p>
+
+    <p class="course-about__price">$5,995</p>
+
+    <ul class="course-about__points">
+      <li class="course-about__point">
+        <img class="course-about__icon" src="/assets/images/fulltime-coffee.png">
+
+        <p>
+          480 hours of intensive practical hands-on experience
+        </p>
+      <li class="course-about__point">
+        <img class="course-about__icon" src="/assets/images/personalized-help.png">
+
+        <p>Personalized help from our awesome instructors and TA's</p>
+      <li class="course-about__point">
+        <img class="course-about__icon" src="/assets/images/job-market.png">
+
+        <p>Ready for the job market in just 8 weeks</p>
+    </ul>
+  </div>
+</section>
+
+<section class="who-should-apply">
+  <div class="section-content">
+    <h1 class="who-should-apply__heading">Who should apply?</h1>
+
+    <p class="who-should-apply__intro">
+      Our full-time intensive web development bootcamp is for those looking to take on a career in web development.
+      In 8 weeks, you will go from beginner to job ready with the help of our expert roster of teachers and TA's.
+    </p>
+
+    <p class="who-should-apply__not-sure">
+      Not sure if this course is for you?<br>
+      <a href="mailto:hello@decodemtl.com">Contact Us</a> and we will point you in the right direction.
+    </p>
+  </div>
+</section>
+
+<section class="what-will-learn">
+  <div class="section-content">
+    <h1 class="what-will-learn__heading">What you will learn</h1>
+
+    <p class="what-will-learn__text">
+      In order to get you job ready in 8 weeks, you will learn the fundamentals of programming, front-end development
+      and back-end development.
+    </p>
+    <ul class="what-will-learn__list">
+      {% for learnItem in site.data.fulltime_learn.list %}
+      <li class="what-will-learn__item">
+        <img class="what-will-learn__list-icon" src="{{learnItem.icon}}">
+
+        <h2 class="what-will-learn__list-title">{{learnItem.title}}</h2>
+
+        <p class="what-will-learn__list-description">{{learnItem.description}}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section id="curriculum" class="curriculum">
+  <div class="section-content">
+    <h1 class="curriculum__heading">Curriculum</h1>
+
+    <div class="course-curriculum">
+      {% for unit in site.data.fulltime_curriculum.units %}
+      <input id="course-curriculum__checkbox--unit{{forloop.index}}" class="course-curriculum__checkbox" type="radio"
+             name="course-curriculum__checkbox">
+
+      <div class="course-curriculum__unit">
+        <label class="course-curriculum__header" for="course-curriculum__checkbox--unit{{forloop.index}}">
+          <span class="course-curriculum__unit-number">Unit {{forloop.index}}</span>
+          <span class="course-curriculum__unit-name">{{unit.name}}</span>
+        </label>
+
+        <div class="course-curriculum__content">
+          {% for contentItem in unit.content %}
+          {% case contentItem.type %}
+          {% when 'list' %}
+          <ul>
+            {% for listItem in contentItem.items %}
+            <li>{{listItem}}</li>
+            {% endfor %}
+          </ul>
+          {% when 'paragraph' %}
+          <p>{{contentItem.text}}</p>
+          {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="instructor">
+  <div class="section-content">
+    <h1 class="instructor__heading">Meet your instructor</h1>
+    <article class="instructor-bio">
+      <img class="instructor-bio__pic" src="https://www.gravatar.com/avatar/9668b6478fb28dea732204066a69a1db.jpg?s=300" alt="Ziad Saab">
+
+      <div class="instructor-bio__text">
+        <h1 class="instructor-bio__name">Ziad Saab</h1>
+
+        <p class="instructor-bio__title">
+        <nobr>Head of Education</nobr>
+        /
+        <nobr>Co-Founder</nobr>
+        </p>
+        <p class="instructor-bio__text">
+          Ziad is a full-stack web developer and educator from Montreal, Canada with over ten years of experience.
+          He's worked for startups, agencies, and large companies. He is also an instructor at the local Ladies
+          Learning Code chapter and a co-founder at DecodeMTL. Ziad loves teaching more than anything and is motivated
+          by seeing his students succeed.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="course-faq">
+  <div class="section-content">
+    <h1 class="course-faq__heading">Your questions answered</h1>
+
+    <div class="faq-list">
+      {% for qa in site.data.fulltime_faq.list %}
+      <input id="faq-list__checkbox--q{{forloop.index}}" class="faq-list__checkbox" type="radio"
+             name="faq-list__checkbox">
+
+      <div class="faq-list__question">
+        <label class="faq-list__header" for="faq-list__checkbox--q{{forloop.index}}">
+          {{qa.question}}
+        </label>
+
+        <div class="faq-list__content">
+          <p>{{qa.answer}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="course-faq__still-questions">Still have questions? <a href="mailto:hello@decodemtl.com">Contact Us</a>.
+    </p>
+  </div>
+</section>
+
+<section class="upcoming-courses">
+  <div class="section-content upcoming-courses__upcoming">
+    <div class="upcoming-courses__heading">November 2015</div>
+    <ul class="upcoming-courses__list">
+      <li class="upcoming-courses__item">
+        <p class="upcoming-courses__info">$5,995</p>
+
+        <p class="upcoming-courses__info">November 9 - January 15</p>
+
+        <p class="upcoming-courses__info">No classes the weeks of Dec 21st &amp; 28th</p>
+
+        <p class="upcoming-courses__info">Monday to Friday from
+        <nobr>10am - 6pm</nobr>
+        </p>
+        <p class="upcoming-courses__info">TA's on hand: Monday to Friday from
+        <nobr>6pm - 9pm</nobr>
+        </p>
+        <p class="upcoming-courses__info"><strong>Sorry! This course is full.</strong>
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section-content upcoming-courses__upcoming">
+    <div class="upcoming-courses__heading">January 2016</div>
+    <ul class="upcoming-courses__list">
+      <li class="upcoming-courses__item">
+        <p class="upcoming-courses__info">$5,995</p>
+
+        <p class="upcoming-courses__info">January 25 - March 18</p>
+
+        <p class="upcoming-courses__info">Monday to Friday from
+        <nobr>10am - 6pm</nobr>
+        </p>
+        <p class="upcoming-courses__info">TA's on hand: Monday to Friday from
+        <nobr>6pm - 9pm</nobr>
+        </p>
+        <p class="upcoming-courses__info">We accept students on a rolling basis. Classes always fill
+        up so please apply as soon as possible. Registration closes <nobr>January 1st.</nobr>
+        </p>
+      </li>
+    </ul>
+    <a class="upcoming-courses__reserve" href="#" data-reveal-id="application-form">Apply Now</a>
+  </div>
+</section>
+
+
+<div id="application-form" class="application-form reveal-modal xlarge" data-reveal>
+  <div class="application-form__content">
+    <img class="application-form__logo" src="/assets/images/decodemtl-logo-black.png">
+
+    <form class="application-form__form">
+      <div class="application-form__input-line">
+        <label class="application-form__label">First Name</label>
+        <input class="application-form__input" type="text" name="firstName">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Last Name</label>
+        <input class="application-form__input" type="text" name="lastName">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Email Address</label>
+        <input class="application-form__input" type="text" name="emailAddress">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Twitter ID</label>
+        <input class="application-form__input" type="text" name="twitterId">
+      </div>
+
+      <div class="application-form__input-line">
+        <label class="application-form__label">Linkedin Profile URL</label>
+        <input class="application-form__input" type="text" name="linkedinUrl">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Where do you live?</label>
+        <input class="application-form__input" type="text" name="whereLive">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What is your current occupation?</label>
+        <input class="application-form__input" type="text" name="currentOccupation">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Phone Number</label>
+        <input class="application-form__input" type="text" name="phoneNumber">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What course are you applying to?</label>
+
+        <div class="application-form__input">g
+          <label class="application-form__radio-label">
+            <input type="radio" name="applyingTo" value="Full-Time (January 2016)">
+            <span class="application-form__radio-text">Full-Time (January 2016)</span>
+          </label>
+        </div>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">How did you hear about us?</label>
+
+        <div class="application-form__input">
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="facebook">
+            <span class="application-form__radio-text">Facebook</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="google">
+            <span class="application-form__radio-text">Google</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="twitter">
+            <span class="application-form__radio-text">Twitter</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="bing-yahoo">
+            <span class="application-form__radio-text">Bing / Yahoo</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="word-of-mouth">
+            <span class="application-form__radio-text">Word of mouth</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="other">
+            <span class="application-form__radio-text">Other</span>
+          </label>
+        </div>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Why are you applying to DecodeMTL?</label>
+        <textarea class="application-form__input" name="whyApplying"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What is your education background?</label>
+        <textarea class="application-form__input" name="education"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What hobbies do you have? What are you passionate about in life?</label>
+        <textarea class="application-form__input" name="hobbies"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What do you want to do after completing the program?</label>
+
+        <div class="application-form__input">
+          <label class="application-form__radio-label">
+            <input type="radio" name="plans" value="developer">
+            <span class="application-form__radio-text">Become a developer</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="plans" value="startup">
+            <span class="application-form__radio-text">Work on an awesome startup</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="plans" value="not-sure">
+            <span class="application-form__radio-text">Not sure</span>
+          </label>
+        </div>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What is your coding background?</label>
+
+        <div class="application-form__input">
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="no-coding">
+            <span class="application-form__radio-text">No coding experience, basic computer skills</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="some-coding">
+            <span class="application-form__radio-text">Some coding. Familiar with HTML/CSS</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="moderate-coding">
+            <span class="application-form__radio-text">Moderate coding. I can make a landing page.</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="intermediate-coding">
+            <span class="application-form__radio-text">Intermediate coding. I've built some full sites.</span>
+          </label>
+        </div>
+      </div>
+      <button type="button" class="application-form__send-button">Send</button>
+    </form>
+  </div>
+  <a class="close-reveal-modal">&times;</a>
+</div>
