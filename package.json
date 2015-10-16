@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "fastclick": "~1.0.3",
+    "grunt-sass": "^1.0.0",
     "jquery": "~1.11.1",
     "lodash": "~2.4.1",
     "parse": "^1.2.19"
