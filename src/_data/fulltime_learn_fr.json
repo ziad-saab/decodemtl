@@ -1,0 +1,64 @@
+{
+  "list": [
+    {
+      "icon": "/assets/images/full-time/html5.png",
+      "title": "HTML5",
+      "description": "La formation de HTML qui vous rend compétent dans la création du code sémantique."
+    },
+    {
+      "icon": "/assets/images/full-time/css3.png",
+      "title": "CSS3 and SASS",
+      "description": "Obtenez une base solide en CSS et la connaissance des possibilités de CSS3."
+    },
+    {
+      "icon": "/assets/images/full-time/javascript.png",
+      "title": "JavaScript",
+      "description": "La langue principale pour ajouter de l'interactivité à vos pages web."
+    },
+    {
+      "icon": "/assets/images/full-time/mysql.png",
+      "title": "SQL",
+      "description": "Apprenez à modéliser, stocker et interroger les données de votre site web."
+    },
+    {
+      "icon": "/assets/images/full-time/rest-api.png",
+      "title": "APIs",
+      "description": "En savoir plus sur les API et ajouter des fonctionnalités à votre site."
+    },
+    {
+      "icon": "/assets/images/full-time/nodejs.png",
+      "title": "NodeJS",
+      "description": "Apprendre une langue back-end populaire pour créer des sites Web dynamiques."
+    },
+    {
+      "icon": "/assets/images/full-time/zurb-foundation.png",
+      "title": "Foundation",
+      "description": "Apprenez Foundation, un framework de web front-end."
+    },
+    {
+      "icon": "/assets/images/full-time/jquery.png",
+      "title": "jQuery",
+      "description": "Apprenez à créer des fonctions dynamiques pour vos sites Web."
+    },
+    {
+      "icon": "/assets/images/full-time/react.png",
+      "title": "React",
+      "description": "Utilisez un cadre UI populaire pour créer des applications d'une seule page."
+    },
+    {
+      "icon": "/assets/images/full-time/git.png",
+      "title": "Git and GitHub",
+      "description": "Apprenez à gérer les versions de fichiers, et le code en collaboration avec votre équipe."
+    },
+    {
+      "icon": "/assets/images/full-time/terminal.png",
+      "title": "Terminal",
+      "description": "Apprenez à faire des tâches quotidiennes en utilisant la ligne de commande de votre ordinateur."
+    },
+    {
+      "icon": "/assets/images/full-time/grunt.png",
+      "title": "Grunt",
+      "description": "Apprenez à créer des workflows automatisés et accélérer votre développement web."
+    }
+  ]
+}
