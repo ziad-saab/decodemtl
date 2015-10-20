@@ -90,7 +90,7 @@ description: Cours de développement web à temps plein à Montréal. En savoir 
 
       <div class="course-curriculum__unit">
         <label class="course-curriculum__header" for="course-curriculum__checkbox--unit{{forloop.index}}">
-          <span class="course-curriculum__unit-number">Unit {{forloop.index}}</span>
+          <span class="course-curriculum__unit-number">Unité {{forloop.index}}</span>
           <span class="course-curriculum__unit-name">{{unit.name}}</span>
         </label>
 
@@ -143,7 +143,7 @@ description: Cours de développement web à temps plein à Montréal. En savoir 
     <h1 class="course-faq__heading">FAQ</h1>
 
     <div class="faq-list">
-      {% for qa in site.data.fulltime_faq.list %}
+      {% for qa in site.data.fulltime_faq_fr.list %}
       <input id="faq-list__checkbox--q{{forloop.index}}" class="faq-list__checkbox" type="radio"
              name="faq-list__checkbox">
 
