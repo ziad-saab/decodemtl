@@ -23,7 +23,7 @@
 
     @media #{$medium-up} {
       max-width: none;
-      @include block-grid(2, 20px);
+      @include block-grid(3, 20px);
     }
   }
 
@@ -40,5 +40,6 @@
   }
   &__member-hello {
     font-size: 20px;
+    margin-top: 0;
   }
 }
