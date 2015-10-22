@@ -101,7 +101,7 @@ module.exports = function(grunt) {
     modernizr: {
       dist: {
         devFile: 'src/assets/js/modernizr.js',
-        outputFile: 'dist/assets/js/modernizr.js',
+        dest: 'dist/assets/js/modernizr.js',
         files: {
           src: [
             'src/**'
