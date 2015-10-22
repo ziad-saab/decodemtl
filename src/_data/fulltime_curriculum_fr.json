@@ -5,7 +5,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Dans cette section, nous allons apprendre les bases de la programmation en construisant diverses applications terminales. Vous aurez la chance de construire une application météo de ligne de commande, un carnet d'adresses ainsi que quelques jeux de chance."
+          "text": "Dans cette section, nous allons apprendre les bases de la programmation en construisant diverses applications en ligne de commande. Vous aurez la chance de construire une application météo en ligne de commande, un carnet d'adresses ainsi que quelques jeux de hasard."
         },
         {
           "type": "list",
@@ -16,7 +16,7 @@
             "JavaScript et JSON",
             "Introduction a NodeJS et npm",
             "Caractéristiques de ECMAScript 6",
-            "Object-Oriented Programming"
+            "Développement Orienté Objet"
           ]
         }
       ]
@@ -26,17 +26,17 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Dans cette section, nous allons nous concentrer sur la modélisation des données et de la persistance avec MySQL. Nous allons aussi pratiquer exposer les données en créant une projets API qui comprennent la mise à niveau de notre carnet d'adresses et jeux à utiliser une base de données."
+          "text": "Dans cette section, nous allons nous concentrer sur la modélisation des données et la persistance avec MySQL. Nous allons aussi pratiquer l'exposition de données en créant un projet API qui comprennent la mise à niveau de notre carnet d'adresses et jeux à utiliser une base de données."
         },
         {
           "type": "list",
           "items": [
             "Présentation des options de persistance des données",
             "Discussion sur SQL vs NoSQL",
-            "Utilisez MySQL pour modeler le data et persistence",
-            "Utilisez un ORM pour MySQL avec NodeJS",
-            "Exposer les données et les fonctions d'une API REST",
-            "Le déploiement d'un serveur d'API sur la plate-forme Heroku"
+            "Utilisation de MySQL pour modéliser les données et les sauvegarder",
+            "Utilisation d'un ORM pour MySQL avec NodeJS",
+            "Exposer les données et les fonctions grâce à un API REST",
+            "Déploiement d'un serveur d'API sur la plate-forme Heroku"
           ]
         }
       ]
@@ -46,16 +46,16 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Après avoir appris comment créer une API pour exposer nos données et fonctions, cette section va nous faire pratiquons nos côtelettes de conception que nous obtenons dans le monde du développement front-end. En travaillant à mettre nos projets antérieurs à la monde front-end, nous allons pratiquer divers cadres et des outils tels que jQuery et ReactJS."
+          "text": "Après l'acquisition des connaissances requises pour créer un API, nous approfondirerons lors de ce volet nos compétences front-end en mettant à jour nos projets antérieurs avec des outils tels que jQuery, Backbone et/ou ReactJS."
         },
         {
           "type": "list",
           "items": [
-            "Regardez CSS et l'HTML semantique",
-            "Regardez CSS3 et l'HTML5",
-            "Introduction a SASS",
-            "Utilisation de Grunt pour automatisez le dévelopment",
-            "Utilisation de jQuery, AJAX et les API 3e partie",
+            "Survol du CSS et HTML sémantique",
+            "Découverte de CSS3 et HTML5",
+            "Introduction à SASS",
+            "Utilisation de Grunt pour automatiser le dévelopment",
+            "Utilisation de jQuery, AJAX et APIs externes",
             "Création d'une application d'un page avec ReactJS"
           ]
         }
@@ -66,28 +66,28 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Dans cette section, vous et votre instructeur allez travailler ensemble pour déterminer des sujets avancés que vous souhaitez explorer. Vous pouvez décider d'aller plus en profondeur sur les choses que nous avons déjà vu, ou de découvrir un nouveau cadre, la langue ou la méthodologie. L'objectif est à la portée des et de créer un projet final avec ce que vous avez appris au cours de la bootcamp."
+          "text": "Dans cette section, vous et votre instructeur allez travailler ensemble pour déterminer des sujets avancés que vous souhaitez explorer. Vous pouvez décider d'aller plus en profondeur sur les choses que nous avons déjà vu, ou de découvrir une nouvelle librairie, langage ou méthodologie. L'objectif est de créer un projet final avec ce que vous avez appris au cours du bootcamp."
         },
         {
           "type": "paragraph",
-          "text": "Certains des sujets qui peuvent être travaillées comprennent, mais ne sont pas limités à:"
+          "text": "Certains des sujets qui peuvent être abordés:"
         },
         {
           "type": "list",
           "items": [
             "Introduction au développement WordPress",
-            "Contribuer à un projet open-source",
-            "L'utilisation d'un cadre frontal différent comme Backbone ou AngularJS",
+            "Contribution à un projet open-source",
+            "Utilisation d'une librairie front-end différente comme Backbone ou AngularJS",
             "Exploration d'un système de base de données différent, comme MongoDB ou Cassandra",
             "Déploiement d'une application sur Amazon Web Services",
             "Essayer le développement mobile en utilisant JavaScript avec React Native",
-            "Utilizez le CSS3 avancé pour crée un nouveau CSS Zen Garden (csszengarden.com)",
-            "... ou toute autre chose qui pique votre curiosité et vous obtient motivé :)"
+            "Utilizer le CSS3 avancé pour crée un nouveau CSS Zen Garden (csszengarden.com)",
+            "... ou toute autre chose qui pique votre curiosité et vous garde motivé :)"
           ]
         },
         {
           "type": "paragraph",
-          "text": "Le dernier jour du bootcamp, vous présenterez votre projet à vos camarades de classe, amis et famille."
+          "text": "Le dernier jour du bootcamp, vous présenterez votre projet à vos camarades de classe, amis et famille, ainsi qu'à nos partenaires d'emploi."
         }
       ]
     }

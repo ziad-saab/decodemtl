@@ -13,7 +13,7 @@
     {
       "icon": "/assets/images/full-time/javascript.png",
       "title": "JavaScript",
-      "description": "La langue principale pour ajouter de l'interactivité à vos pages web."
+      "description": "Le langage rrincipale pour ajouter de l'interactivité à vos pages web."
     },
     {
       "icon": "/assets/images/full-time/mysql.png",
@@ -28,12 +28,12 @@
     {
       "icon": "/assets/images/full-time/nodejs.png",
       "title": "NodeJS",
-      "description": "Apprendre une langue back-end populaire pour créer des sites Web dynamiques."
+      "description": "Apprendre un langage back-end populaire pour créer des sites Web dynamiques."
     },
     {
       "icon": "/assets/images/full-time/zurb-foundation.png",
       "title": "Foundation",
-      "description": "Apprenez Foundation, un framework de web front-end."
+      "description": "Apprenez Foundation, une librairie de web front-end."
     },
     {
       "icon": "/assets/images/full-time/jquery.png",
@@ -43,7 +43,7 @@
     {
       "icon": "/assets/images/full-time/react.png",
       "title": "React",
-      "description": "Utilisez un cadre UI populaire pour créer des applications d'une seule page."
+      "description": "Utilisez une librairie UI populaire pour créer des applications d'une seule page."
     },
     {
       "icon": "/assets/images/full-time/git.png",
@@ -53,12 +53,12 @@
     {
       "icon": "/assets/images/full-time/terminal.png",
       "title": "Terminal",
-      "description": "Apprenez à faire des tâches quotidiennes en utilisant la ligne de commande de votre ordinateur."
+      "description": "Apprenez à exécuter des tâches journalières en utilisant la ligne de commande de votre ordinateur."
     },
     {
       "icon": "/assets/images/full-time/grunt.png",
       "title": "Grunt",
-      "description": "Apprenez à créer des workflows automatisés et accélérer votre développement web."
+      "description": "Apprenez à créer des processus automatisés et accélérez votre développement web."
     }
   ]
 }

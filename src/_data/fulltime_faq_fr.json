@@ -1,40 +1,40 @@
 {
   "list": [
     {
-      "question": "Dois-je aucune connaissance préalable pour assister à ce cours?",
-      "answer": "Non, ce cours accueille les débutants qui ont jamais écrit une ligne de code, ou ceux qui ont bricolé avec un minimum de code."
+      "question": "Dois-je avoir des connaissances préalables pour assister à ce cours?",
+      "answer": "Non, ce cours accueille les débutants qui n'ont jamais écrit une ligne de code, ou ceux qui ont bricolé avec un minimum de code."
     },
     {
       "question": "Quelles sont les exigences pour participer à ce cours?",
-      "answer": "Vous aurez besoin d'être ambitieux, concentré, prêt à travailler sur votre propre temps, et être réceptifs à l'apprentissage de nouvelles choses. Vous devrez également apporter votre propre ordinateur portable. Mac et PC sont très bien, aussi longtemps que vous êtes familier avec l'ordinateur et il est pas trop lent. Si vous n'êtes pas sûr de votre équipement, demandez-nous. En outre, vous devrez remplir un cours de préparation avant la première session."
+      "answer": "Vous aurez besoin d'être ambitieux, concentré, prêt à travailler tout le temps, et être réceptifs à l'apprentissage de nouvelles choses. Vous devrez également apporter votre propre ordinateur portable. Mac et PC sont bienvenus, tant que vous êtes familier avec l'ordinateur et il n'est pas trop lent. Si vous n'êtes pas sûr de votre équipement, demandez-nous. En outre, vous devrez compléter un cours de préparatoire à la maison avant la première session."
     },
     {
-      "question": "Est-ce que tout le monde se acceptée pour le cours?",
-      "answer": "Seuls les candidats qui nous semblent bénéficieront le plus de ce cours seront acceptés."
+      "question": "Est-ce que tout le monde est accepté pour le cours?",
+      "answer": "Seuls les candidats qui bénéficieront le plus de ce cours seront acceptés."
     },
     {
       "question": "Combien d'étudiants sont dans la salle de classe?",
-      "answer": "Le cours est limité à un maximum de 20 élèves. Sièges ont tendance à se remplir rapidement alors assurez-vous d'appliquer dès que possible."
+      "answer": "Le cours est limité à un maximum de 20 élèves. Les sièges ont tendance à se remplir rapidement alors assurez-vous de postuler dès que possible."
     },
     {
       "question": "Si je me pose des questions après les heures de classe, est quelqu'un capable de m'aider?",
-      "answer": "Oui, nos instructeurs ont des heures de bureau où ils seront heureux de repondre a vos questions."
+      "answer": "Oui, nos instructeurs ont des heures de bureau où ils seront heureux de repondre à vos questions."
     },
     {
-      "question": "Quel genre de travail que je peux attendre?",
-      "answer": "Vous pouvez vous attendre à obtenir un emploi de niveau d'entrée en tant que développeur dans des startups ou des grandes entreprises. Il ya beaucoup d'emplois disponibles pour les développeurs, et la demande est en croissance. Vous allez continuer à apprendre sur le job, et de devenir un développeur senior dans quelques années si vous rester concentré et travailler à son égard."
+      "question": "À quel genre d'emploi puis-je m'attendre?",
+      "answer": "Vous pouvez vous attendre à obtenir un emploi de niveau débutant/stagiaire en tant que développeur dans des startups ou des grandes entreprises. Il ya beaucoup d'emplois disponibles pour les développeurs, et la demande est en croissance. Vous allez continuer à apprendre durant votre emploi/stage, et devenir un développeur sénior dans quelques années si vous restez concentré."
     },
     {
-      "question": "Quel type de compétences que je peux attendre d'avoir à la fin?",
-      "answer": "Après avoir réussi ce bootcamp, vous aurez les compétences nécessaires pour modéliser et construire des sites Web dynamiques et d'applications web."
+      "question": "Quel type de compétences aurai-je à la fin?",
+      "answer": "Après avoir réussi ce bootcamp, vous aurez les compétences nécessaires pour modéliser et construire des sites Web dynamiques et applications web."
     },
     {
       "question": "Quel est le coût de la formation?",
-      "answer": "Les frais de scolarité pour la formation est $5,995 et est payable avant le début de la formation."
+      "answer": "Les frais de scolarité pour la formation sont de $5,995 + taxes et sont payables avant le début de la formation."
     },
     {
       "question": "Y at-il une politique de remboursement?",
-      "answer": "Nous essayons d'être équitable et souple avec restitutions. Si pour une raison quelconque vous avez besoin de quitter le cours, nous vous rembourserons vos frais sur une base pro-rata. Par exemple, si vous laissez à mi-chemin à travers le cours, nous vous rembourserons la moitié de votre paiement."
+      "answer": "Nous essayons d'être équitable et souple avec les remboursements. Si pour une raison quelconque vous avez besoin de quitter le cours, nous vous rembourserons vos frais sur une base pro-rata. Par exemple, si vous laissez à mi-chemin à travers le cours, nous vous rembourserons la moitié de votre paiement."
     },
     {
       "question": "Quels sont les délais de paiement?",
@@ -42,10 +42,10 @@
     },
     {
       "question": "Es ce que vous donnez des certificat a la fin?",
-      "answer": "Non, nous ne donnons pas de certificats, les notes, ou des cartes de rapport. Nous vous donnons les outils et les compétences nécessaires pour obtenir un emploi en tant que développeur."
+      "answer": "Non, nous ne donnons pas de certificats, de notes, ou des cartes de rapport. Nous vous donnons les outils et les compétences nécessaires pour obtenir un emploi en tant que développeur."
     },
     {
-      "question": "Où est le cours enseigné?",
+      "question": "Où se passe la formation?",
       "answer": "Ces cours sont actuellement enseignés à La Commune (440, Place Jacques-Cartier, Montréal, QC H2Y 3B3) dans le cœur du Vieux-Port de Montréal."
     }
   ]
