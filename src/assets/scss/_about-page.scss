@@ -20,6 +20,7 @@
   &__members {
     max-width: 300px;
     margin: 0 auto;
+    list-style: none;
 
     @media #{$medium-up} {
       max-width: none;
