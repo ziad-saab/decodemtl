@@ -1428,7 +1428,8 @@ code {
     font-size: 2em; }
   .meet-the-team__members {
     max-width: 300px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    list-style: none; }
     @media only screen and (min-width: 40.0625em) {
       .meet-the-team__members {
         max-width: none;
