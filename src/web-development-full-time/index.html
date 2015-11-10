@@ -22,7 +22,7 @@ description: Intensive, full-time web development course in Montreal. Go from be
     </h1>
     <p class="course-about__subheading">8-12 hours / day for 8 weeks</p>
 
-    <p class="course-about__price">$5,995</p>
+    <p class="course-about__price">$59.95</p>
 
     <ul class="course-about__points">
       <li class="course-about__point">
@@ -120,10 +120,10 @@ description: Intensive, full-time web development course in Montreal. Go from be
   <div class="section-content">
     <h1 class="instructor__heading">Meet your instructor</h1>
     <article class="instructor-bio">
-      <img class="instructor-bio__pic" src="https://www.gravatar.com/avatar/9668b6478fb28dea732204066a69a1db.jpg?s=300" alt="Ziad Saab">
+      <img class="instructor-bio__pic" src="http://www.gravatar.com/avatar/237702d59a350f04ab1fce649efbe3b7.jpg?s=300" alt="Ziad Saab">
 
       <div class="instructor-bio__text">
-        <h1 class="instructor-bio__name">Ziad Saab</h1>
+        <h1 class="instructor-bio__name">Babak Khosravifar</h1>
 
         <p class="instructor-bio__title">
         <nobr>Head of Education</nobr>
@@ -208,117 +208,80 @@ description: Intensive, full-time web development course in Montreal. Go from be
         </p>
       </li>
     </ul>
+   
+<div style="position: relative;background-color: #1589FF; width: 80px; height: 30px;">    
+
+    <div style="position: absolute; bottom: 5px; background-color: #1589FF">
     <a class="upcoming-courses__reserve" href="#" data-reveal-id="application-form">Apply Now</a>
+    </div>
+</div>
+   
+    
   </div>
 </section>
 
 
-<div id="application-form" class="application-form reveal-modal xlarge" data-reveal>
-  <div class="application-form__content">
-    <img class="application-form__logo" src="/assets/images/decodemtl-logo-black.png">
+<form action="//submit.form" id="EmploymentApplication100" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.First_Name.value == "") { alert('First name is required.'); frm.First_Name.focus(); return false; }
+if (frm.Last_Name.value == "") { alert('Last name is required.'); frm.Last_Name.focus(); return false; }
+if (frm.Email_Address.value == "") { alert('Email address is required.'); frm.Email_Address.focus(); return false; }
+if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.Email_Address.focus(); return false; }
+if (frm.Position.value == "") { alert('Position is required.'); frm.Position.focus(); return false; }
+if (frm.Phone.value == "") { alert('Phone is required.'); frm.Phone.focus(); return false; }
+return true; }
+</script>
+<table border="0" cellpadding="5" cellspacing="0">
+<tr> <td style="width: 50%">
+<label for="First_Name"><b>First name *</b></label><br />
+<input name="First_Name" type="text" maxlength="50" style="width: 260px" />
+</td> <td style="width: 50%">
+<label for="Last_Name"><b>Last name *</b></label><br />
+<input name="Last_Name" type="text" maxlength="50" style="width: 260px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Email_Address"><b>Email *</b></label><br />
+<input name="Email_Address" type="text" maxlength="100" style="width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Portfolio"><b>Portfolio website</b></label><br />
+<input name="Portfolio" type="text" maxlength="255" value="http://" style="width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Position"><b>course you are applying for *</b></label><br />
+<input name="Position" type="text" maxlength="100" style="width: 535px" />
+</td> </tr> <tr> <td>
+<label for="Salary"><b>Major prerequisites</b></label><br /> <input name="Salary" type="text" maxlength="50" style="width: 260px" /> </td> <td>
+<label for="StartDate"><b>When can you start?</b></label><br />
+<input name="StartDate" type="text" maxlength="50" style="width: 260px" />
+</td> </tr> <tr> <td>
+<label for="Phone"><b>Phone *</b></label><br />
+<input name="Phone" type="text" maxlength="50" style="width: 260px" />
+</td> <td>
+<label for="Fax"><b>Fax</b></label><br />
+<input name="Fax" type="text" maxlength="50" style="width: 260px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Relocate"><b>Are you willing to receive our newsletter?</b></label><br />
+<input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes      
+<input name="Relocate" type="radio" value="No" /> No      
+<input name="Relocate" type="radio" value="NotSure" /> Not sure
+</td> </tr> <tr> <td colspan="2">
+<label for="Organization"><b>Previous courses you took</b></label><br />
+<input name="Organization" type="text" maxlength="100" style="width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Reference"><b>Reference / Comments / Questions</b></label><br />
+<textarea name="Reference" rows="7" cols="40" style="width: 535px"></textarea>
+</td> </tr> <tr> <td colspan="2" style="text-align: center;">
+<div style="float: right"> <a href="https://www.100forms.com" id="lnk100" title="web forms">forms</a></div>
+<script src="//www.100forms.com/js/FORMKEY:QQ97WBDJS242/SEND:XXXX@XXXX.com" type="text/javascript"></script>
+<input name="skip_submit" type="submit" value="Send Application" />
+</td> </tr>
+</table>
+</form>
 
-    <form class="application-form__form">
-      <div class="application-form__input-line">
-        <label class="application-form__label">First Name</label>
-        <input class="application-form__input" type="text" name="firstName">
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">Last Name</label>
-        <input class="application-form__input" type="text" name="lastName">
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">Email Address</label>
-        <input class="application-form__input" type="text" name="emailAddress">
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">Twitter ID</label>
-        <input class="application-form__input" type="text" name="twitterId">
-      </div>
 
-      <div class="application-form__input-line">
-        <label class="application-form__label">Linkedin Profile URL</label>
-        <input class="application-form__input" type="text" name="linkedinUrl">
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">Where do you live?</label>
-        <input class="application-form__input" type="text" name="whereLive">
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">What is your current occupation?</label>
-        <input class="application-form__input" type="text" name="currentOccupation">
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">Phone Number</label>
-        <input class="application-form__input" type="text" name="phoneNumber">
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">What course are you applying to?</label>
 
-        <div class="application-form__input">
-          <label class="application-form__radio-label">
-            <input type="radio" name="applyingTo" value="Full-Time (January 2016)">
-            <span class="application-form__radio-text">Full-Time (January 2016)</span>
-          </label>
-        </div>
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">How did you hear about us?</label>
-        <input class="application-form__input" type="text" name="leadSource">
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">Why are you applying to DecodeMTL?</label>
-        <textarea class="application-form__input" name="whyApplying"></textarea>
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">What is your education background?</label>
-        <textarea class="application-form__input" name="education"></textarea>
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">What hobbies do you have? What are you passionate about in life?</label>
-        <textarea class="application-form__input" name="hobbies"></textarea>
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">What do you want to do after completing the program?</label>
 
-        <div class="application-form__input">
-          <label class="application-form__radio-label">
-            <input type="radio" name="plans" value="developer">
-            <span class="application-form__radio-text">Become a developer</span>
-          </label>
-          <label class="application-form__radio-label">
-            <input type="radio" name="plans" value="startup">
-            <span class="application-form__radio-text">Work on an awesome startup</span>
-          </label>
-          <label class="application-form__radio-label">
-            <input type="radio" name="plans" value="not-sure">
-            <span class="application-form__radio-text">Not sure</span>
-          </label>
-        </div>
-      </div>
-      <div class="application-form__input-line">
-        <label class="application-form__label">What is your coding background?</label>
 
-        <div class="application-form__input">
-          <label class="application-form__radio-label">
-            <input type="radio" name="codingBackground" value="no-coding">
-            <span class="application-form__radio-text">No coding experience, basic computer skills</span>
-          </label>
-          <label class="application-form__radio-label">
-            <input type="radio" name="codingBackground" value="some-coding">
-            <span class="application-form__radio-text">Some coding. Familiar with HTML/CSS</span>
-          </label>
-          <label class="application-form__radio-label">
-            <input type="radio" name="codingBackground" value="moderate-coding">
-            <span class="application-form__radio-text">Moderate coding. I can make a landing page.</span>
-          </label>
-          <label class="application-form__radio-label">
-            <input type="radio" name="codingBackground" value="intermediate-coding">
-            <span class="application-form__radio-text">Intermediate coding. I've built some full sites.</span>
-          </label>
-        </div>
-      </div>
-      <button type="button" class="application-form__send-button">Send</button>
-    </form>
-  </div>
+
+
   <a class="close-reveal-modal">&times;</a>
 </div>
