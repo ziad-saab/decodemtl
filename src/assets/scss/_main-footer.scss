@@ -1,0 +1,59 @@
+.main-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+
+  &__subscribe-heading {
+    font-weight: 100;
+    font-size: 1.5em;
+    margin: 0 0 1.2em;
+  }
+
+  &__subscribe-form {
+    margin: 2em 0;
+  }
+
+  &__subscribe-input {
+    line-height: 1;
+    padding: 0.5em 1em;
+    margin: 0 auto 0.5em;
+    max-width: 250px;
+    display: block;
+    vertical-align: middle;
+
+    @media #{$medium-up} {
+      display: inline-block;
+      margin: 0 0.25em;
+    }
+  }
+
+  &__subscribe-button {
+    line-height: 1;
+    font-size: 100%;
+    padding: 0.65em 1em;
+    margin: 0 0.25em;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #333;
+    vertical-align: middle;
+  }
+
+  &__facebook, &__twitter, &__email {
+    display: inline;
+    padding-right: 10px;
+    a {
+      color: white;
+    }
+  }
+
+  &__contact {
+    margin-top: 1.5em;
+  }
+
+  &__policy-terms {
+    a:first-of-type {
+      padding-right: 10px;
+    }
+  }
+}

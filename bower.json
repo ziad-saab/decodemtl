@@ -1,0 +1,11 @@
+{
+  "name": "foundation-skeleton",
+  "version": "1.0.0",
+  "private": "true",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation",
+    "bourbon": "~4.0.2",
+    "modernizr": "~2.8.3",
+    "hw-parallax": "git://github.com/ziad-saab/hw-parallax.git"
+  }
+}

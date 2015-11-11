@@ -1,0 +1,95 @@
+{
+  "units": [
+    {
+      "name": "Programmation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Dans cette section, nous allons apprendre les bases de la programmation en construisant diverses applications en ligne de commande. Vous aurez la chance de construire une application météo en ligne de commande, un carnet d'adresses ainsi que quelques jeux de hasard."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Mise en place de notre IDE et environnement de développement",
+            "Apprendre les bases de la ligne de commande",
+            "Utilisation de Git et GitHub",
+            "JavaScript et JSON",
+            "Introduction a NodeJS et npm",
+            "Caractéristiques de ECMAScript 6",
+            "Développement Orienté Objet"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bases de données et développement Back-End",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Dans cette section, nous allons nous concentrer sur la modélisation des données et la persistance avec MySQL. Nous allons aussi pratiquer l'exposition de données en créant un projet API qui comprennent la mise à niveau de notre carnet d'adresses et jeux à utiliser une base de données."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Présentation des options de persistance des données",
+            "Discussion sur SQL vs NoSQL",
+            "Utilisation de MySQL pour modéliser les données et les sauvegarder",
+            "Utilisation d'un ORM pour MySQL avec NodeJS",
+            "Exposer les données et les fonctions grâce à un API REST",
+            "Déploiement d'un serveur d'API sur la plate-forme Heroku"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Développement Front-End",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Après l'acquisition des connaissances requises pour créer un API, nous approfondirerons lors de ce volet nos compétences front-end en mettant à jour nos projets antérieurs avec des outils tels que jQuery, Backbone et/ou ReactJS."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Survol du CSS et HTML sémantique",
+            "Découverte de CSS3 et HTML5",
+            "Introduction à SASS",
+            "Utilisation de Grunt pour automatiser le dévelopment",
+            "Utilisation de jQuery, AJAX et APIs externes",
+            "Création d'une application d'un page avec ReactJS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sujets avancés et projet final",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Dans cette section, vous et votre instructeur allez travailler ensemble pour déterminer des sujets avancés que vous souhaitez explorer. Vous pouvez décider d'aller plus en profondeur sur les choses que nous avons déjà vu, ou de découvrir une nouvelle librairie, langage ou méthodologie. L'objectif est de créer un projet final avec ce que vous avez appris au cours du bootcamp."
+        },
+        {
+          "type": "paragraph",
+          "text": "Certains des sujets qui peuvent être abordés:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Introduction au développement WordPress",
+            "Contribution à un projet open-source",
+            "Utilisation d'une librairie front-end différente comme Backbone ou AngularJS",
+            "Exploration d'un système de base de données différent, comme MongoDB ou Cassandra",
+            "Déploiement d'une application sur Amazon Web Services",
+            "Essayer le développement mobile en utilisant JavaScript avec React Native",
+            "Utilizer le CSS3 avancé pour crée un nouveau CSS Zen Garden (csszengarden.com)",
+            "... ou toute autre chose qui pique votre curiosité et vous garde motivé :)"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Le dernier jour du bootcamp, vous présenterez votre projet à vos camarades de classe, amis et famille, ainsi qu'à nos partenaires d'emploi."
+        }
+      ]
+    }
+  ]
+}

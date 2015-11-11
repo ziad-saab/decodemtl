@@ -1,0 +1,254 @@
+---
+layout: default
+title: Learn HTML & CSS
+description: Learn the fundamentals of HTML & CSS in Montreal. 8 part-time weeks of learning to kick-start your career as a web developer. Learn more here.
+---
+<section class="intro-section intro-section--course" data-image="/assets/images/classroom.jpg" data-width="1500" data-height="994">
+  <div class="section-content">
+    <h1 class="intro-section__headline">HTML &amp; CSS<br>Part-Time</h1>
+    <p class="intro-section__links">
+      <!--<a class="intro-section__link" href="#" data-reveal-id="application-form">Apply Now</a>-->
+    </p>
+  </div>
+</section>
+
+<section class="course-about">
+  <div class="section-content">
+    <h1 class="course-about__heading">Learn HTML &amp; CSS Part-Time</h1>
+    <p class="course-about__subheading">Two nights a week for 6 weeks</p>
+    <p class="course-about__price">$1,495</p>
+
+    <ul class="course-about__points">
+      <li class="course-about__point">
+        <img class=course-about__icon" src="/assets/images/about-schedule.png">
+        <p>
+          6 weeks<br>
+          Two nights a week<br>
+          Weekly TA sessions
+        </p>
+      <li class="course-about__point">
+      <img class=course-about__icon" src="/assets/images/personalized-help.png">
+        <p>Get hands-on help from our awesome instructors and TA's</p>
+      <li class="course-about__point">
+      <img class=course-about__icon" src="/assets/images/about-website.png">
+        <p>You will learn to build &amp; maintain your own websites</p>
+    </ul>
+  </div>
+</section>
+
+<section class="who-should-apply">
+  <div class="section-content">
+    <h1 class="who-should-apply__heading">Who should apply?</h1>
+    <p class="who-should-apply__intro">
+      Our HTML and CSS course is perfect for a variety of people. We focus on giving you an excellent overview into the
+      world of web development, with enough practical experience to be able to build, manage, and scale your websites.
+    </p>
+    <p class="who-should-apply__faces">
+      <img class="who-should-apply__face" src="/assets/images/who-woman.png">
+      <img class="who-should-apply__face" src="/assets/images/who-man.png">
+    </p>
+    <p class="who-should-apply__great-for-heading">This course is great for:</p>
+    <ul class="who-should-apply__great-for-list">
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Entrepreneurs</span> looking to build an MVP</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Designers</span> that want to bring their creations to life</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Product Managers</span> that want to better understand their technical team</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Full-Time Employees</span> that can't exactly quit their day job (yet)</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Tech Enthusiasts</span> aspiring to take over the world</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Future Full-Time Students</span> who want to test the waters before taking the full plunge</li>
+    </ul>
+    <p class="who-should-apply__not-sure">
+      Not sure if this course is for you?<br>
+      <a href="mailto:hello@decodemtl.com">Contact Us</a> and we will point you in the right direction.
+    </p>
+  </div>
+</section>
+
+<section class="what-will-learn">
+  <div class="section-content">
+    <h1 class="what-will-learn__heading">What you will learn</h1>
+    <p class="what-will-learn__text">
+      Our part-time curriculum is an excellent introduction into the world of web development. We focus on the
+      fundamental languages of web development: HTML &amp; CSS. We also cover some productivity tools such as GitHub, Zurb's Foundation Framework, and WebStorm. Upon completion of the course, you will be able to build landing pages or multi-page websites and put them on the web.
+    </p>
+  </div>
+</section>
+
+<section class="course-faq">
+  <div class="section-content">
+    <h1 class="course-faq__heading">FAQ</h1>
+    <div class="faq-list">
+      {% for qa in site.data.faq.list %}
+      <input id="faq-list__checkbox--q{{forloop.index}}" class="faq-list__checkbox" type="radio" name="faq-list__checkbox">
+      <div class="faq-list__question">
+        <label class="faq-list__header" for="faq-list__checkbox--q{{forloop.index}}">
+          {{qa.question}}
+        </label>
+        <div class="faq-list__content">
+          <p>{{qa.answer}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="curriculum">
+  <div class="section-content">
+    <h1 class="curriculum__heading">Curriculum</h1>
+    <div class="course-curriculum">
+      {% for unit in site.data.curriculum.units %}
+      <input id="course-curriculum__checkbox--unit{{forloop.index}}" class="course-curriculum__checkbox" type="radio" name="course-curriculum__checkbox">
+      <div class="course-curriculum__unit">
+        <label class="course-curriculum__header" for="course-curriculum__checkbox--unit{{forloop.index}}">
+          <span class="course-curriculum__unit-number">Unit {{forloop.index}}</span>
+          <span class="course-curriculum__unit-name">{{unit.name}}</span>
+        </label>
+        <div class="course-curriculum__content">
+          {% for contentItem in unit.content %}
+          {% case contentItem.type %}
+          {% when 'list' %}
+          <ul>
+            {% for listItem in contentItem.items %}
+            <li>{{listItem}}</li>
+            {% endfor %}
+          </ul>
+          {% when 'paragraph' %}
+          <p>{{contentItem.text}}</p>
+          {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="upcoming-courses">
+  <div class="section-content">
+    <div class="upcoming-courses__heading">Upcoming Courses</div>
+    <ul class="upcoming-courses__list">
+      <li class="upcoming-courses__item">
+        <p class="upcoming-courses__info">No courses currently scheduled. Please sign up to our newsletter below to
+        stay informed on our next course.</p>
+      </li>
+    </ul>
+    <!--<a class="upcoming-courses__reserve" href="#" data-reveal-id="application-form">Apply Now</a>-->
+  </div>
+</section>
+
+
+<div id="application-form" class="application-form reveal-modal xlarge" data-reveal>
+  <div class="application-form__content">
+    <img class="application-form__logo" src="/assets/images/decodemtl-logo-black.png">
+
+    <form class="application-form__form">
+      <div class="application-form__input-line">
+        <label class="application-form__label">First Name</label>
+        <input class="application-form__input" type="text" name="firstName">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Last Name</label>
+        <input class="application-form__input" type="text" name="lastName">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Email Address</label>
+        <input class="application-form__input" type="text" name="emailAddress">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Phone Number</label>
+        <input class="application-form__input" type="text" name="phoneNumber">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What course are you applying to?</label>
+
+        <div class="application-form__input">
+          <label class="application-form__radio-label">
+            <input type="radio" name="applyingTo" value="Full-Time (January 2016)">
+            <span class="application-form__radio-text">Full-Time (January 2016)</span>
+          </label>
+        </div>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">How did you hear about us?</label>
+        <div class="application-form__input">
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="facebook">
+            <span class="application-form__radio-text">Facebook</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="google">
+            <span class="application-form__radio-text">Google</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="twitter">
+            <span class="application-form__radio-text">Twitter</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="bing-yahoo">
+            <span class="application-form__radio-text">Bing / Yahoo</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="word-of-mouth">
+            <span class="application-form__radio-text">Word of mouth</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="leadSource" value="other">
+            <span class="application-form__radio-text">Other</span>
+          </label>
+        </div>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Why are you applying to DecodeMTL?</label>
+        <textarea class="application-form__input" name="whyApplying"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What is your education background?</label>
+        <textarea class="application-form__input" name="education"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What hobbies do you have? What are you passionate about in life?</label>
+        <textarea class="application-form__input" name="hobbies"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What do you want to do after completing the program?</label>
+        <div class="application-form__input">
+          <label class="application-form__radio-label">
+            <input type="radio" name="plans" value="developer">
+            <span class="application-form__radio-text">Become a developer</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="plans" value="startup">
+            <span class="application-form__radio-text">Work on an awesome startup</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="plans" value="not-sure">
+            <span class="application-form__radio-text">Not sure</span>
+          </label>
+        </div>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What is your coding background?</label>
+        <div class="application-form__input">
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="no-coding">
+            <span class="application-form__radio-text">No coding experience, basic computer skills</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="some-coding">
+            <span class="application-form__radio-text">Some coding. Familiar with HTML/CSS</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="moderate-coding">
+            <span class="application-form__radio-text">Moderate coding. I can make a landing page.</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="intermediate-coding">
+            <span class="application-form__radio-text">Intermediate coding. I've built some full sites.</span>
+          </label>
+        </div>
+      </div>
+      <button type="button" class="application-form__send-button">Send</button>
+    </form>
+  </div>
+  <a class="close-reveal-modal">&times;</a>
+</div>

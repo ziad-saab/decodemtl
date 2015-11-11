@@ -1,0 +1,119 @@
+.application-form {
+  
+  &__content {
+    font-size: 14px;
+  }
+  
+  &__logo {
+    display: table;
+    max-width: 100%;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #000;
+    margin: 0 auto 1em;
+  }
+  
+  &__input-line {
+    margin-bottom: 1em;
+  }
+  &__label {
+    display: block;
+    padding: 0.25em;
+    background-color: #000;
+    color: #fff;
+  }
+  &__input {
+    -webkit-appearance: none;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #000;
+  }
+  &__input:focus {
+    outline: none;
+  }
+  
+  &__radio-label {
+    display: block;
+    margin-bottom: 0.3em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    
+    input[type=radio] {
+      vertical-align: middle;
+      margin-right: 0.1em;
+    }
+  }
+  &__radio-text {
+    vertical-align: middle;
+  }
+  
+  &__send-button {
+    -webkit-appearance: none;
+    @include no-tap-highlight;
+    border: none;
+    outline: none;
+    float: right;
+    color: #fff;
+    background-color: $decode-red;
+    border-bottom: 3px solid #000;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+  }
+
+  @media #{$medium-up} {
+    &__content {
+      font-size: 18px;
+    }
+
+    &__input-line {
+      @include display(flex);
+      @include align-items(stretch);
+    }
+    &__label {
+      width: 10em;
+      @include flex-shrink(0);
+    }
+    &__input {
+      border: none;
+      border-bottom: 1px solid #000;
+      width: auto;
+      @include flex-grow(1);
+    }
+
+    &__radio-label {
+      display: inline-block;
+      white-space: nowrap;
+    }
+  }
+
+  @media #{$large-up} {
+    &__content {
+      font-size: 22px;
+    }
+  }
+}
+@include keyframes(moving-background) {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+.application-form--submitting:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  @include linear-gradient(90deg, #000 0%, #fff 50%, #000 100%);
+  background-size: 200%;
+  @include animation-name(moving-background);
+  @include animation-duration(20s);
+  @include animation-iteration-count(infinite);
+  @include animation-timing-function(linear);
+  
+}

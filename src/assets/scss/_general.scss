@@ -1,0 +1,55 @@
+$decode-red: #ef4136;
+$section-content-padding: 10px;
+
+@mixin no-tap-highlight() {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+@mixin section-heading() {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  color: $decode-red;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.full-link {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+}
+
+.section-content {
+  @include grid-row();
+  padding: 40px $section-content-padding;
+}
+// Fix disappearing fixed elements on parallax
+.main-header, #habla_window_div, .intro-section:before {
+  @include transform(translateZ(0));
+}
+
+code {
+  display: inline-block;
+  padding: 2px;
+  background-color: #f0f0f0;
+  border: 1px solid #222;
+  border-radius: 2px;
+  line-height: 1;
+  vertical-align: middle;
+  color: hsl(120, 50%, 40%);
+  font-size: 0.9em;
+}
