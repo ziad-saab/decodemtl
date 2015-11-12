@@ -10,4 +10,7 @@
 ./src/web-development-full-time/index.html:    <img class="application-form__logo" src="/assets/images/decodemtl-logo-black.png">
 ./src/fr/web-development-part-time/index.html:    <img class="application-form__logo" src="/assets/images/decodemtl-logo-black.png">
 ./src/fr/web-development-full-time/index.html:    <img class="application-form__logo" src="/assets/images/decodemtl-logo-black.png">
+./.git/COMMIT_EDITMSG:I outputted the content with logo to the files-with-logo.txt file
+./.git/logs/refs/heads/master:af5d857ce1e37453534c1ce4749b446d798f6911 f2ff7fa38dc14324306efd5641d4577d2f17d346 Johny Junior Duval <johny.duval@gmail.com> 1447352251 +0000	commit: I outputted the content with logo to the files-with-logo.txt file
+./.git/logs/HEAD:af5d857ce1e37453534c1ce4749b446d798f6911 f2ff7fa38dc14324306efd5641d4577d2f17d346 Johny Junior Duval <johny.duval@gmail.com> 1447352251 +0000	commit: I outputted the content with logo to the files-with-logo.txt file
 Binary file ./.git/index matches
