@@ -1,0 +1,13 @@
+./src/_layouts/default_fr.html:  <div class="main-header__logo">
+./src/_layouts/default_fr.html:      <a href="/fr"><img class="main-header__logo-image" src="/assets/images/decodemtl-logo-white.png"></a>
+./src/_layouts/default.html:  <div class="main-header__logo">
+./src/_layouts/default.html:      <a href="/"><img class="main-header__logo-image" src="/assets/images/decodemtl-logo-white.png"></a>
+./src/assets/scss/_application-form.scss:  &__logo {
+./src/assets/scss/_main-header.scss:  &__logo {
+./src/assets/scss/_main-header.scss:  &__logo-image {
+./src/assets/scss/_main-header.scss:    &__logo-image {
+./src/web-development-part-time/index.html:    <img class="application-form__logo" src="/assets/images/decodemtl-logo-black.png">
+./src/web-development-full-time/index.html:    <img class="application-form__logo" src="/assets/images/decodemtl-logo-black.png">
+./src/fr/web-development-part-time/index.html:    <img class="application-form__logo" src="/assets/images/decodemtl-logo-black.png">
+./src/fr/web-development-full-time/index.html:    <img class="application-form__logo" src="/assets/images/decodemtl-logo-black.png">
+Binary file ./.git/index matches
