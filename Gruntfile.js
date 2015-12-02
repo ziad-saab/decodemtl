@@ -175,21 +175,6 @@ module.exports = function(grunt) {
     },
     clean: {
       dist: ['dist']
-    },
-    imagemin: {
-      dist: {
-        options: {
-          optimizationLevel: 7
-        },
-        files: [
-          {
-            expand: true,
-            cwd: 'src/',
-            src: ['**/*.png'],
-            dest: 'dist'
-          }
-        ]
-      }
     }
   });
 
@@ -203,9 +188,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-modernizr');
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-jekyll');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   grunt.registerTask('dev', ['concurrent:dev']);
-  grunt.registerTask('build', ['clean:dist', 'copy:dist', 'imagemin:dist', 'webpack:dist', 'uglify:app', 'modernizr:dist', 'sass:dist', 'jekyll:dist']);
+  grunt.registerTask('build', ['clean:dist', 'copy:dist', 'webpack:dist', 'uglify:app', 'modernizr:dist', 'sass:dist', 'jekyll:dist']);
   grunt.registerTask('deploy', ['build', 'gh-pages']);
 };
