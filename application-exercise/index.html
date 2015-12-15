@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="DecodeMTL Application Exercise">
+    <title>DecodeMTL Application Exercise | DecodeMTL</title>
+    <link rel="icon" type="image/png" href="/assets/images/decodemtl-favicon-64.png">
+    <meta property="og:image" content="http://www.decodemtl.com/assets/images/decodemtl-favicon-large.png">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="/assets/js/modernizr.js"></script>
+</head>
+<body class="application-exercise">
+<input class="main-nav__checkbox" type="checkbox" id="main-nav__checkbox">
+<header class="main-header">
+  <div class="main-header__logo">
+      <a href="/"><img class="main-header__logo-image" src="/assets/images/decodemtl-logo-white.png"></a>
+  </div>
+  <label class="main-nav__burger-icon" for="main-nav__checkbox"></label>
+  <nav class="main-header__nav main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="/">Home</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="javascript:void(0)" class="main-nav__link">Courses</a>
+        <ul class="main-nav__sub-nav main-nav__sub-nav--right">
+          <li class="main-nav__sub-nav-item">
+            <a class="main-nav__sub-nav-link" href="/web-development-full-time">Web Development Full-Time</a>
+          </li>
+          <li class="main-nav__sub-nav-item">
+            <a class="main-nav__sub-nav-link" href="/web-development-part-time">HTML &amp; CSS Part-Time</a>
+          </li>
+        </ul>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="/about">About</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link main-nav__link--contact" href="mailto:hello@decodemtl.com">Contact</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link main-nav__link" href="/fr">FR</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  body {
+    background-color: #f8f8f8;
+  }
+  .section-content--app {
+    margin: 1em auto;
+    background-color: #fff;
+    padding: 1em;
+    border: 1px solid rgba(0,0,0, 0.5);
+    box-shadow: 0 0 10px 5px rgba(0,0,0, 0.1);
+    font-size: 1.15em;
+  }
+</style>
+<section class="intro-section intro-section--prep" data-image="/assets/images/application.jpg" data-width="1000" data-height="576">
+  <div class="section-content">
+    <h1 class="intro-section__headline">DecodeMTL Application Exercise</h1>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="section-content section-content--app">
+    <h2>Welcome to DecodeMTL!</h2>
+    <h3>Intro</h3>
+    <p>
+      If you are reading this document, it's because you have applied to one of our
+      <a href="/web-development-full-time">full-time web development bootcamps</a>.
+    </p>
+    <p>
+      As part of your application, you'll have to complete the following exercise. The first part is an online JavaScript
+      class that will take you through the basics of programming with JavaScript. In a second part, you will have to write
+      a few functions to show your understanding of your newly acquired knowledge.
+    </p>
+  </div>
+</section>
+<section class="learning">
+  <div class="section-content section-content--app">
+    <h2>Learning</h2>
+    <p>
+      <a href="https://www.codecademy.com/tracks/javascript">Complete CodeCademy's JavaScript track</a>. This will
+      give you a solid base in JavaScript programming as it relates to creating and manipulating data structures, as
+      well as creating your own functions.
+    </p>
+    <p>
+      Anything we do with JavaScript, no matter how complex, will end up boiling down to these fundamentals. Even as
+      we start using jQuery or NodeJS to do more advanced things, we will always be in a situation where we need to
+      manipulate data, and create modularized, re-usable code.
+    </p>
+    <p>
+      After completing this track, you should be ready to move on to the exercises below!
+    </p>
+  </div>
+</section>
+<section class="doing">
+  <div class="section-content section-content--app">
+    <h2>Doing</h2>
+    <h3>Instructions</h3>
+    <p>
+      Now that you have the fundamentals of JavaScript nailed down, it's time to show off your newly acquired knowledge!
+      To do this, you are being asked to create a series of JavaScript functions that respond to certain problems. To
+      submit your exercises, you will be <a href="https://tonicdev.com/">creating a notebook on Tonicdev</a>.
+    </p>
+    <p>
+      Sign up for a Tonicdev account, and create a new notebook. For each exercise, insert a new text cell with the full
+      text of the exercise, followed by a code cell with your solution. After writing your function, show that it works
+      by calling it with the required parameters.
+    </p>
+    <p>
+      Your final, submitted notebook should look like
+      <a href="https://tonicdev.com/ziad-saab/decodemtl-application">this example notebook</a>.
+    </p>
+
+    <h3>Exercises</h3>
+    <h4>Exercise 1</h4>
+    <p>
+      Write a function called <code>firstLetter</code> that takes one string argument and returns the first letter of
+      the string.
+    </p>
+    <h4>Exercise 2</h4>
+    <p>
+      Write a function called <code>lastLetter</code> that takes one string argument and returns the last letter of
+      the string.
+    </p>
+    <h4>Exercise 3</h4>
+    <p>
+      Write a function called <code>crazySum</code> that takes an array of numbers, and returns the sum of each number
+      multiplied by its position in the array.
+    </p>
+    <p>
+      For example, if you pass <code>[4, 8, 15, 16]</code>, the program will calculate 4*1 + 8*2 + 15*3 + 16*4 and give
+      you that back as an answer.
+    </p>
+    <h4>Exercise 4</h4>
+    <p>
+      Write a function called <code>fizzBuzz</code> that doesn't take any arguments and doesn't return anything. This
+      function should print all the numbers from 1 to 100. If the number is dividable by 3, then it should print FIZZ
+      instead of the number. If the number is dividable by 5, then it should print BUZZ instead of the number. If the
+      number is dividable by 3 AND 5, then it should print FIZZBUZZ instead of the number.
+    </p>
+    <h4>Exercise 5</h4>
+    <p>
+      Write a function called <code>factorial</code> that takes a number as argument and returns the
+      <a href="http://www.mathsisfun.com/definitions/factorial.html">factorial</a> of that number.
+    </p>
+
+    <h3>You are done :)</h3>
+    You are done! Please use the "publish" functionality at the top of your Tonicdev notebook to publish it with a fixed
+    URL. Then submit this URL to us at <a href="mailto:hello@decodemtl.com">hello@decodemtl.com</a>. We will get back to
+    you shortly after :)
+  </div>
+</section>
+
+
+<footer class="main-footer">
+  <h1 class="main-footer__subscribe-heading">Newsletter</h1>
+  <p class="main-footer__subscribe-instructions">
+    Subscribe to our newsletter to stay informed about our courses and events.
+  </p>
+  <!-- Begin MailChimp Signup Form -->
+  <div id="mc_embed_signup">
+    <form class="main-footer__subscribe-form" action="//decodemtl.us9.list-manage.com/subscribe/post?u=26336ef421ad48ecc3fba5376&amp;id=47aff20fae" method="post" target="_blank">
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_26336ef421ad48ecc3fba5376_47aff20fae" tabindex="-1" value=""></div>
+      <input class="main-footer__subscribe-input" placeholder="First Name" type="text" name="FNAME">
+      <input class="main-footer__subscribe-input" placeholder="Last Name" type="text" name="LNAME">
+      <input class="main-footer__subscribe-input" placeholder="Email Address" type="email" name="EMAIL" required>
+      <button class="main-footer__subscribe-button" type="submit">Sign Up</button>
+    </form>
+  </div>
+  <!--End mc_embed_signup-->
+
+  <div class="main-footer__social">
+      <div class="main-footer__facebook"><a href="https://www.facebook.com/decodemtl" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></div>
+      <div class="main-footer__twitter"><a href="https://twitter.com/decodemtl" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></div>
+      <div class="main-footer__email"><a href="mailto:hello@decodemtl.com"><i class="fa fa-envelope-o fa-2x"></i></a></div>
+  </div>
+  <div class="main-footer__contact">You can find us at <a href="https://goo.gl/maps/SfL1j" target="_blank">La Commune</a>,  reach us by
+      <a href="mailto:hello@decodemtl.com">email</a>,  or by phone at <a href="tel:+14387887057">438.788.7057</a></div>
+    <div class="main-footer__legal">
+        <div class="main-footer__copyright">&copy; 2015 9320-7223 Québec inc.</div>
+        <div class="main-footer__policy-terms">
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/terms">Terms of Use</a>
+        </div>
+    </div>
+
+</footer>
+<script src="/assets/js/app-bundle.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54876410-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+</script>
+<script src="//cdn.supportkit.io/supportkit.min.js"></script>
+<script>
+  SupportKit.init({appToken: '5whvfqoinngukw6qah52j5tmf'});
+</script>
+</body>
+</html>
