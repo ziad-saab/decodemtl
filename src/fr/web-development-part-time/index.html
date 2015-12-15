@@ -1,20 +1,20 @@
 ---
 layout: default_fr
 title: Introduction au développement web
-description: Apprenez les bases du développement web à Montreal. 10 semaines d'apprentissage pour démarrer une carrière de développeur web. En savoir plus ici.
+description: Apprenez les fondements du développement web à Montreal. 10 semaines d'apprentissage pour démarrer une carrière de développeur web. En savoir plus ici.
 ---
 <section class="intro-section intro-section--course" data-image="/assets/images/classroom.jpg" data-width="1500" data-height="994">
   <div class="section-content">
     <h1 class="intro-section__headline">Introduction au<br>Développement Web<br>Temps Partiel</h1>
     <p class="intro-section__links">
-      <!--<a class="intro-section__link" href="#" data-reveal-id="application-form">Apply Now</a>-->
+      <a class="intro-section__link" href="#" data-reveal-id="application-form">Postulez</a>
     </p>
   </div>
 </section>
 
 <section class="course-about">
   <div class="section-content">
-    <h1 class="course-about__heading">Apprenez les fondamentaux du développement web</h1>
+    <h1 class="course-about__heading">Apprenez les fondements du développement web</h1>
     <p class="course-about__subheading">Deux soirs par semaine pendant 10 semaines</p>
     <p class="course-about__price">$2,495</p>
 
@@ -134,7 +134,7 @@ description: Apprenez les bases du développement web à Montreal. 10 semaines d
 
 <section class="course-faq">
   <div class="section-content">
-    <h1 class="course-faq__heading">Your questions answered</h1>
+    <h1 class="course-faq__heading">FAQ</h1>
     <div class="faq-list">
       {% for qa in site.data.faq_fr.list %}
       <input id="faq-list__checkbox--q{{forloop.index}}" class="faq-list__checkbox" type="radio" name="faq-list__checkbox">
@@ -162,7 +162,7 @@ description: Apprenez les bases du développement web à Montreal. 10 semaines d
 
         <p class="upcoming-courses__info">1 Mars - 5 Mai</p>
 
-        <p class="upcoming-courses__info">Mardi &amp; Jeudi<br>
+        <p class="upcoming-courses__info">Mardi &amp; Jeudi de<br>
           <nobr>6pm - 9pm</nobr>
         </p>
       </li>
@@ -178,7 +178,7 @@ description: Apprenez les bases du développement web à Montreal. 10 semaines d
 
         <p class="upcoming-courses__info">31 Mai - 4 Août</p>
 
-        <p class="upcoming-courses__info">Mardi &amp; Jeudi<br>
+        <p class="upcoming-courses__info">Mardi &amp; Jeudi de<br>
           <nobr>6pm - 9pm</nobr>
         </p>
       </li>
@@ -238,8 +238,7 @@ description: Apprenez les bases du développement web à Montreal. 10 semaines d
           <label class="application-form__radio-label">
             <input type="radio" name="applyingTo" value="Full-Time (January 2016)">
             <span class="application-form__radio-text">Temps Plein (Janvier 2016)</span>
-          </label>
-          <br>
+          </label><br>
           <label class="application-form__radio-label">
             <input type="radio" name="applyingTo" value="Part-Time (May 2016)">
             <span class="application-form__radio-text">Temps Partiel (Mai 2016)</span>
@@ -264,21 +263,7 @@ description: Apprenez les bases du développement web à Montreal. 10 semaines d
       </div>
       <div class="application-form__input-line">
         <label class="application-form__label">Que voulez-vous faire après avoir complété le cours?</label>
-
-        <div class="application-form__input">
-          <label class="application-form__radio-label">
-            <input type="radio" name="plans" value="developer">
-            <span class="application-form__radio-text">Devenir développeur</span>
-          </label>
-          <label class="application-form__radio-label">
-            <input type="radio" name="plans" value="startup">
-            <span class="application-form__radio-text">Démarrer votre startup</span>
-          </label>
-          <label class="application-form__radio-label">
-            <input type="radio" name="plans" value="not-sure">
-            <span class="application-form__radio-text">Pas sur</span>
-          </label>
-        </div>
+        <textarea class="application-form__input" name="afterCoursePlan"></textarea>
       </div>
       <div class="application-form__input-line">
         <label class="application-form__label">Quelle est votre expérience en programmation?</label>
