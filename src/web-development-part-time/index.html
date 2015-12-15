@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Learn HTML & CSS
-description: Learn the fundamentals of HTML & CSS in Montreal. 8 part-time weeks of learning to kick-start your career as a web developer. Learn more here.
+title: Intro to web development
+description: Learn the fundamentals of web development in Montreal. 10 part-time weeks of learning to kick-start your career as a web developer. Learn more here.
 ---
 <section class="intro-section intro-section--course" data-image="/assets/images/classroom.jpg" data-width="1500" data-height="994">
   <div class="section-content">
-    <h1 class="intro-section__headline">HTML &amp; CSS<br>Part-Time</h1>
+    <h1 class="intro-section__headline">Intro to<br> Web Development<br>Part-Time</h1>
     <p class="intro-section__links">
       <!--<a class="intro-section__link" href="#" data-reveal-id="application-form">Apply Now</a>-->
     </p>
@@ -14,15 +14,15 @@ description: Learn the fundamentals of HTML & CSS in Montreal. 8 part-time weeks
 
 <section class="course-about">
   <div class="section-content">
-    <h1 class="course-about__heading">Learn HTML &amp; CSS Part-Time</h1>
-    <p class="course-about__subheading">Two nights a week for 6 weeks</p>
-    <p class="course-about__price">$1,495</p>
+    <h1 class="course-about__heading">Learn the fundamentals of Web Developement</h1>
+    <p class="course-about__subheading">Two nights a week for 10 weeks</p>
+    <p class="course-about__price">$2,495</p>
 
     <ul class="course-about__points">
       <li class="course-about__point">
         <img class=course-about__icon" src="/assets/images/about-schedule.png">
         <p>
-          6 weeks<br>
+          10 weeks<br>
           Two nights a week<br>
           Weekly TA sessions
         </p>
@@ -40,7 +40,7 @@ description: Learn the fundamentals of HTML & CSS in Montreal. 8 part-time weeks
   <div class="section-content">
     <h1 class="who-should-apply__heading">Who should apply?</h1>
     <p class="who-should-apply__intro">
-      Our HTML and CSS course is perfect for a variety of people. We focus on giving you an excellent overview into the
+      Our intro to web development course is perfect for a variety of people. We focus on giving you an excellent overview into the
       world of web development, with enough practical experience to be able to build, manage, and scale your websites.
     </p>
     <p class="who-should-apply__faces">
@@ -67,28 +67,13 @@ description: Learn the fundamentals of HTML & CSS in Montreal. 8 part-time weeks
   <div class="section-content">
     <h1 class="what-will-learn__heading">What you will learn</h1>
     <p class="what-will-learn__text">
-      Our part-time curriculum is an excellent introduction into the world of web development. We focus on the
-      fundamental languages of web development: HTML &amp; CSS. We also cover some productivity tools such as GitHub, Zurb's Foundation Framework, and WebStorm. Upon completion of the course, you will be able to build landing pages or multi-page websites and put them on the web.
+      Whether you are reading a simple article or using the most complex web app, every page you see in a browser is delivered as HTML and styled with CSS.
+      This powerful duo is the foundation of front-end web development and the perfect place to start your coding journey.
     </p>
-  </div>
-</section>
-
-<section class="course-faq">
-  <div class="section-content">
-    <h1 class="course-faq__heading">FAQ</h1>
-    <div class="faq-list">
-      {% for qa in site.data.faq.list %}
-      <input id="faq-list__checkbox--q{{forloop.index}}" class="faq-list__checkbox" type="radio" name="faq-list__checkbox">
-      <div class="faq-list__question">
-        <label class="faq-list__header" for="faq-list__checkbox--q{{forloop.index}}">
-          {{qa.question}}
-        </label>
-        <div class="faq-list__content">
-          <p>{{qa.answer}}</p>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
+    <p class="what-will-learn__text">
+      In this course you will learn how to write clean, standards-compliant code, and you will become acquainted with the fundamentals of design geared specifically for the web.
+      We will get you setup with a text editor on day one, and by the end of our 10 weeks together you will have created your first responsive website to present to the world.
+    </p>
   </div>
 </section>
 
@@ -123,17 +108,84 @@ description: Learn the fundamentals of HTML & CSS in Montreal. 8 part-time weeks
   </div>
 </section>
 
-<section class="upcoming-courses">
+<section class="instructor">
   <div class="section-content">
-    <div class="upcoming-courses__heading">Upcoming Courses</div>
+    <h1 class="instructor__heading">Meet your instructor</h1>
+    <article class="instructor-bio">
+      <img class="instructor-bio__pic" src="/assets/images/lucas.jpg" alt="Lucas Lemmonier">
+
+      <div class="instructor-bio__text">
+        &nbsp;
+        <h1 class="instructor-bio__name">Lucas Lemmonier</h1>
+
+        <p class="instructor-bio__title">
+          <!--<nobr>Head of Education</nobr>-->
+          <!--/-->
+          <!--<nobr>Co-Founder</nobr>-->
+        </p>
+        <p class="instructor-bio__text">
+          Lucas is an independent front-end web developer, designer and instructor with over 10 years of experience.
+          As a designer-turned-developer, Lucas is passionate about introducing beginners to CSS and spreading the word that coding is accessible to everyone.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="course-faq">
+  <div class="section-content">
+    <h1 class="course-faq__heading">Your questions answered</h1>
+    <div class="faq-list">
+      {% for qa in site.data.faq.list %}
+      <input id="faq-list__checkbox--q{{forloop.index}}" class="faq-list__checkbox" type="radio" name="faq-list__checkbox">
+      <div class="faq-list__question">
+        <label class="faq-list__header" for="faq-list__checkbox--q{{forloop.index}}">
+          {{qa.question}}
+        </label>
+        <div class="faq-list__content">
+          <p>{{qa.answer}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="course-faq__still-questions">Still have questions? <a href="mailto:hello@decodemtl.com">Contact Us</a>.
+    </p>
+  </div>
+</section>
+
+<section class="upcoming-courses">
+  <div class="section-content upcoming-courses__upcoming">
+    <div class="upcoming-courses__heading">March 2016</div>
     <ul class="upcoming-courses__list">
       <li class="upcoming-courses__item">
-        <p class="upcoming-courses__info">No courses currently scheduled. Please sign up to our newsletter below to
-        stay informed on our next course.</p>
+        <p class="upcoming-courses__info">$2,495</p>
+
+        <p class="upcoming-courses__info">March 1 - May 5</p>
+
+        <p class="upcoming-courses__info">Tuesday &amp; Thursday
+          <br><nobr>6pm - 9pm</nobr>
+        </p>
       </li>
     </ul>
-    <!--<a class="upcoming-courses__reserve" href="#" data-reveal-id="application-form">Apply Now</a>-->
+    <a class="upcoming-courses__reserve" href="#" data-reveal-id="application-form">Apply Now</a>
   </div>
+
+  <div class="section-content upcoming-courses__upcoming">
+    <div class="upcoming-courses__heading">May 2016</div>
+    <ul class="upcoming-courses__list">
+      <li class="upcoming-courses__item">
+        <p class="upcoming-courses__info">$2,495</p>
+
+        <p class="upcoming-courses__info">May 31 - August 4</p>
+
+        <p class="upcoming-courses__info">Tuesday &amp; Thursday
+          <br><nobr>6pm - 9pm</nobr>
+        </p>
+      </li>
+    </ul>
+    <a class="upcoming-courses__reserve" href="#" data-reveal-id="application-form">Apply Now</a>
+  </div>
+
 </section>
 
 
@@ -163,8 +215,19 @@ description: Learn the fundamentals of HTML & CSS in Montreal. 8 part-time weeks
 
         <div class="application-form__input">
           <label class="application-form__radio-label">
-            <input type="radio" name="applyingTo" value="Full-Time (January 2016)">
-            <span class="application-form__radio-text">Full-Time (January 2016)</span>
+            <label class="application-form__radio-label">
+              <input type="radio" name="applyingTo" value="Part-Time (March 2016)">
+              <span class="application-form__radio-text">Part-Time (March 2016)</span>
+            </label>
+            <label class="application-form__radio-label">
+              <input type="radio" name="applyingTo" value="Full-Time (January 2016)">
+              <span class="application-form__radio-text">Full-Time (January 2016)</span>
+            </label>
+            <br>
+            <label class="application-form__radio-label">
+              <input type="radio" name="applyingTo" value="Part-Time (May 2016)">
+              <span class="application-form__radio-text">Part-Time (May 2016)</span>
+            </label>
           </label>
         </div>
       </div>
