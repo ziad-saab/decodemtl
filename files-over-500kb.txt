@@ -1,0 +1,3 @@
+./src/assets/images/typewriter.jpg
+./src/assets/images/meeting.jpg
+./.git/objects/pack/pack-19075df3c5d89b19a17147a9f38346fa699bad5d.pack
