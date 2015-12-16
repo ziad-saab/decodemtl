@@ -1,0 +1,57 @@
+{
+  "units": [
+    {
+      "name": "HTML",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Introduction à l'éditeur de texte & rôle du document HTML sur le web",
+            "Structure du document HTML",
+            "Manipuler les typographie, les images et les liens",
+            "Différence entre éléments bloc et en-ligne",
+            "Définir les étiquettes et les balises sémantiques",
+            "Importance des étiquettes HTML5 pour le SEO et l'accessibilité"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CSS",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Définir les règles CSS",
+            "Différence entre les styles externes, internes et en-ligne",
+            "Sélecteurs & pseudo-sélecteurs de base",
+            "Classes & pseudo-classes de base",
+            "Spécificité & la cascade",
+            "Typographie et web fonts",
+            "Couleurs, images, bords, et arrière-plan",
+            "Comprendre le modèle de boîte, les flottants et le positionnemet",
+            "Outils pour développeurs et debuggage",
+            "Effets de base et animation",
+            "Créer des mises en page avec les grilles et introduction aux boîtes flexibles",
+            "Requêtes médias et design réactif"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fondements du design",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "Aperçu des outils et applications industriels standards",
+            "Application des concepts du design au web",
+            "Plan de site & maquette fonctionnelle",
+            "Présentation de Sketch pour un maquettage fonctionnelle rapide",
+            "Importance de la planification du code"
+          ]
+        }
+      ]
+    }
+  ]
+}

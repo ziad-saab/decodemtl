@@ -1,31 +1,17 @@
 {
   "units": [
     {
-      "name": "Introduction",
-      "content": [
-        {
-          "type": "list",
-          "items": [
-            "Overview of the schedule",
-            "Setup of development environment",
-            "Quick talk about HTML and CSS",
-            "Quick talk about Git and Github",
-            "Brief overview of how the web works (servers, clients, etc.)"
-          ]
-        }
-      ]
-    },
-    {
       "name": "HTML",
       "content": [
         {
           "type": "list",
           "items": [
-            "Brief history of HTML",
-            "Introduction to HTML's role, structure vs. presentation",
-            "Understanding what is meant by HTML5",
-            "Using HTML semantic tags to create meaningful documents",
-            "Understanding of images, differences between the various image formats"
+            "Intro to the text editor & role of the HTML document on the web",
+            "Structure of the HTML document",
+            "Working with typography, images, and links",
+            "Differentiating between block and inline elements",
+            "Defining HTML5 tags and semantic markup",
+            "Importance of HTML5 tags for SEO and accessibility"
           ]
         }
       ]
@@ -36,34 +22,34 @@
         {
           "type": "list",
           "items": [
-            "Introduction to CSS' role, structure vs. presentation",
-            "Experimenting with basic CSS properties",
-            "Understanding of the CSS cascade and specificity",
-            "Understanding of the CSS box model",
-            "Use a browser's inspector to interact with the content"
+            "Defining the CSS rule",
+            "Differentiating between internal, external, and inline styles",
+            "Selectors & basic pseudo-selectors",
+            "Classes & basic pseudo-classes",
+            "Specificity and the cascade",
+            "Typography and web fonts",
+            "Colour, images, borders, and backgrounds",
+            "Understanding the box model, floats and positioning",
+            "Developer tools and debugging",
+            "Basic effects and animation",
+            "Creating layouts with grids and introduction to flexbox",
+            "Media queries & responsive design"
           ]
         }
       ]
     },
     {
-      "name": "Responsive Framework: Foundation",
+      "name": "Design Fundamentals",
       "content": [
         {
           "type": "list",
           "items": [
-            "High-level discussion about responsiveness",
-            "Using our newly-acquired understanding of front-end technologies, explore the Foundation framework",
-            "Demo: creating a small landing page using Foundation’s responsive components"
+            "Overview of industry standard tools and applications",
+            "Applying fundamentals of design theory to the web",
+            "Sitemaps & wireframes",
+            "Introducing Sketch for rapid wireframing",
+            "The importance of planning for code"
           ]
-        }
-      ]
-    },
-    {
-      "name": "Project",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "Using everything that was learned through the sessions, create a personal landing page or a microsite. This project can be done alone or with a group. Your instructor will control the scope of the project, and will be guiding you throughout."
         }
       ]
     }
