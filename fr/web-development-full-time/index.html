@@ -662,8 +662,16 @@
 
         <div class="application-form__input">
           <label class="application-form__radio-label">
+            <input type="radio" name="applyingTo" value="Part-Time (March 2016)">
+            <span class="application-form__radio-text">Temps Partiel (Mars 2016)</span>
+          </label>
+          <label class="application-form__radio-label">
             <input type="radio" name="applyingTo" value="Full-Time (January 2016)">
-            <span class="application-form__radio-text">Full-Time (January 2016)</span>
+            <span class="application-form__radio-text">Temps Plein (Janvier 2016)</span>
+          </label><br>
+          <label class="application-form__radio-label">
+            <input type="radio" name="applyingTo" value="Part-Time (May 2016)">
+            <span class="application-form__radio-text">Temps Partiel (Mai 2016)</span>
           </label>
         </div>
       </div>
@@ -685,21 +693,7 @@
       </div>
       <div class="application-form__input-line">
         <label class="application-form__label">Que voulez-vous faire après avoir complété le cours?</label>
-
-        <div class="application-form__input">
-          <label class="application-form__radio-label">
-            <input type="radio" name="plans" value="developer">
-            <span class="application-form__radio-text">Devenir développeur</span>
-          </label>
-          <label class="application-form__radio-label">
-            <input type="radio" name="plans" value="startup">
-            <span class="application-form__radio-text">Démarrer votre startup</span>
-          </label>
-          <label class="application-form__radio-label">
-            <input type="radio" name="plans" value="not-sure">
-            <span class="application-form__radio-text">Pas sur</span>
-          </label>
-        </div>
+        <textarea class="application-form__input" name="afterCoursePlan"></textarea>
       </div>
       <div class="application-form__input-line">
         <label class="application-form__label">Quelle est votre expérience en programmation?</label>
