@@ -52,7 +52,7 @@
   <div class="section-content">
     <h1 class="intro-section__headline">Intro to<br> Web Development<br>Part-Time</h1>
     <p class="intro-section__links">
-      <a class="intro-section__link" href="#" data-reveal-id="application-form">Apply Now</a>
+        <a class="intro-section__link" href="#" data-reveal-id="application-form">Apply Now</a>
     </p>
   </div>
 </section>
@@ -236,7 +236,7 @@
 
       <div class="instructor-bio__text">
         &nbsp;
-        <h1 class="instructor-bio__name">Lucas Lemmonier</h1>
+        <h1 class="instructor-bio__name">Lucas Lemonnier</h1>
 
         <p class="instructor-bio__title">
           <!--<nobr>Head of Education</nobr>-->
@@ -407,6 +407,23 @@
         <input class="application-form__input" type="text" name="emailAddress">
       </div>
       <div class="application-form__input-line">
+        <label class="application-form__label">Twitter ID</label>
+        <input class="application-form__input" type="text" name="twitterId">
+      </div>
+
+      <div class="application-form__input-line">
+        <label class="application-form__label">Linkedin Profile URL</label>
+        <input class="application-form__input" type="text" name="linkedinUrl">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Where do you live?</label>
+        <input class="application-form__input" type="text" name="whereLive">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What is your current occupation?</label>
+        <input class="application-form__input" type="text" name="currentOccupation">
+      </div>
+      <div class="application-form__input-line">
         <label class="application-form__label">Phone Number</label>
         <input class="application-form__input" type="text" name="phoneNumber">
       </div>
@@ -415,18 +432,16 @@
 
         <div class="application-form__input">
           <label class="application-form__radio-label">
-            <label class="application-form__radio-label">
-              <input type="radio" name="applyingTo" value="Part-Time (March 2016)">
-              <span class="application-form__radio-text">Part-Time (March 2016)</span>
-            </label>
-            <label class="application-form__radio-label">
-              <input type="radio" name="applyingTo" value="Part-Time (May 2016)">
-              <span class="application-form__radio-text">Part-Time (May 2016)</span>
-            </label><br>
-            <label class="application-form__radio-label">
-              <input type="radio" name="applyingTo" value="Full-Time (January 2016)">
-              <span class="application-form__radio-text">Full-Time (January 2016)</span>
-            </label>
+            <input type="radio" name="applyingTo" value="Part-Time (March 2016)">
+            <span class="application-form__radio-text">Part-Time (March 2016)</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="applyingTo" value="Part-Time (May 2016)">
+            <span class="application-form__radio-text">Part-Time (May 2016)</span>
+          </label><br>
+          <label class="application-form__radio-label">
+            <input type="radio" name="applyingTo" value="Full-Time (January 2016)">
+            <span class="application-form__radio-text">Full-Time (January 2016)</span>
           </label>
         </div>
       </div>
@@ -448,10 +463,11 @@
       </div>
       <div class="application-form__input-line">
         <label class="application-form__label">What do you want to do after completing the program?</label>
-        <textarea class="application-form__input" name="afterCoursePlan"></textarea>
+        <textarea class="application-form__input" name="plans"></textarea>
       </div>
       <div class="application-form__input-line">
         <label class="application-form__label">What is your coding background?</label>
+
         <div class="application-form__input">
           <label class="application-form__radio-label">
             <input type="radio" name="codingBackground" value="no-coding">
