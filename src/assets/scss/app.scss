@@ -23,3 +23,28 @@
 @import "about-page";
 @import "curriculum";
 @import "on-demand";
+
+/* Text of "Learn to Code" to #92A8D1
+<h1 class="intro-section__headline">Learn to Code</h1>*/
+.intro-section {
+    color: #92A8D1;
+}
+
+
+/* <a class="intro-section__link" href="/web-development-full-time" style="
+    color: #92A8D1;
+">Full-Time</a>*/
+element.style {
+    color: #92A8D1;
+}
+
+/*<a class="intro-section__link" href="/web-development-part-time">Part-Time</a>*/
+.intro-section__link {
+    color: rgb(247, 202, 201);
+}
+
+/*changes to <body>*/
+body {
+    background: #F7CAC9;
+    color: #92A8D1;
+}
