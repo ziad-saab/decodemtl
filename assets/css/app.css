@@ -651,15 +651,13 @@ a {
   transform: translateZ(0); }
 
 code {
-  display: inline-block;
-  padding: 2px;
-  background-color: #f0f0f0;
-  border: 1px solid #222;
-  border-radius: 2px;
-  line-height: 1;
-  vertical-align: middle;
-  color: #339933;
-  font-size: 0.9em; }
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  margin: 0 2px;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace; }
 
 .main-header {
   color: #fff;
@@ -1566,5 +1564,52 @@ code {
     .course-curriculum {
       margin: 0 auto 50px; } }
 
-.on-demand-page ul {
-  padding-left: 40px; }
+body.prep-course .prep-section {
+  font-size: 20px; }
+  body.prep-course .prep-section:not(.prep-section__first) {
+    border-top: 5px solid rgba(0, 0, 0, 0.5); }
+  body.prep-course .prep-section:not(.prep-section__last) {
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5); }
+  body.prep-course .prep-section__getting-started {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0, rgba(255, 255, 255, 0.9) 100%), url("../images/getting-started.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
+  body.prep-course .prep-section__cmdline {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0, rgba(255, 255, 255, 0.9) 100%), url("../images/cmdline.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
+  body.prep-course .prep-section__programming {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0, rgba(255, 255, 255, 0.9) 100%), url("../images/jquery-code-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
+  body.prep-course .prep-section__htmlcss {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0, rgba(255, 255, 255, 0.9) 100%), url("../images/html-css-wireframes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
+  body.prep-course .prep-section__git {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0, rgba(255, 255, 255, 0.9) 100%), url("../images/git-github-drawing.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
+  body.prep-course .prep-section__finished {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0, rgba(255, 255, 255, 0.9) 100%), url("../images/prep-beach.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
+  body.prep-course .prep-section .section-content {
+    max-width: 850px; }
+  body.prep-course .prep-section h1, body.prep-course .prep-section h2, body.prep-course .prep-section h3, body.prep-course .prep-section h4 {
+    font-weight: 400; }
+  body.prep-course .prep-section h1, body.prep-course .prep-section h2 {
+    line-height: 1;
+    border-bottom: 1px solid black; }
+  body.prep-course .prep-section h4 a {
+    border-bottom: 1px solid #ef4136; }
+  body.prep-course .prep-section ul {
+    padding-left: 2em; }
+  body.prep-course .prep-section strong {
+    font-weight: 400; }
