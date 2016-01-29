@@ -43,13 +43,11 @@ a {
 }
 
 code {
-  display: inline-block;
-  padding: 2px;
-  background-color: #f0f0f0;
-  border: 1px solid #222;
-  border-radius: 2px;
-  line-height: 1;
-  vertical-align: middle;
-  color: hsl(120, 50%, 40%);
-  font-size: 0.9em;
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  margin: 0 2px;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 }

@@ -1,5 +1,65 @@
-.on-demand-page {
-  ul {
-    padding-left: 40px;
+@mixin fadedBg($url) {
+  background-image:
+    linear-gradient(to bottom, rgba(white, 0.9) 0, rgba(white, 0.9) 100%),
+    url($url);
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+body.prep-course {
+  .prep-section {
+    font-size: 20px;
+
+    &:not(.prep-section__first) {
+      border-top: 5px solid rgba(0,0,0, 0.5);
+    }
+    &:not(.prep-section__last) {
+      border-bottom: 5px solid rgba(0,0,0, 0.5);
+    }
+
+    &__getting-started {
+      @include fadedBg("../images/getting-started.jpg");
+    }
+    &__cmdline {
+      @include fadedBg("../images/cmdline.jpg");
+    }
+    &__programming {
+      @include fadedBg("../images/jquery-code-bg.jpg");
+    }
+    &__htmlcss {
+      @include fadedBg("../images/html-css-wireframes.jpg");
+    }
+    &__git {
+      @include fadedBg("../images/git-github-drawing.jpg");
+    }
+    &__finished {
+      @include fadedBg("../images/prep-beach.jpg");
+    }
+
+
+
+    .section-content {
+      max-width: 850px;
+    }
+
+    h1,h2,h3,h4 {
+      font-weight: 400;
+    }
+    h1,h2 {
+      line-height: 1;
+      border-bottom: 1px solid black;
+    }
+    h4 a {
+      border-bottom: 1px solid $decode-red;
+    }
+
+    ul {
+      padding-left: 2em;
+    }
+
+    strong {
+      font-weight: 400;
+    }
   }
 }
