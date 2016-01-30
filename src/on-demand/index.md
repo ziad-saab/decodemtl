@@ -132,7 +132,7 @@ If you are doing this prep work as part of your bootcamp application, login to S
 * Describe the activity of programming **in your own words**, using a few sentences.
 * Create a JavaScript function that takes an integer as input, and **returns** all the prime factors of the number in an **array**. You don't need to pay attention to the performance of your code.
 * Write a piece of jQuery code that uses the browser's `alert` function to open a popup when the user clicks on any `button` that has the class "`popup`".
-* Write a piece of AJAX code that fetches the [MDN search results for "javascript"](https://developer.mozilla.org/en-US/search.json?q=javascript) and prints the **title** of each search result on the console.
+* **Optional/Advanced**: Write a piece of AJAX code that fetches the [MDN search results for "javascript"](https://developer.mozilla.org/en-US/search.json?q=javascript) and prints the **title** of each search result on the console.
 
 </div>
 </section>
