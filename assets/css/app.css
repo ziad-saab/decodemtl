@@ -1641,3 +1641,11 @@ body.prep-course .prep-section {
 
 .event-item__content ul {
   padding-left: 2em; }
+
+.event-item__register-button {
+  color: white;
+  background-color: black;
+  padding: 1em;
+  line-height: 1;
+  display: table;
+  margin: auto; }
