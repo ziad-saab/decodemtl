@@ -23,3 +23,39 @@
 @import "about-page";
 @import "curriculum";
 @import "on-demand";
+
+.events-list {
+  list-style: none;
+}
+.event-item {
+  &__title {
+    font-weight: 400;
+    border-bottom: 1px solid #aaa;
+  }
+  &__subtitle {
+    margin-top: 0;
+  }
+  &__details {
+    overflow: hidden;
+  }
+  &__pic {
+    display: none;
+
+    @media screen and (min-width: 801px) {
+      display: block;
+      float: left;
+      margin-right: 1em;
+      width: 200px;
+    }
+  }
+  &__description {
+    overflow: hidden;
+  }
+
+  &__content {
+    ul {
+      padding-left: 2em;
+      
+    }
+  }
+}

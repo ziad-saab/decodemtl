@@ -1,0 +1,54 @@
+---
+layout: default
+title: Événements
+description: Apprenez-en plus sur nos événements et ateliers à venir.
+---
+<section class="intro-section intro-section--about" data-image="/assets/images/events.jpg" data-width="1000" data-height="667">
+  <div class="section-content">
+    <h1 class="intro-section__headline">Événements</h1>
+  </div>
+</section>
+
+<section class="events-section">
+  <div class="section-content">
+    <p class="events-section__intro">
+      Rencontrez les membres de notre communauté en participant à nos journées Demo Day ainsi que nos sessions d'information.
+    </p>
+    <ul class="events-section__list events-list">
+      <li class="events-list__item">
+        <div class="event-item">
+          <h2 class="event-item__title">Jeudi 11 Février @ 18h30</h2>
+          <div class="event-item__details">
+
+            <div class="event-item__description">
+              <h3 class="event-item__subtitle">
+                <a href="https://www.eventbrite.com/e/information-session-learning-to-code-with-decodemtl-tickets-21452291381">
+                  Session d'information développement web
+                </a>
+              </h3>
+              <div class="event-item__content">
+                {% capture content %}
+Êtes-vous curieux de savoir ce qui fait de DecodeMTL la meilleure place pour apprendre à programmer à Montréal?
+
+Vous l'êtes sans aucun doute :)
+
+Que vous cherchiez à démarrer une carrière en technologies de l'information, devenir meilleur à votre emploi ou simplement curieux à propos de la programmation web, joignez-vous à nous lors de notre session d'information pour savoir lequel de nos cours vous convient le mieux.
+
+Durant la session d'information:
+
+  * Vous rencontrerez l'équipe DecodeMTL ainsi que des participants potentiels
+  * Vous aurez une bonne vue d'ensemble des objectifs et contenu de chaque cours
+  * Vous pourrez rencontrer les instructeurs et en savoir plus sur leur expérience professionnelle
+  * Découvrir les avantages de faire partie de la communauté DecodeMTL
+
+Si vous ne pouvez pas assister à notre session d'information, contactez [hello@decodemtl.com](hello@decodemtl.com) pour nous parler directement.
+                {% endcapture %}
+                {{ content | markdownify}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
