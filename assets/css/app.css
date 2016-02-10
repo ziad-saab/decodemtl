@@ -1613,3 +1613,31 @@ body.prep-course .prep-section {
     padding-left: 2em; }
   body.prep-course .prep-section strong {
     font-weight: 400; }
+
+.events-list {
+  list-style: none; }
+
+.event-item__title {
+  font-weight: 400;
+  border-bottom: 1px solid #aaa; }
+
+.event-item__subtitle {
+  margin-top: 0; }
+
+.event-item__details {
+  overflow: hidden; }
+
+.event-item__pic {
+  display: none; }
+  @media screen and (min-width: 801px) {
+    .event-item__pic {
+      display: block;
+      float: left;
+      margin-right: 1em;
+      width: 200px; } }
+
+.event-item__description {
+  overflow: hidden; }
+
+.event-item__content ul {
+  padding-left: 2em; }
