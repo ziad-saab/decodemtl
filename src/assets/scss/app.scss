@@ -55,7 +55,16 @@
   &__content {
     ul {
       padding-left: 2em;
-      
+
     }
+  }
+
+  &__register-button {
+    color: white;
+    background-color: black;
+    padding: 1em;
+    line-height: 1;
+    display: table;
+    margin: auto;
   }
 }
