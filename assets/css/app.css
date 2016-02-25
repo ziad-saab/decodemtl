@@ -1000,6 +1000,10 @@ code {
     @media only screen and (min-width: 64.0625em) {
       .course-about__points {
         font-size: 20px; } }
+    .sql-workshop .course-about__points {
+      text-transform: none; }
+      .sql-workshop .course-about__points strong {
+        text-transform: uppercase; }
   .course-about__point {
     vertical-align: top;
     max-width: 400px;
@@ -1560,6 +1564,12 @@ code {
     transform: rotateZ(270deg); }
   .course-curriculum__checkbox:checked + .course-curriculum__unit > .course-curriculum__content {
     display: block; }
+  .sql-workshop .course-curriculum__unit {
+    background-color: #fff; }
+  .sql-workshop .course-curriculum__unit > .course-curriculum__content {
+    display: block; }
+  .sql-workshop .course-curriculum__unit:before {
+    display: none; }
   @media only screen and (min-width: 40.0625em) {
     .course-curriculum {
       margin: 0 auto 50px; } }
