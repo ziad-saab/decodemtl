@@ -82,6 +82,16 @@
     display: block;
   }
 
+  .sql-workshop &__unit {
+    background-color: #fff;
+  }
+  .sql-workshop &__unit  > &__content {
+    display: block;
+  }
+  .sql-workshop &__unit:before {
+    display: none;
+  }
+
   @media #{$medium-up} {
     margin: 0 auto 50px;
   }

@@ -1,0 +1,60 @@
+{
+  "units": [
+    {
+      "name": "The Dummy's Guide",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "<strong>Morning</strong>"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Who uses \"Databases\" and \"Structured Query Language\"?",
+            "What is a \"Database Management System\"?",
+            "How do I speak \"Structured Query Language\"?",
+            "Generating Simple Reports"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Afternoon</strong>"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Hands-on Activities"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Hacker's Guide",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "<strong>Morning</strong>"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Overview of Common Database Set-ups",
+            "Database Optimization Fundamentals",
+            "Data Model Visualization",
+            "Generating Complex Reports"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Afternoon</strong>"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Hands-on Activities"
+          ]
+        }
+      ]
+    }
+  ]
+}

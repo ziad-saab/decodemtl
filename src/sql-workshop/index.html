@@ -1,0 +1,108 @@
+---
+layout: default
+title: Learn SQL in Montreal
+description: SQL workshop for business people in Montreal
+bodyClass: sql-workshop
+---
+
+<section class="intro-section intro-section--about" data-image="/assets/images/sql-workshop.jpg" data-width="1280" data-height="853">
+    <div class="section-content">
+        <h1 class="intro-section__headline">SQL for Business People</h1>
+        <p class="intro-section__tagline">2-Day Comprehensive Workshop</p>
+    </div>
+</section>
+
+<section class="who-should-apply">
+  <div class="section-content">
+    <a name="more-info"></a>
+    <h1 class="who-should-apply__heading">Want to have a chat about the next workshop?</h1>
+
+    <p class="who-should-apply__intro">
+      Enter your email below and one of our team members will contact you to answer any questions you might have.
+    </p>
+
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form class="main-footer__subscribe-form" action="//decodemtl.us9.list-manage.com/subscribe/post?u=26336ef421ad48ecc3fba5376&amp;id=47aff20fae" method="post" target="_blank">
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_26336ef421ad48ecc3fba5376_47aff20fae" tabindex="-1" value=""></div>
+        <input class="main-footer__subscribe-input" placeholder="First Name" type="text" name="FNAME">
+        <input class="main-footer__subscribe-input" placeholder="Last Name" type="text" name="LNAME">
+        <input class="main-footer__subscribe-input" placeholder="Email Address" type="email" name="EMAIL" required>
+        <button class="main-footer__subscribe-button" type="submit">Get more info</button>
+      </form>
+    </div>
+    <!--End mc_embed_signup-->
+  </div>
+</section>
+
+<section class="course-about">
+  <div class="section-content">
+    <h1 class="course-about__heading">
+      Who is this workshop for?
+    </h1>
+
+    <ul class="course-about__points">
+      <li class="course-about__point">
+        <img class="course-about__icon" src="/assets/images/job-market.png">
+
+        <p>
+          <strong>Business owners</strong><br> wishing to gain business insights through data models and understand how to access information.
+        </p>
+      <li class="course-about__point">
+        <img class="course-about__icon" src="/assets/images/personalized-help.png">
+
+        <p>
+          <strong>Project managers</strong><br> wishing to understand data models, the process of custom report generation and their technical team.
+        </p>
+      <li class="course-about__point">
+        <img class="course-about__icon" src="/assets/images/fulltime-coffee.png">
+
+        <p>
+          <strong>Office workers</strong><br> needing to connect the concepts of day-to-day operations and data models to produce custom reports.
+        </p>
+    </ul>
+  </div>
+</section>
+
+<section id="curriculum" class="curriculum">
+  <div class="section-content">
+    <h1 class="curriculum__heading">Curriculum</h1>
+
+    <div class="course-curriculum">
+      {% for unit in site.data.sql_workshop.units %}
+      <input id="course-curriculum__checkbox--unit{{forloop.index}}" class="course-curriculum__checkbox" type="radio"
+             name="course-curriculum__checkbox">
+
+      <div class="course-curriculum__unit">
+        <label class="course-curriculum__header" for="course-curriculum__checkbox--unit{{forloop.index}}">
+          <span class="course-curriculum__unit-number">Day {{forloop.index}}</span>
+          <span class="course-curriculum__unit-name">{{unit.name}}</span>
+        </label>
+
+        <div class="course-curriculum__content">
+          {% for contentItem in unit.content %}
+          {% case contentItem.type %}
+          {% when 'list' %}
+          <ul>
+            {% for listItem in contentItem.items %}
+            <li>{{listItem}}</li>
+            {% endfor %}
+          </ul>
+          {% when 'paragraph' %}
+          <p>{{contentItem.text}}</p>
+          {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="upcoming-courses">
+  <div class="section-content">
+    <a class="upcoming-courses__reserve" href="#more-info">
+      Learn how to extract valuable business information in 2 days.
+    </a>
+  </div>
+</section>

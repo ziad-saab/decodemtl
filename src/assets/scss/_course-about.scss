@@ -12,7 +12,7 @@
     margin: 0;
     font-size: 1.5em;
   }
-  
+
   &__price {
     font-weight: bold;
     margin: 0;
@@ -28,6 +28,14 @@
 
     @media #{$large-up} {
       font-size: 20px;
+    }
+
+    .sql-workshop & {
+      text-transform: none;
+
+      & strong {
+        text-transform: uppercase;
+      }
     }
   }
 

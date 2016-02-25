@@ -23,7 +23,7 @@ if (!Modernizr.touch) {
 }
 
 var $body = $(document.body);
-$body.on('click', '.course-curriculum__header', function() {
+$body.on('click', '.course-curriculum__header:not(.sql-workshop .course-curriculum__header)', function() {
 
   // since the accordion is "css-only", this enables clearing the radio button if current box is open
   var $for = $('#' + $(this).attr('for'));
@@ -64,7 +64,7 @@ Parse.initialize('fyWcoNIpRkC4Tc18XJqHUKNFXoDkhTZqF1ceJeFS', 'IYowp9G78uLzKdnvie
 $('.application-form__send-button').on('click', function() {
   // Send a GA event for attempting to submit
   window.ga && ga('send', 'event', 'application form', 'submit attempt');
-  
+
   // Gather all keys/values from the form
   var values = $('.application-form__form')
     .serializeArray()
@@ -81,7 +81,7 @@ $('.application-form__send-button').on('click', function() {
     // Has errors, alert about them
     var errorValues = errorKeys.map(function(key) {return errors[key]});
     alert(errorValues.join("\r\n"));
-    
+
     // Send GA event with errors
     window.ga && ga('send', 'event', 'application form', 'submit errors', errorValues.join(','));
   }
@@ -92,7 +92,7 @@ $('.application-form__send-button').on('click', function() {
       function() {
         alert('Your application was submitted successfully!');
         $('#application-form').removeClass('application-form--submitting').foundation('reveal', 'close');
-        
+
         // Send GA event for parse submit success
         window.ga && ga('send', 'event', 'application form', 'submit to parse success');
       },
@@ -100,12 +100,12 @@ $('.application-form__send-button').on('click', function() {
         var errorMessage = error && error.error || 'Unknown error';
         alert("An error occurred while submitting your application:\r\n\r\n" + errorMessage);
         $('#application-form').removeClass('application-form--submitting');
-        
+
         // Send GA event for parse submit error
         window.ga && ga('send', 'event', 'application form', 'submit to parse error', errorMessage);
       }
     );
-    
+
     // Send GA event for parse submit attempt
     window.ga && ga('send', 'event', 'application form', 'submit to parse attempt');
   }

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Montserrat;
+}
+
+header,footer,section {
+    width: 100vw;
+    overflow: hidden;
+}
+
+section {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+section.dark {
+    background-color: #444444;
+    color: #EEEEEE;
+}
+
+section.dark h4 {
+    color: #EEEEEE;
+}
+
+section.even {
+    background-color: #DDDDDD;
+}
+
+section.odd {
+    background-color: #CCCCCC;
+}
+
+header::after {
+    content: "";
+    background-image: url('../img/splash.jpg');
+    background-size: cover;
+    background-position: right;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+div.workshop-description h1, section h4, section h5 {
+    margin-bottom: 1em;
+}
+
+.quarter {
+    height: 25vh;
+}
+
+.half {
+    height: 50vh;
+}
+
+.three-quarters {
+    height: 75vh;
+}
+
+.centered {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: inherit;
+}
+
+div.workshop-brand {
+    text-align: right;
+    background:rgba(0,0,0,0.7);
+}
+
+div.workshop-brand img {
+    width: 50%;
+    margin-right: 0.25em;
+}
+
+div.workshop-description {
+    padding-top:15vh;
+}
+
+div.workshop-description h1, div.workshop-description h3 {
+    text-shadow: 3px 3px #AAA;
+    color:#000
+}
+
+footer {
+    background-color: #444444;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+img.person {
+    width:50%;
+    display: block;
+    margin:0 auto 2vh auto;
+}
