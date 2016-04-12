@@ -4,7 +4,7 @@
 The code for the landing page is open through this repository, and the page is hosted on [Github Pages](https://pages.github.com/).
 
 Technologies used:
-* html5
+* html6
 * css3 inspired from [BEM](https://bem.info/)
 * javascript/jquery
 * [sass](http://sass-lang.com/)
