@@ -10,14 +10,13 @@ var confirmationTemplateFrench = _.template(fs.readFileSync('cloud/templates/con
 var applicationTemplate = _.template(fs.readFileSync('cloud/templates/application.ejs'));
 
 function _sendEmail(params) {
-  params.key = config.mandrillApiKey;
   return Parse.Cloud.httpRequest({
     method: 'POST',
+    url: 'https://api.sendgrid.com/api/mail.send.json',
+    body: params,
     headers: {
-      'Content-Type': 'application/json; charset=utf-8'
-    },
-    url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-    body: params
+      authorization: 'Bearer ' + config.sendgridApiKey
+    }
   });
 }
 
@@ -74,19 +73,12 @@ Parse.Cloud.job('sendEmails', function (request, status) {
 
               _sendEmail(
                   {
-                    message: {
-                      from_email: 'hello@decodemtl.com',
-                      from_name: 'DecodeMTL Team',
-                      subject: 'DecodeMTL Application',
-                      to: [
-                        {
-                          email: emailAddress,
-                          name: fullName
-                        }
-                      ],
-                      text: text
-                    },
-                    async: true
+                    from: 'hello@decodemtl.com',
+                    fromname: 'DecodeMTL Team',
+                    subject: 'DecodeMTL Application',
+                    'to[]': emailAddress,
+                    'toname[]': fullName,
+                    text: text
                   }).then(
                   function () {
                     application.set('emailSent', true).save().then(
@@ -96,14 +88,12 @@ Parse.Cloud.job('sendEmails', function (request, status) {
 
                           _sendEmail(
                               {
-                                message: {
-                                  from_email: 'no-reply@decodemtl.com',
-                                  from_name: 'DecodeMTL Bot',
-                                  subject: 'New DecodeMTL Application',
-                                  to: config.applicationRecipients,
-                                  text: applicationTemplate(values)
-                                },
-                                async: true
+                                from: 'no-reply@decodemtl.com',
+                                fromname: 'DecodeMTL Bot',
+                                subject: 'New DecodeMTL Application',
+                                'to[]': config.applicationRecipients[0].email,
+                                'toname[]': config.applicationRecipients[0].name,
+                                text: applicationTemplate(values)
                               }).then(
                               function () {
                                 nextApp();
