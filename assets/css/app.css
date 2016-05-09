@@ -719,9 +719,9 @@ code {
     -ms-transform-origin: 0 0;
     -o-transform-origin: 0 0;
     transform-origin: 0 0;
-    -webkit-transition: -webkit-transform;
-    -moz-transition: -moz-transform;
-    transition: transform; }
+    -webkit-transition: -webkit-transform 100ms ease-in;
+    -moz-transition: -moz-transform 100ms ease-in;
+    transition: transform 100ms ease-in; }
   .main-nav__checkbox:checked + .main-header {
     background-color: #000; }
     .main-nav__checkbox:checked + .main-header .main-nav__list {
@@ -809,9 +809,9 @@ code {
         -ms-transform-origin: 0 0;
         -o-transform-origin: 0 0;
         transform-origin: 0 0;
-        -webkit-transition: -webkit-transform, background-color;
-        -moz-transition: -moz-transform, background-color;
-        transition: transform, background-color; }
+        -webkit-transition: -webkit-transform 100ms ease-in, background-color 300ms ease-in;
+        -moz-transition: -moz-transform 100ms ease-in, background-color 300ms ease-in;
+        transition: transform 100ms ease-in, background-color 300ms ease-in; }
       .main-nav__item:hover .main-nav__sub-nav, .main-nav__link:active + .main-nav__sub-nav {
         -webkit-transform: scale3d(1, 1, 1);
         -moz-transform: scale3d(1, 1, 1);
@@ -1051,9 +1051,9 @@ code {
     -ms-transform: rotateZ(90deg);
     -o-transform: rotateZ(90deg);
     transform: rotateZ(90deg);
-    -webkit-transition: -webkit-transform;
-    -moz-transition: -moz-transform;
-    transition: transform; }
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    -moz-transition: -moz-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out; }
   .faq-list__header {
     display: block;
     padding: 20px 30px 20px 0;
@@ -1505,9 +1505,9 @@ code {
     -ms-transform: rotateZ(90deg);
     -o-transform: rotateZ(90deg);
     transform: rotateZ(90deg);
-    -webkit-transition: -webkit-transform;
-    -moz-transition: -moz-transform;
-    transition: transform; }
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    -moz-transition: -moz-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out; }
     @media only screen and (min-width: 40.0625em) {
       .course-curriculum__unit:before {
         right: 30px; } }
