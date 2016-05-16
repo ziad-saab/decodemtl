@@ -1,0 +1,297 @@
+---
+layout: default
+title: Intro to JavaScript
+description: Learn to code using JavaScript. Master programming fundamentals is it related to JavaScript. Read more here.
+---
+<section class="intro-section intro-section--course" data-image="/assets/images/classroom.jpg" data-width="1500" data-height="994">
+  <div class="section-content">
+    <h1 class="intro-section__headline">JavaScript<br>Part-Time</h1>
+    <p class="intro-section__links">
+        <a class="intro-section__link" href="#" data-reveal-id="application-form">Apply Now</a>
+    </p>
+  </div>
+</section>
+
+<section class="course-about">
+  <div class="section-content">
+    <h1 class="course-about__heading">Learn the fundamentals of JavaScript</h1>
+    <p class="course-about__subheading">Two nights a week for 10 weeks</p>
+    <p class="course-about__price">$1,495</p>
+
+    <ul class="course-about__points">
+      <li class="course-about__point">
+        <img class=course-about__icon" src="/assets/images/about-schedule.png">
+        <p>
+          10 weeks<br>
+          Two nights a week<br>
+          Weekly TA sessions
+        </p>
+      <li class="course-about__point">
+      <img class=course-about__icon" src="/assets/images/personalized-help.png">
+        <p>Get hands-on help from our awesome instructors and TA's</p>
+      <li class="course-about__point">
+      <img class=course-about__icon" src="/assets/images/about-website.png">
+        <p>You will learn to build &amp; maintain your own websites</p>
+    </ul>
+  </div>
+</section>
+
+<section class="who-should-apply">
+  <div class="section-content">
+    <h1 class="who-should-apply__heading">Who should apply?</h1>
+    <p class="who-should-apply__intro">
+      Our intro to web development course is perfect for a variety of people. We focus on giving you an excellent overview into the
+      world of web development, with enough practical experience to be able to build, manage, and scale your websites.
+    </p>
+    <p class="who-should-apply__faces">
+      <img class="who-should-apply__face" src="/assets/images/who-woman.png">
+      <img class="who-should-apply__face" src="/assets/images/who-man.png">
+    </p>
+    <p class="who-should-apply__great-for-heading">This course is great for:</p>
+    <ul class="who-should-apply__great-for-list">
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Entrepreneurs</span> looking to build an MVP</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Designers</span> that want to bring their creations to life</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Product Managers</span> that want to better understand their technical team</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Full-Time Employees</span> that can't exactly quit their day job (yet)</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Tech Enthusiasts</span> aspiring to take over the world</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Future Full-Time Students</span> who want to test the waters before taking the full plunge</li>
+    </ul>
+    <p class="who-should-apply__not-sure">
+      Not sure if this course is for you?<br>
+      <a href="mailto:hello@decodemtl.com">Contact Us</a> and we will point you in the right direction.
+    </p>
+  </div>
+</section>
+
+<section class="what-will-learn">
+  <div class="section-content">
+    <h1 class="what-will-learn__heading">What you will learn</h1>
+    <p class="what-will-learn__text">
+      Whether you are reading a simple article or using the most complex web app, every page you see in a browser is delivered as HTML and styled with CSS.
+      This powerful duo is the foundation of front-end web development and the perfect place to start your coding journey.
+    </p>
+    <p class="what-will-learn__text">
+      In this course you will learn how to write clean, standards-compliant code, and you will become acquainted with the fundamentals of design geared specifically for the web.
+      We will get you setup with a text editor on day one, and by the end of our 10 weeks together you will have created your first responsive website to present to the world.
+    </p>
+  </div>
+</section>
+
+<section class="curriculum">
+  <div class="section-content">
+    <h1 class="curriculum__heading">Curriculum</h1>
+    <div class="course-curriculum">
+      {% for unit in site.data.curriculum.units %}
+      <input id="course-curriculum__checkbox--unit{{forloop.index}}" class="course-curriculum__checkbox" type="radio" name="course-curriculum__checkbox">
+      <div class="course-curriculum__unit">
+        <label class="course-curriculum__header" for="course-curriculum__checkbox--unit{{forloop.index}}">
+          <span class="course-curriculum__unit-number">Unit {{forloop.index}}</span>
+          <span class="course-curriculum__unit-name">{{unit.name}}</span>
+        </label>
+        <div class="course-curriculum__content">
+          {% for contentItem in unit.content %}
+          {% case contentItem.type %}
+          {% when 'list' %}
+          <ul>
+            {% for listItem in contentItem.items %}
+            <li>{{listItem}}</li>
+            {% endfor %}
+          </ul>
+          {% when 'paragraph' %}
+          <p>{{contentItem.text}}</p>
+          {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="instructor">
+  <div class="section-content">
+    <h1 class="instructor__heading">Meet your instructor</h1>
+    <article class="instructor-bio">
+      <img class="instructor-bio__pic" src="/assets/images/lucas.jpg" alt="Lucas Lemmonier">
+
+      <div class="instructor-bio__text">
+        &nbsp;
+        <h1 class="instructor-bio__name">Lucas Lemonnier</h1>
+
+        <p class="instructor-bio__title">
+          <!--<nobr>Head of Education</nobr>-->
+          <!--/-->
+          <!--<nobr>Co-Founder</nobr>-->
+        </p>
+        <p class="instructor-bio__text">
+          Lucas is an independent front-end web developer, designer and instructor with over 10 years of experience.
+          As a designer-turned-developer, Lucas is passionate about introducing beginners to CSS and spreading the word that coding is accessible to everyone.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="course-faq">
+  <div class="section-content">
+    <h1 class="course-faq__heading">Your questions answered</h1>
+    <div class="faq-list">
+      {% for qa in site.data.faq.list %}
+      <input id="faq-list__checkbox--q{{forloop.index}}" class="faq-list__checkbox" type="radio" name="faq-list__checkbox">
+      <div class="faq-list__question">
+        <label class="faq-list__header" for="faq-list__checkbox--q{{forloop.index}}">
+          {{qa.question}}
+        </label>
+        <div class="faq-list__content">
+          <p>{{qa.answer}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="course-faq__still-questions">Still have questions? <a href="mailto:hello@decodemtl.com">Contact Us</a>.
+    </p>
+  </div>
+</section>
+
+<section class="upcoming-courses">
+  <div class="section-content upcoming-courses__upcoming">
+    <div class="upcoming-courses__heading">September 2016</div>
+    <ul class="upcoming-courses__list">
+      <li class="upcoming-courses__item">
+        <p class="upcoming-courses__info">$1,995</p>
+        <p class="upcoming-courses__info">September 13th - November 17th</p>
+
+        <p class="upcoming-courses__info">Tuesday &amp; Thursday from
+          <br><nobr>6:30pm - 9:30pm</nobr>
+        </p>
+      </li>
+    </ul>
+    <a class="upcoming-courses__reserve" href="#" data-reveal-id="application-form">Apply Now</a>
+  </div>
+
+  <div class="section-content upcoming-courses__upcoming">
+    <div class="upcoming-courses__heading">Spring 2017</div>
+    <ul class="upcoming-courses__list">
+      <li class="upcoming-courses__item">
+        <p class="upcoming-courses__info">$2,495</p>
+
+        <p class="upcoming-courses__info">Dates to be determined</p>
+
+        <p class="upcoming-courses__info">Tuesday &amp; Thursday from
+          <br><nobr>6:30pm - 9:30pm</nobr>
+        </p>
+      </li>
+    </ul>
+    <a class="upcoming-courses__reserve" href="#" data-reveal-id="application-form">Apply Now</a>
+  </div>
+
+</section>
+
+
+<div id="application-form" class="application-form reveal-modal xlarge" data-reveal>
+  <div class="application-form__content">
+    <img class="application-form__logo" src="/assets/images/decodemtl-logo-black.png">
+
+    <form class="application-form__form">
+      <div class="application-form__input-line">
+        <label class="application-form__label">First Name</label>
+        <input class="application-form__input" type="text" name="firstName">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Last Name</label>
+        <input class="application-form__input" type="text" name="lastName">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Email Address</label>
+        <input class="application-form__input" type="text" name="emailAddress">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Twitter ID</label>
+        <input class="application-form__input" type="text" name="twitterId">
+      </div>
+
+      <div class="application-form__input-line">
+        <label class="application-form__label">Linkedin Profile URL</label>
+        <input class="application-form__input" type="text" name="linkedinUrl">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Where do you live?</label>
+        <input class="application-form__input" type="text" name="whereLive">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What is your current occupation?</label>
+        <input class="application-form__input" type="text" name="currentOccupation">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Phone Number</label>
+        <input class="application-form__input" type="text" name="phoneNumber">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What course are you applying to?</label>
+
+        <div class="application-form__input">
+          <label class="application-form__radio-label">
+            <input type="radio" name="applyingTo" value="Part-Time (September 2016)">
+            <span class="application-form__radio-text">Part-Time (September 2016)</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="applyingTo" value="Part-Time (Spring 2017)">
+            <span class="application-form__radio-text">Part-Time (Spring 2017)</span>
+          </label><br>
+          <label class="application-form__radio-label">
+            <input type="radio" name="applyingTo" value="Full-Time (July 2016)">
+            <span class="application-form__radio-text">Full-Time (July 2016)</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="applyingTo" value="Full-Time (October 2016)">
+            <span class="application-form__radio-text">Full-Time (October 2016)</span>
+          </label>
+        </div>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">How did you hear about us?</label>
+        <input class="application-form__input" type="text" name="leadSource">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Why are you applying to DecodeMTL?</label>
+        <textarea class="application-form__input" name="whyApplying"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What is your education background?</label>
+        <textarea class="application-form__input" name="education"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What hobbies do you have? What are you passionate about in life?</label>
+        <textarea class="application-form__input" name="hobbies"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What do you want to do after completing the program?</label>
+        <textarea class="application-form__input" name="plans"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">What is your coding background?</label>
+
+        <div class="application-form__input">
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="no-coding">
+            <span class="application-form__radio-text">No coding experience, basic computer skills</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="some-coding">
+            <span class="application-form__radio-text">Some coding. Familiar with HTML/CSS</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="moderate-coding">
+            <span class="application-form__radio-text">Moderate coding. I can make a landing page.</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="intermediate-coding">
+            <span class="application-form__radio-text">Intermediate coding. I've built some full sites.</span>
+          </label>
+        </div>
+      </div>
+      <button type="button" class="application-form__send-button">Send</button>
+    </form>
+  </div>
+  <a class="close-reveal-modal">&times;</a>
+</div>
