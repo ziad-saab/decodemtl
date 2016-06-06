@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Intro to JavaScript
-description: Learn to code using JavaScript. Master programming fundamentals is it related to JavaScript. Read more here.
+title: Intro to Programming in JavaScript
+description: Master programming fundamentals in the world's most useful programming language, JavaScript. Read more here.
 ---
 <section class="intro-section intro-section--course" data-image="/assets/images/classroom.jpg" data-width="1500" data-height="994">
   <div class="section-content">
@@ -14,7 +14,7 @@ description: Learn to code using JavaScript. Master programming fundamentals is 
 
 <section class="course-about">
   <div class="section-content">
-    <h1 class="course-about__heading">Learn the fundamentals of JavaScript</h1>
+    <h1 class="course-about__heading">Learn the fundamentals of programming and JavaScript</h1>
     <p class="course-about__subheading">Two nights a week for 10 weeks</p>
     <p class="course-about__price">$1,495</p>
 
@@ -31,7 +31,7 @@ description: Learn to code using JavaScript. Master programming fundamentals is 
         <p>Get hands-on help from our awesome instructors and TA's</p>
       <li class="course-about__point">
       <img class=course-about__icon" src="/assets/images/about-website.png">
-        <p>You will learn to build &amp; maintain your own websites</p>
+        <p>You will learn to program &amp; deploy your own web apps!</p>
     </ul>
   </div>
 </section>
@@ -40,8 +40,7 @@ description: Learn to code using JavaScript. Master programming fundamentals is 
   <div class="section-content">
     <h1 class="who-should-apply__heading">Who should apply?</h1>
     <p class="who-should-apply__intro">
-      Our intro to web development course is perfect for a variety of people. We focus on giving you an excellent overview into the
-      world of web development, with enough practical experience to be able to build, manage, and scale your websites.
+      Bottom line, our intro to programming is perfect for anyone who wants to write code and make things do stuff. If you like doing stuff and making things, we'll give you a solid base in programming, and enough practical coding skills to make you epicly dangerous.
     </p>
     <p class="who-should-apply__faces">
       <img class="who-should-apply__face" src="/assets/images/who-woman.png">
@@ -50,11 +49,11 @@ description: Learn to code using JavaScript. Master programming fundamentals is 
     <p class="who-should-apply__great-for-heading">This course is great for:</p>
     <ul class="who-should-apply__great-for-list">
       <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Entrepreneurs</span> looking to build an MVP</li>
-      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Designers</span> that want to bring their creations to life</li>
-      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Product Managers</span> that want to better understand their technical team</li>
-      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Full-Time Employees</span> that can't exactly quit their day job (yet)</li>
-      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Tech Enthusiasts</span> aspiring to take over the world</li>
-      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Future Full-Time Students</span> who want to test the waters before taking the full plunge</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Product Managers</span> who want to better understand their technical team</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Prospective full-time students who want a leg up in programming skills</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Full-Time Employees</span> who can't quit their day job (yet)</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">The designer who wants to make their web pages come alive with interactivity</li>
+      <li class="who-should-apply__great-for-item"><span class="who-should-apply__great-for-profile">Anyone who wants to leverage the power of code to get things done.</li>
     </ul>
     <p class="who-should-apply__not-sure">
       Not sure if this course is for you?<br>
@@ -67,12 +66,12 @@ description: Learn to code using JavaScript. Master programming fundamentals is 
   <div class="section-content">
     <h1 class="what-will-learn__heading">What you will learn</h1>
     <p class="what-will-learn__text">
-      Whether you are reading a simple article or using the most complex web app, every page you see in a browser is delivered as HTML and styled with CSS.
-      This powerful duo is the foundation of front-end web development and the perfect place to start your coding journey.
+      JavaScript is the programming language of the Web browser, and has spread to other domains from robotics to servers. It's ubiquity, necessity for Web developers, and the ease of deployment - make JavaScript a must learn language.
+
+      Not only do you have to know it to be a modern software developer, but JavaScript is also immediately useful in the hands of a begginer, making it a great first programming language.
     </p>
     <p class="what-will-learn__text">
-      In this course you will learn how to write clean, standards-compliant code, and you will become acquainted with the fundamentals of design geared specifically for the web.
-      We will get you setup with a text editor on day one, and by the end of our 10 weeks together you will have created your first responsive website to present to the world.
+      In this course you will learn the fundamentals of programming, as well as the fundamentals of JavaScript and its unique asynchronous programming model. We'll progress from making interactive command-line programs, to building our own messaging clients and chat bots, and walk away having learnt to build real-time connected apps on the server and Web browser.
     </p>
   </div>
 </section>
@@ -81,7 +80,7 @@ description: Learn to code using JavaScript. Master programming fundamentals is 
   <div class="section-content">
     <h1 class="curriculum__heading">Curriculum</h1>
     <div class="course-curriculum">
-      {% for unit in site.data.curriculum.units %}
+      {% for unit in site.data.intro_programming_curriculum.units %}
       <input id="course-curriculum__checkbox--unit{{forloop.index}}" class="course-curriculum__checkbox" type="radio" name="course-curriculum__checkbox">
       <div class="course-curriculum__unit">
         <label class="course-curriculum__header" for="course-curriculum__checkbox--unit{{forloop.index}}">
@@ -112,20 +111,17 @@ description: Learn to code using JavaScript. Master programming fundamentals is 
   <div class="section-content">
     <h1 class="instructor__heading">Meet your instructor</h1>
     <article class="instructor-bio">
-      <img class="instructor-bio__pic" src="/assets/images/lucas.jpg" alt="Lucas Lemmonier">
+      <img class="instructor-bio__pic" src="/assets/images/stasi.jpg" alt="Anastasi Bakolias">
 
       <div class="instructor-bio__text">
         &nbsp;
-        <h1 class="instructor-bio__name">Lucas Lemonnier</h1>
+        <h1 class="instructor-bio__name">Anastasi Bakolias</h1>
 
         <p class="instructor-bio__title">
-          <!--<nobr>Head of Education</nobr>-->
-          <!--/-->
-          <!--<nobr>Co-Founder</nobr>-->
+          <!--<nobr>Developer</nobr>-->
         </p>
         <p class="instructor-bio__text">
-          Lucas is an independent front-end web developer, designer and instructor with over 10 years of experience.
-          As a designer-turned-developer, Lucas is passionate about introducing beginners to CSS and spreading the word that coding is accessible to everyone.
+          Anastasi is a software developer and co-founder at smooch.io. He fell deeply in love with programming, and he wants you to too.
         </p>
       </div>
     </article>
@@ -155,14 +151,14 @@ description: Learn to code using JavaScript. Master programming fundamentals is 
 
 <section class="upcoming-courses">
   <div class="section-content upcoming-courses__upcoming">
-    <div class="upcoming-courses__heading">September 2016</div>
+    <div class="upcoming-courses__heading">August 2016</div>
     <ul class="upcoming-courses__list">
       <li class="upcoming-courses__item">
-        <p class="upcoming-courses__info">$1,995</p>
-        <p class="upcoming-courses__info">September 13th - November 17th</p>
+        <p class="upcoming-courses__info">$1,495</p>
+        <p class="upcoming-courses__info">August 15th - October 19th</p>
 
-        <p class="upcoming-courses__info">Tuesday &amp; Thursday from
-          <br><nobr>6:30pm - 9:30pm</nobr>
+        <p class="upcoming-courses__info">Monday &amp; Wednesday from
+          <br><nobr>6:00pm - 9:00pm</nobr>
         </p>
       </li>
     </ul>
@@ -170,15 +166,15 @@ description: Learn to code using JavaScript. Master programming fundamentals is 
   </div>
 
   <div class="section-content upcoming-courses__upcoming">
-    <div class="upcoming-courses__heading">Spring 2017</div>
+    <div class="upcoming-courses__heading">December 2016</div>
     <ul class="upcoming-courses__list">
       <li class="upcoming-courses__item">
-        <p class="upcoming-courses__info">$2,495</p>
+        <p class="upcoming-courses__info">$1,495</p>
 
         <p class="upcoming-courses__info">Dates to be determined</p>
 
-        <p class="upcoming-courses__info">Tuesday &amp; Thursday from
-          <br><nobr>6:30pm - 9:30pm</nobr>
+        <p class="upcoming-courses__info">Monday &amp; Wednesday from
+          <br><nobr>6:00pm - 9:00pm</nobr>
         </p>
       </li>
     </ul>
@@ -231,11 +227,11 @@ description: Learn to code using JavaScript. Master programming fundamentals is 
 
         <div class="application-form__input">
           <label class="application-form__radio-label">
-            <input type="radio" name="applyingTo" value="Part-Time (September 2016)">
+            <input type="radio" name="applyingTo" value="Introduction to Programming (August 2016)">
             <span class="application-form__radio-text">Part-Time (September 2016)</span>
           </label>
           <label class="application-form__radio-label">
-            <input type="radio" name="applyingTo" value="Part-Time (Spring 2017)">
+            <input type="radio" name="applyingTo" value="Introduction to Programming (December 2016)">
             <span class="application-form__radio-text">Part-Time (Spring 2017)</span>
           </label><br>
           <label class="application-form__radio-label">
@@ -269,24 +265,24 @@ description: Learn to code using JavaScript. Master programming fundamentals is 
         <textarea class="application-form__input" name="plans"></textarea>
       </div>
       <div class="application-form__input-line">
-        <label class="application-form__label">What is your coding background?</label>
+        <label class="application-form__label">What is your programming background?</label>
 
         <div class="application-form__input">
           <label class="application-form__radio-label">
             <input type="radio" name="codingBackground" value="no-coding">
-            <span class="application-form__radio-text">No coding experience, basic computer skills</span>
+            <span class="application-form__radio-text">No programming experience, basic computer skills</span>
           </label>
           <label class="application-form__radio-label">
             <input type="radio" name="codingBackground" value="some-coding">
-            <span class="application-form__radio-text">Some coding. Familiar with HTML/CSS</span>
+            <span class="application-form__radio-text">Some programming. Familiar with variables, functions, loops and conditionals</span>
           </label>
           <label class="application-form__radio-label">
             <input type="radio" name="codingBackground" value="moderate-coding">
-            <span class="application-form__radio-text">Moderate coding. I can make a landing page.</span>
+            <span class="application-form__radio-text">Moderate programming. I've taken a course or written some intense Excel macros.</span>
           </label>
           <label class="application-form__radio-label">
             <input type="radio" name="codingBackground" value="intermediate-coding">
-            <span class="application-form__radio-text">Intermediate coding. I've built some full sites.</span>
+            <span class="application-form__radio-text">Intermediate programming. I know teh codes. I write programs professionally, or am an incredibly zealous and disciplined amateur.</span>
           </label>
         </div>
       </div>
