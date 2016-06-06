@@ -99,10 +99,10 @@
                     "type": "list",
                     "items": [
                         "The Document Object Model",
-                        "script tags in the browser",
+                        "Script tags in the browser",
                         "\"onClick\" and event handlers",
                         "\"getElementById\" and manipulating the DOM",
-                        "form submissions and making POST requests"
+                        "Form submission and making and receiving POST requests"
                     ]
                 }
             ]
@@ -121,7 +121,7 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "why chat with another person when you could chat with a bot? Lets build one!"
+                    "text": "Why chat with another person when you could chat with a bot? Lets build one!"
                 }
             ]
         },
@@ -130,7 +130,7 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "Our bot is as dumb as a bag of nails. Lets leverage the power of the interwebs to make our bot wise and all-knowing."
+                    "text": "Our bot is as dumb as a bag of nails. Let's leverage the power of the interwebs to make our bot wise and all-knowing."
                 }
             ]
         }
