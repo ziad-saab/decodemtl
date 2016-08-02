@@ -1,0 +1,97 @@
+<div id="application-form" class="application-form reveal-modal xlarge" data-reveal>
+  <div class="application-form__content">
+    <img class="application-form__logo" src="/assets/images/decodemtl-logo-black.png">
+
+    <form class="application-form__form">
+      <div class="application-form__input-line">
+        <label class="application-form__label">Prénom</label>
+        <input class="application-form__input" type="text" name="firstName">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Nom de famille</label>
+        <input class="application-form__input" type="text" name="lastName">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Courriel</label>
+        <input class="application-form__input" type="text" name="emailAddress">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">ID Twitter</label>
+        <input class="application-form__input" type="text" name="twitterId">
+      </div>
+
+      <div class="application-form__input-line">
+        <label class="application-form__label">URL Profil Linkedin</label>
+        <input class="application-form__input" type="text" name="linkedinUrl">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Où vivez-vous?</label>
+        <input class="application-form__input" type="text" name="whereLive">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Quel est votre emploi/occupation courant?</label>
+        <input class="application-form__input" type="text" name="currentOccupation">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Téléphone</label>
+        <input class="application-form__input" type="text" name="phoneNumber">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Pour quel cours postulez-vous?</label>
+
+        <div class="application-form__input">
+          {% for course in site.data.courses_fr %}
+          <label class="application-form__radio-label">
+            <input type="radio" name="applyingTo" value="{{course}}">
+            <span class="application-form__radio-text">{{course}}</span>
+          </label>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Comment avez-vous entendu parler de nous?</label>
+        <input class="application-form__input" type="text" name="leadSource">
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Pourquoi postulez-vous à DecodeMTL?</label>
+        <textarea class="application-form__input" name="whyApplying"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Quel est votre niveau d'éducation?</label>
+        <textarea class="application-form__input" name="education"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Quels sont vos passe-temps et passions dans la vie?</label>
+        <textarea class="application-form__input" name="hobbies"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Que voulez-vous faire après avoir complété le cours?</label>
+        <textarea class="application-form__input" name="plans"></textarea>
+      </div>
+      <div class="application-form__input-line">
+        <label class="application-form__label">Quelle est votre expérience en programmation?</label>
+
+        <div class="application-form__input">
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="no-coding">
+            <span class="application-form__radio-text">Connaissances informatiques de base</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="some-coding">
+            <span class="application-form__radio-text">Un peu de code. Familier avec HTML/CSS</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="moderate-coding">
+            <span class="application-form__radio-text">Je peux créer une page d'accueil</span>
+          </label>
+          <label class="application-form__radio-label">
+            <input type="radio" name="codingBackground" value="intermediate-coding">
+            <span class="application-form__radio-text">Intermédiaire, j'ai construit des sites complets</span>
+          </label>
+        </div>
+      </div>
+      <button type="button" class="application-form__send-button">Envoyer</button>
+    </form>
+  </div>
+  <a class="close-reveal-modal">&times;</a>
+</div>

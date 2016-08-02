@@ -1,0 +1,138 @@
+{
+    "units": [
+        {
+            "name": "Types and Expressions",
+            "content": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Using a REPL",
+                        "Numbers and math",
+                        "Booleans and logic",
+                        "Defining and referencing variables",
+                        "Evaluating expressions"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Functions",
+            "content": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Invoking functions",
+                        "Declaring functions",
+                        "Functions as data",
+                        "Anonymous functions",
+                        "Immediately invoked function expressions",
+                        "Scope and closures"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Objects",
+            "content": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Dictionaries",
+                        "Objects",
+                        "Calling object methods",
+                        "Defining object methods",
+                        "Object constructors",
+                        "The \"this\" keyword"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Strings, Arrays and Callbacks",
+            "content": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Arrays and their methods",
+                        "Strings and their methods",
+                        "Map, filter, reduce and sort",
+                        "Type coercion in JavaScript"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Control Structures and Implementing Callbacks",
+            "content": [
+                {
+                    "type": "list",
+                    "items": [
+                        "If",
+                        "Switch",
+                        "For",
+                        "While",
+                        "Try",
+                        "Implementing our own \"map\" function",
+                        "Four different ways to iterate over a list: for, while, map, recursion"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Asynchronous Programming, IO and Building Pyramids of Doom",
+            "content": [
+                {
+                    "type": "list",
+                    "items": [
+                        "The event loop",
+                        "The \"fetch\" API and GET requests",
+                        "Deploying an HTTP server with node and ngrok",
+                        "Nesting asynchronous callbacks"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "The DOM",
+            "content": [
+                {
+                    "type": "list",
+                    "items": [
+                        "The Document Object Model",
+                        "Script tags in the browser",
+                        "\"onClick\" and event handlers",
+                        "\"getElementById\" and manipulating the DOM",
+                        "Form submission and making and receiving POST requests"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Building a Chat Client",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "We have the skills, so together we'll design and build a quick and dirty messaging app to chat amongst eachother."
+                }
+            ]
+        },
+        {
+            "name": "Building a Bot",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "Why chat with another person when you could chat with a bot? Lets build one!"
+                }
+            ]
+        },
+        {
+            "name": "Connecting to Third Party APIs",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "Our bot is as dumb as a bag of nails. Let's leverage the power of the interwebs to make our bot wise and all-knowing."
+                }
+            ]
+        }
+    ]
+}
