@@ -342,7 +342,7 @@ table {
   border-spacing: 0; }
 
 meta.foundation-version {
-  font-family: "/5.5.3/"; }
+  font-family: "/5.5.2/"; }
 
 meta.foundation-mq-small {
   font-family: "/only screen/";
@@ -386,12 +386,15 @@ meta.foundation-data-attribute-namespace {
 html, body {
   height: 100%; }
 
+html {
+  box-sizing: border-box; }
+
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
 
 html,
 body {
@@ -509,14 +512,11 @@ select {
     .reveal-modal {
       top: 6.25rem; } }
   .reveal-modal.radius {
-    box-shadow: none;
     border-radius: 3px; }
   .reveal-modal.round {
-    box-shadow: none;
     border-radius: 1000px; }
   .reveal-modal.collapse {
-    padding: 0;
-    box-shadow: none; }
+    padding: 0; }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.tiny {
       left: 0;
@@ -665,7 +665,9 @@ code {
   position: absolute;
   width: 100%;
   z-index: 9999;
-  transition: none; }
+  -webkit-transition: background-color 250ms ease-in;
+  -moz-transition: background-color 250ms ease-in;
+  transition: background-color 250ms ease-in; }
   .main-header:before, .main-header:after {
     content: " ";
     display: table; }
@@ -717,7 +719,9 @@ code {
     -ms-transform-origin: 0 0;
     -o-transform-origin: 0 0;
     transform-origin: 0 0;
-    transition: none; }
+    -webkit-transition: -webkit-transform 100ms ease-in;
+    -moz-transition: -moz-transform 100ms ease-in;
+    transition: transform 100ms ease-in; }
   .main-nav__checkbox:checked + .main-header {
     background-color: #000; }
     .main-nav__checkbox:checked + .main-header .main-nav__list {
@@ -785,7 +789,9 @@ code {
       .main-nav__link--contact {
         padding: 12px;
         border: 2px solid #fff;
-        transition: none; }
+        -webkit-transition: background-color 250ms ease-in, color 250ms ease-in;
+        -moz-transition: background-color 250ms ease-in, color 250ms ease-in;
+        transition: background-color 250ms ease-in, color 250ms ease-in; }
       .main-nav__link--contact:hover {
         background-color: #fff;
         color: #000; }
@@ -803,7 +809,9 @@ code {
         -ms-transform-origin: 0 0;
         -o-transform-origin: 0 0;
         transform-origin: 0 0;
-        transition: none; }
+        -webkit-transition: -webkit-transform 100ms ease-in, background-color 300ms ease-in;
+        -moz-transition: -moz-transform 100ms ease-in, background-color 300ms ease-in;
+        transition: transform 100ms ease-in, background-color 300ms ease-in; }
       .main-nav__item:hover .main-nav__sub-nav, .main-nav__link:active + .main-nav__sub-nav {
         -webkit-transform: scale3d(1, 1, 1);
         -moz-transform: scale3d(1, 1, 1);
@@ -875,7 +883,9 @@ code {
     border: 2px solid #fff;
     min-width: 130px;
     opacity: 0.6;
-    transition: none; }
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in; }
     .no-touch .intro-section__link:hover {
       background-color: rgba(200, 200, 200, 0.5); }
   @media only screen and (min-width: 40.0625em) {
@@ -1042,7 +1052,9 @@ code {
     -ms-transform: rotateZ(90deg);
     -o-transform: rotateZ(90deg);
     transform: rotateZ(90deg);
-    transition: none; }
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    -moz-transition: -moz-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out; }
   .faq-list__header {
     display: block;
     padding: 20px 30px 20px 0;
@@ -1158,8 +1170,7 @@ code {
     flex-grow: 1;
     -ms-flex-positive: 1; }
   .application-form__radio-label {
-    display: inline-block;
-    white-space: nowrap; } }
+    display: inline-block; } }
 
 @media only screen and (min-width: 64.0625em) {
   .application-form__content {
@@ -1363,7 +1374,9 @@ code {
     display: inline-block;
     padding: 16px;
     color: #000;
-    transition: none; }
+    -webkit-transition: background-color 300ms ease-in, color 300ms ease-in;
+    -moz-transition: background-color 300ms ease-in, color 300ms ease-in;
+    transition: background-color 300ms ease-in, color 300ms ease-in; }
     .upcoming-courses__reserve:hover {
       background-color: #000;
       color: #fff; }
@@ -1476,7 +1489,9 @@ code {
     background-color: transparent;
     overflow: hidden;
     border-bottom: 1px solid #eee;
-    transition: none; }
+    -webkit-transition: background-color 250ms ease-in-out;
+    -moz-transition: background-color 250ms ease-in-out;
+    transition: background-color 250ms ease-in-out; }
   .course-curriculum__unit:before {
     content: "\203a";
     font-size: 40px;
@@ -1490,7 +1505,9 @@ code {
     -ms-transform: rotateZ(90deg);
     -o-transform: rotateZ(90deg);
     transform: rotateZ(90deg);
-    transition: none; }
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    -moz-transition: -moz-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out; }
     @media only screen and (min-width: 40.0625em) {
       .course-curriculum__unit:before {
         right: 30px; } }
