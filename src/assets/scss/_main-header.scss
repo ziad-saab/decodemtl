@@ -1,7 +1,7 @@
 $height: 50px;
 
 .main-header {
-  color: #fff;
+  color: #ff0000;
   line-height: 1;
   position: absolute;
   width: 100%;
@@ -71,7 +71,7 @@ $height: 50px;
     position: relative;
   }
   &__link {
-    color: #fff;
+    color: #ff0000;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 1px;
@@ -131,7 +131,7 @@ $height: 50px;
     &__link--contact {
       padding: 12px;
       border: 2px solid #fff;
-      @include transition(background-color 250ms ease-in, color 250ms ease-in);
+      @include transition(background-color 500ms ease-in, color 500ms ease-in);
     }
     &__link--contact:hover {
       background-color: #fff;
